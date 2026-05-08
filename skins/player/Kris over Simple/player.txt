@@ -1,0 +1,169 @@
+[simple-overall]
+has tails=false
+name color=0,255,255
+
+resizesmallform=0.5
+
+top speed=3.5
+air acceleration=0.08
+ground acceleration=0.06
+deaccelaration=0.265
+jump type=Mario
+movement type=Mario
+
+airjump=true
+airjump amount=2
+airjump refreshes other moves=true
+airjump changevertspeed=true
+airjump vertspeed=-3
+airjump changehorspeed=false
+airjump horspeed=0
+
+spindash=false
+roll=false
+
+instashield=true
+dropdash=false
+
+wallkick=true
+wallslide=true
+
+marioslide=false
+
+zerodash=false
+zerodashEX=false
+zerodashplus=false
+
+sonicairdash=false
+sonicfiredash=false
+sonicwingdash=false
+
+slide=true
+slidekick=true
+
+momentumbreak=false
+
+
+longjump=false
+sideflip=false
+triplejump=false
+groundpound=false
+dive=false
+
+
+[simple-basic]
+top speed=3
+zerodash=false
+
+[simple-big]
+zerodash=false
+
+[simple-fire]
+airjump amount=1
+airjump vertspeed=-5
+airjump changehorspeed=true
+airjump horspeed=5
+zerodashEX=false
+
+[simple-feather]
+airjump amount=4
+zerodashplus=false
+zerodash=true
+dive=false
+
+[simple-mini]
+top speed=4
+zerodash=false
+
+[simple-extra]
+
+[simple]
+name=Kris
+
+
+icon speed=6
+icon loop=yes
+animation speed=1.0
+center x=32
+center y=28
+box width=59
+box height=47
+
+pitch spindash=yes
+jump ball animation=no
+fire duration=2.75
+victory duration=50
+time until wait=300
+pipe squish=20
+pole center offset=8
+
+size reroute big=basic
+size reroute fire=big
+size reroute feather=big
+size reroute extra=big
+
+use paletting=true
+defaultspray 1=1
+defaultspray 2=4
+defaultspray 3=0
+defaultspray 4=0
+
+
+custom sprite list=stand,walk,knock,dead,run,pose,ball,spring,airwalk,wallslide,slide,longjump,climbing
+connect walk=true
+
+reroute wait=stand
+reroute lookup=stand
+
+connect knock=true
+connect dead=true
+connect pose=true
+reroute jump=ball
+connect airwalk=true
+connect wallslide=true
+
+reroute marioslide=slide
+reroute maxrun=run
+connect longjump=true
+reroute sidepiping=walk
+reroute dive=longjump
+
+stand frames=1
+walk frames=4
+walk speed=0.25
+knock frames=1
+dead frames=1
+run frames=6
+run speed=0.25
+pose frames=1
+ball frames=5
+ball loop=2
+ball speed=0.25
+spring frames=3
+spring loop=1
+spring speed=0.25
+airwalk frames=3
+airwalk loop=1
+airwalk speed=0.25
+slide frames=6
+slide speed=0.25
+longjump frames=1
+climbing frames=4
+climbing speed=0.25
+
+
+
+boll top=#0077FF
+boll mid=#000000
+boll bot=#ff0000
+
+[lang]
+winspecial=Sonic got a Chaos Emerald
+allspecial=Sonic got all Chaos Emeralds
+princess=our Princess
+savetext1=Peace is Paved
+savetext2=With Kingdom Saved
+savetext3=Hurrah to Sonic
+savetext4=Our Only Hero 
+savetext5=This Ends Your Trip
+savetext6=Of a Long Friendship

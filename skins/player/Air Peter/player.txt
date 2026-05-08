@@ -1,0 +1,147 @@
+[giana]
+name=Air Peter
+credits=SuperSanic24
+
+icon speed=4
+icon loop=yes
+animation speed=1.0
+center x=27
+center y=46
+box width=54
+box height=67
+
+additive blend dash effects=yes
+3d death=yes
+victory duration=90
+victory frame=12
+time until wait=300
+pipe squish=20
+
+roster size=0
+
+use paletting=true
+defaultspray 1=9
+defaultspray 2=0
+defaultspray 3=10
+
+custom sprite list=stand,wait,lookup,brake,pose,crouch,walk,grow,knock,die,jump,bonk,fall,fire,twirl,dash,paddle,specialfall,grind,climbing,stride1,piping,stride1fall
+reroute run=walk
+reroute firewalk=fire
+reroute firejump=brake
+reroute swim=dash
+reroute stride1=dash
+reroute stride2=dash
+reroute stride1fall=fall
+reroute stride2fall=fall
+reroute slide=dash
+reroute flagslide=brake
+reroute pipingup=piping
+reroute sidepiping=piping
+reroute doorenter=stand
+reroute doorexit=stand
+reroute dash=walk
+reroute jump=dash
+
+connect wait=true
+connect lookup=true
+connect brake=true
+connect walk=true
+connect grow=true
+connect knock=true
+connect die=true
+connect bonk=true
+connect fall=true
+connect fire=true
+connect paddle=true
+connect grind=true
+connect stride1=true
+connect stride1fall=true
+
+stand frames=3
+wait frames=2
+lookup frames=2
+pose frames=8
+crouch frames=2
+walk frames=2
+brake frames=1
+jump frames=3
+bonk frames=2
+fall frames=2
+knock frames=1
+burn frames=1
+grow frames=2
+fire frames=1
+twirl frames=8
+dash frames=6
+specialfall frames=7
+paddle frames=2
+stride1 frames=2
+stride1fall frames=2
+slide frames=6
+climbing frames=6
+
+stand speed=0.2
+wait speed=0.25
+pose speed=0.25
+brake speed=0.5
+bonk speed=0.25
+knock speed=0.25
+grow speed=0.25
+fire speed=0.25
+twirl speed=0.5
+dash speed=0.5
+specialfall speed=0.25
+paddle speed=0.1
+climbing speed=0.3
+
+stand frametimes=32,1,1
+wait frametimes=2,2
+pose frametimes=1,1,1,1,1,1,2,2
+lookup frametimes=4
+crouch frametimes=4
+walk frametimes=3,3
+jump frametimes=4,20
+fall frametimes=10
+twirl frametimes=2,4,2,2,2,2,2,2
+stride1 frametimes=4
+stride1fall frametimes=10
+
+stand loop=1
+pose loop=7
+wait loop=1
+lookup loop=2
+win loop=1
+crouch loop=2
+jump loop=3
+bonk loop=2
+fall loop=2
+twirl loop=3
+paddle loop=2
+brake loop=1
+knock loop=1
+grow loop=1
+fire loop=1
+firejump loop=3
+specialfall loop=7
+stride1 loop=2
+stride1fall loop=2
+
+grind frames=1
+piping frames=6
+
+piping speed=0.25
+
+boll top=#FFCD9B
+boll mid=#000000
+boll bot=#006349
+
+[lang]
+winspecial=Peter got a Chaos Emerald
+allspecial=Peter got all Chaos Emeralds
+princess=Lois
+savetext1=Enough!
+savetext2=
+savetext3=
+savetext4=
+savetext5=Flight
+savetext6=Over

@@ -1,0 +1,102 @@
+[bowser]
+name=Bowser
+
+icon speed=6
+icon loop=yes
+animation speed=1.0
+center x=20
+center y=29
+box width=40
+box height=48
+shield offset=-6
+pole center offset=8
+time until wait=0
+fire duration=8
+victory duration=50
+skin offset=140
+marker offset=42
+use ypos=false
+
+use paletting=false
+defaultspray 1=7
+defaultspray 2=6
+defaultspray 3=5
+defaultspray 4=9
+
+custom sprite list=stand,turn,walk,crouch,jump,bomb,bombland,fired,shell
+
+reroute wait=stand
+reroute lookup=stand
+reroute pose=turn
+reroute knock=stand
+reroute dead=bomb
+reroute jumpstart=crouch
+reroute bonk=jump
+reroute fall=jump
+reroute firedjump=fired
+reroute firedcrouch=crouch
+reroute throw=stand
+reroute throwjump=jump
+reroute bombjump=bomb
+reroute bombfall=bomb
+reroute superjump=bomb
+reroute superfall=bomb
+reroute swim=jump
+reroute paddle=jump
+reroute shelljump=shell
+reroute shellglide=shell
+reroute superjumpcharge=bombland
+reroute land=crouch
+reroute superland=bombland
+reroute climbing=jump
+reroute flagslide=jump
+reroute grind=stand
+reroute piping=shell
+reroute sidepiping=shell
+reroute pipingup=shell
+reroute doorenter=stand
+reroute doorexit=stand
+
+connect turn=true
+connect jump=true
+connect bomb=true
+connect bombland=true
+
+stand frames=1
+crouch speed=0.125
+walk frames=4
+jump frames=1
+turn frames=2
+fired frames=3
+bomb frames=1
+shell frames=8
+bombland frames=1
+turn frametimes=2,2,2
+turn loop=2
+crouch frames=1
+
+fired loop=3
+turn loop=2
+
+stand speed=0.2
+walk speed=0.25
+fired speed=0.3
+shell speed=0.5
+
+stand frametimes=1,1,1
+walk frametimes=1,1,1,1,1,1,1,1
+
+boll top=#aaaaaa
+boll mid=#000000
+boll bot=#808080
+
+[lang]
+winspecial=Bowser got a Chaos Emerald
+allspecial=Bowser got all Chaos Emeralds
+princess=our Princess
+savetext1=Peace is Paved
+savetext2=With Kingdom Saved
+savetext3=Hurrah to Bowser
+savetext4=Our Only Hero...?
+savetext5=This Ends Your Trip
+savetext6=Of a Long Friendship

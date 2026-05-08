@@ -1,0 +1,37 @@
+time=45
+1=36
+2=72
+3=144
+xxxxxxxxxxxxxxxx@:::@xxxx
+xxxxxxxxxxxxxx@.::O::.@xx
+xxxxxxxxxxxxx@.::xxx::.@x
+xxxxxxxxxxxxx.t:@/#\@: .x
+xxxxxxxxxxxx@  @/´ `\@  @
+xxxxxxxxxxxx. x/´   `\x .
+xxxxxxxxxxxx: x#  F  #xO:
+xxxxxxxxxxxx. x`\   /´x .
+xxxxxxxxxxxx@  @`\ /´@. @
+xxxxxxxxxxxxx.  @`3´@...x
+xxxxxxxxxxxxx@      xT.@x
+xxxxxxxxxxxxxx@.    xx@xx
+xxxxxxxxxxxxxxxx@: :@xxxx
+xxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxTxxxxxx
+xxxxxxxxxxxxxxxxx@.@xxxxx
+xxxxxxxxxxxxxxxxxx.xxxxxx
+xxxxxxxxxxxxxxxxxx.xxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxTxxxxxx
+xxxxxxxxxxxxxxxxx@:@xxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxTxxxxxx
+xxxxxxxxxxxxxxxxxx xxxxxx
+xxxxx/#####\xxx/##2##\xxx
+x/´.:@xxxxx@:./´x#  :`\xx
+/´   . :T: . /´tx#  Ot`\x
+#     x@x@x  #:@#´ Oxxx#x
+# S  ...x:   1  x Otxx.#x
+#     x@x@x  #: x   x.:#x
+`\   . :T: . `\.xxxx.:/´x
+x`#.:@xxxxx@:.`\:. .:/´xx
+xxxxx`#####´xxx`#####´xxx

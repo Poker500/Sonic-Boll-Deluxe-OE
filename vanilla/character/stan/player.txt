@@ -1,0 +1,121 @@
+[stan]
+name=Stanley
+
+icon speed=6
+icon loop=yes
+animation speed=1.0
+center x=24
+center y=27
+box width=48
+box height=48
+
+fire duration=2.75
+victory duration=30
+time until wait=200
+pipe squish=20
+pole center offset=8
+
+use paletting=true
+defaultspray 1=5
+defaultspray 2=2
+defaultspray 3=5
+defaultspray 4=7
+
+custom sprite list=stand,wait,fired,lookup,lookupfired,pose,dance,knock,deadair,deadland,walk,walkfired,walkup,walkupfired,brake,jump,bonk,fall,jumpfired,jumpup,jumpupfired,jumpdown,jumpdownfired,suckin,groundpound,poundfall,slide,double,triple,climbing,flagslide,grind,piping,pipingup,sidepiping,doorenter,doorexit
+reroute doublejump=double
+reroute doublejumpbonk=double
+reroute doublejumpfall=double
+reroute triplejump=triple
+reroute triplejumpbonk=triple
+reroute triplejumpfall=triple
+reroute swim=fall
+reroute paddle=jump
+
+stand frames=1,3,1,1,1
+wait frames=15
+wait frametimes=1,6,1,2,1,1,1,2,4,2,1,1,1,2,4
+fired frames=2
+lookup frames=1
+lookupfired frames=2
+pose frames=1
+crouch frames=2
+knock frames=1
+dead frames=2
+deadlanded frames=1
+walk frames=8
+walkfired frames=8
+walkup frames=8
+walkupfired frames=8
+brake frames=1
+jump frames=3
+bonk frames=1
+fall frames=3
+jumpfired frames=2
+jumpup frames=1
+jumpupfired frames=2
+jumpdown frames=1
+jumpdownfired frames=2
+climbing frames=2
+sliding frames=1
+dance frames=2
+suckin frames=6
+groundpound frames=8
+slide frames=1
+double frames=1
+triple frames=1
+deadair frames=2
+
+size reroute beet=big
+size reroute lui=big
+
+stand speed=0.2
+stand loop=1
+fired speed=0.2
+fired loop=2
+lookupfired speed=0.2
+lookupfired loop=2
+jumpfired speed=0.2
+jumpfired loop=2
+jumpupfired speed=0.2
+jumpupfired loop=2
+jumpdownfired speed=0.2
+jumpdownfired loop=2
+jump loop=3
+fall loop=3
+wait speed=0.2
+walk speed=0.5
+walkfired speed=0.5
+walkup speed=0.5
+walkupfired speed=0.5
+jump speed=0.1
+fall speed=0.15
+springfall speed=0.4
+climbing speed=0.05
+sliding speed=0.05
+dance speed=0.1
+groundpound speed=0.75
+groundpound loop=8
+deadair speed=0.1
+suckin frametimes= 20,2,18,5,5,69
+
+10,60,10,20,10,10,10,20,40,20,10,10,10,20,40
+
+stand frametimes=32,1,1
+wait loop=4
+
+
+boll top=#E1DDD5
+boll mid=#000000
+boll bot=#1870F0
+
+
+[lang]
+winspecial=Stanley got a Chaos Emerald
+allspecial=Stanley got all Chaos Emeralds
+princess=our Princess
+savetext1=Peace is Paved
+savetext2=With Kingdom Saved
+savetext3=Hurrah to Stanley
+savetext4=Our Only Hero 
+savetext5=This Ends Your Trip
+savetext6=Of a Long Friendship

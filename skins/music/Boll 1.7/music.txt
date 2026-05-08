@@ -1,0 +1,6 @@
+[music]
+fast music=yes
+hurry timer=30
+automatic fast music semitones=1
+music continues after death=no
+boss music=yes

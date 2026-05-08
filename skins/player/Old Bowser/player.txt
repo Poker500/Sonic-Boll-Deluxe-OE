@@ -1,0 +1,149 @@
+[bowser]
+name=Bowser
+
+icon speed=12
+icon loop=yes
+animation speed=1.0
+center x=24
+center y=30
+box width=48
+box height=48
+
+shield offset=-6
+pole center offset=8
+time until wait=300
+fire duration=8
+victory duration=50
+pole center offset=8
+mini sheet=0
+use ypos=false
+
+skin offset=140
+sheet splits=bombjump
+sheet split size=200
+use paletting=true
+defaultspray 1=7
+defaultspray 2=6
+defaultspray 3=5
+defaultspray 4=9
+
+custom sprite list=stand,wait,lookup,pose,crouch,knock,dead,walk,turn,jumpstart,jump,bonk,fall,bombjump,superjump,superfall,land,superland,swim,paddle,shell,superjumpcharge,throw,fired,firedcrouch,climbing,flagslide,hanging,doorenter,doorexit
+reroute firedjump=fired
+reroute throwjump=throw
+reroute bombfall=superfall
+reroute firedjump=fired
+reroute throwjump=throw
+reroute hangmove=hanging
+reroute shelljump=shell
+reroute shellglide=shell
+reroute piping=shell
+reroute pipingup=shell
+reroute sidepiping=shell
+
+reroute swim=swim
+reroute paddle=paddle
+
+connect superfall=true
+connect superland=true
+
+stand frames=3
+wait frames=3
+lookup frames=2
+lookup speed=0.2
+pose frames=2
+crouch speed=0.125
+dead frames=2
+walk frames=4
+turn frames=2
+jumpstart frames=1
+jump frames=2
+ball frames=3
+fall frames=2
+throw frames=2
+fired frames=3
+firedcrouch frames=3
+bombjump frames=2
+superjump frames=2
+superfall frames=1
+swim frames=2
+paddle frames=2
+shell frames=8
+shellglide frames=8
+superjumpcharge frames=3
+fly frames=2
+turn frametimes=2,2,2
+turn loop=2
+crouch frames=2
+armless frames=2
+claw frames=3
+climbing frames=2
+
+wait loop=1
+lookup loop=2
+claw loop=3
+armless loop=2
+crouch loop=2
+jump loop=2
+fall loop=2
+bombjump loop=2
+throw loop=2
+fired loop=3
+firedcrouch loop=3
+pose loop=2
+superjumpcharge loop=3
+superjump loop=2
+
+stand speed=0.2
+dead speed=0.2
+wait speed=0.1
+jump speed=0.1
+fall speed=0.2
+walk speed=0.1
+claw speed=0.05
+superjump speed=0.075
+bombjump speed=0.4
+throw speed=0.2
+fired speed=0.3
+firedcrouch speed=0.3
+turn speed=0.2
+pose speed=0.4
+swim speed=0.2
+paddle speed=0.375
+shell speed=0.5
+shellglide speed=0.5
+superjumpcharge speed=0.5
+climbing speed=0.125
+
+stand frametimes=32,1,1
+wait frametimes=3,5,2
+walk frametimes=1,1,1,1
+
+
+grind frames=1
+piping frames=8
+pipingup frames=8
+sidepiping frames=8
+doorenter frames=1
+doorexit frames=3
+
+piping speed=0.35
+pipingup speed=0.35
+sidepiping speed=0.35
+doorexit speed=0.20
+
+doorexit loop=3
+
+boll top=#aaaaaa
+boll mid=#000000
+boll bot=#808080
+
+[lang]
+winspecial=Bowser got a Chaos Emerald
+allspecial=Bowser got all Chaos Emeralds
+princess=our Princess
+savetext1=Peace is Paved
+savetext2=With Kingdom Saved
+savetext3=Hurrah to Bowser
+savetext4=Our Only Hero...?
+savetext5=This Ends Your Trip
+savetext6=Of a Long Friendship

@@ -1,0 +1,44 @@
+time=45
+1=24
+2=62
+3=104
+xxxxxxxxxxxxxxxxxxxxxx/###\xx
+xxxxxxxxxxxxxxxxxxxxx/´   `\x
+xxxxxxxxxxxxxxxxxxxxx#  F  #x
+xxxxxxxxxxxxxxxxxxxxx#     #x
+xxxxxxxxxxxxxxxxxxxxx`\   /´x
+xxxxxxxxxxxxxxxxxxxxxx`   ´xx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxTxxxx
+xxxxxxxxxxxxxxxxxxxxxxxx xxxx
+xxxxxxxxxxxxxxxxxxxxxxxx xxxx
+xxxxxxxxxxxxxxxxxxxxxxxx xxxx
+xx/##\xxxxxxxxxxxxxx/###3###\
+x/´  `\xxxxxxxxxxxxx#x.x:x.x#
+/´t   `\xxxxxxxxxxxx#tx.x.x:#
+#      `\xxxxxxxxxxx#x:x:x:x#
+#   S  x`##\xxxxxxxx#.x.x.x.#
+`\    x:x: `\xxxxxxx#x:x:x:x#
+x`\  x.x.x  `\xxxxxx`\x.x.x/´
+xx`\x:x:x    `\xxxxxx#.x.x.#x
+xxx`\x.x ...  #xxxxxx#x.x.x#x
+xxxx#:x .   . #xxxxxx#     #x
+xxxx#   . O . #xxxxxx`\   /´x
+xxxx`\  .   . #xxxxxxx#   #xx
+xxxxx`\  ...  #xxxxxxx#   #xx
+xxxxxx`\     1`\xxxxxx`\ /´xx
+xxxxxxx`#####\ `\xxxxxx`2´xxx
+xxxxxxxxxxxxx`\. @xxxxxx xxxx
+xxxxxxxxxxxxxx` :xxxxxxx.xxxx
+xxxxxxxxxxxxxxx@x.x@xxxx.xxxx
+xxxxxxxxxxxxxxxxxx: \xxx.xxxx
+xxxxxxxxxxxxxxxxx@ .`\xx.xxxx
+xxxxxxxxxxxxxxxxxx`\T`\x xxxx
+xxxxxxxxxxxxxxxxxxx`\/## #\xx
+xxxxxxxxxxxxxxxxxxxx`#´ :.`\x
+xxxxxxxxxxxxxxxxxxxxx# t  .`\
+xxxxxxxxxxxxxxxxxxxxx#: @@ .#
+xxxxxxxxxxxxxxxxxxxxx#. @@ :#
+xxxxxxxxxxxxxxxxxxxxx`\.   .#
+xxxxxxxxxxxxxxxxxxxxxx`\.:./´
+xxxxxxxxxxxxxxxxxxxxxxx`###´x

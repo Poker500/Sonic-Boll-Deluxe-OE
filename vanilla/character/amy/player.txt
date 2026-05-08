@@ -1,0 +1,290 @@
+[amy]
+name=Amy
+
+icon speed=6
+icon loop=yes
+animation speed=1.0
+multiple box sizes=false
+center x=26
+center y=36
+box width=56
+box height=56
+
+pitch spindash=yes
+jump ball animation=no
+fire duration=2.75
+victory duration=30
+time until wait=300
+pipe squish=20
+pole center offset=8
+minisheet=false
+
+single sheet=false
+max sizes=7
+seperate projectile coords by size=true
+
+old hammer rotation=false
+
+reroute pikoball=pikoball
+
+hammer rotate graphic x0=21
+hammer rotate graphic y0=85
+
+hammer rotate offset x0=-10
+hammer rotate offset y0=-1
+
+hammer rotate offset x1=-10
+hammer rotate offset y1=-4
+
+hammer rotate offset x5=-10
+hammer rotate offset y5=-1
+
+stand frames=3
+stand loop=1
+stand speed=0.1
+stand frametimes=16,1,1
+stand offset x=0
+stand offset y=0
+
+wait frames=5
+wait loop=4
+wait speed=0.1
+wait frametimes=0
+wait offset x=0
+wait offset y=0
+
+lookup frames=1
+lookup loop=1
+lookup speed=0.2
+wait frametimes=0
+wait offset x=0
+wait offset y=0
+
+pose frames=1
+pose loop=1
+pose speed=0.20
+wait frametimes=0
+wait offset x=0
+wait offset y=0
+
+crouch frames=1
+crouch loop=1
+crouch speed=0.2
+wait frametimes=0
+wait offset x=0
+wait offset y=0
+
+knock frames=1
+wait frametimes=0
+wait offset x=0
+wait offset y=0
+
+dead frames=1
+wait frametimes=0
+wait offset x=0
+wait offset y=0
+
+walk frames=8
+walk loop=1
+walk speed=0.5
+wait frametimes=0
+wait offset x=0
+wait offset y=0
+
+run frames=4
+run loop=1
+run speed=0.25
+wait frametimes=0
+wait offset x=0
+wait offset y=0
+
+brake frames=1
+brake loop=4
+brake speed=0.3
+brake frametimes= 1,1,2,10
+brake offset x=0
+brake offset y=0
+
+jump frames=3
+jump loop=3
+jump speed=0.3
+jump frametimes=0
+jump offset x=0
+jump offset y=0
+
+fall frames=3
+fall loop=3
+fall speed=0.3
+fall frametimes=0
+fall offset x=0
+fall offset y=0
+
+bonk frames=2
+bonk loop=2
+bonk speed=0.25
+bonk frametimes=0
+bonk offset x=0
+bonk offset y=0
+
+hammerspin frames=8
+hammerspin loop=1
+hammerspin speed=0.25
+hammerspin frametimes=0
+hammerspin offset x=0
+hammerspin offset y=0
+
+ball frames=8
+ball loop=1
+ball speed=0.5
+ball frametimes=0
+ball offset x=0
+ball offset y=0
+
+pikoball frames=8
+pikoball loop=1
+pikoball speed=1
+pikoball frametimes=0
+pikoball offset x=0
+pikoball offset y=14
+
+skip frames=1
+skip loop=1
+skip speed=0.25
+skip frametimes=0
+skip offset x=0
+skip offset y=0
+
+push frames=4
+push loop=1
+push speed=0.1
+push frametimes=0
+push offset x=0
+push offset y=0
+
+balance frames=4
+balance loop=1
+balance speed=0.16
+balance frametimes=0
+balance offset x=0
+balance offset y=0
+
+piko frames=8
+piko loop=8
+piko speed=0.45
+piko frametimes=0
+piko offset x=0
+piko offset y=0
+
+twirl frames=6
+twirl loop=1
+twirl speed=0.4
+twirl frametimes=0
+twirl offset x=0
+twirl offset y=0
+
+hammerfall frames=3
+hammerfall loop=2
+hammerfall speed=0.3
+hammerfall frametimes=0
+hammerfall offset x=0
+hammerfall offset y=0
+
+hammerslam frames=3
+hammerslam loop=2
+hammerslam speed=0.3
+hammerslam frametimes=0
+hammerslam offset x=0
+hammerslam offset y=0
+
+kick frames=1
+kick loop=1
+kick speed=0.5
+kick frametimes=0
+kick offset x=0
+kick offset y=0
+
+upper frames=5
+upper loop=5
+upper speed=0.5
+upper frametimes=0
+upper offset x=0
+upper offset y=0
+
+flip frames=9
+flip loop=2
+flip speed=0.2
+flip frametimes=0
+flip offset x=0
+flip offset y=0
+
+climb frames=2
+climb loop=2
+climb speed=0.05
+climb frametimes=0
+climb offset x=0
+climb offset y=0
+
+flagslide frames=1
+flagslide loop=1
+flagslide speed=0.05
+flagslide frametimes=0
+flagslide offset x=0
+flagslide offset y=0
+
+grind frames=1
+grind loop=1
+grind speed=0.05
+grind frametimes=0
+grind offset x=0
+grind offset y=0
+
+piping frames=1
+piping loop=1
+piping speed=0.05
+piping frametimes=0
+piping offset x=0
+piping offset y=0
+
+pipingup frames=1
+pipingup loop=1
+pipingup speed=0.05
+pipingup frametimes=0
+pipingup offset x=0
+pipingup offset y=0
+
+sidepiping frames=8
+sidepiping loop=1
+sidepiping speed=0.5
+sidepiping frametimes=0
+sidepiping offset x=0
+sidepiping offset y=0
+
+doorenter frames=1
+doorenter loop=1
+doorenter speed=0.5
+doorenter frametimes=0
+doorenter offset x=0
+doorenter offset y=0
+
+doorexit frames=1
+doorexit loop=1
+doorexit speed=0.5
+doorexit frametimes=0
+doorexit offset x=0
+doorexit offset y=0
+
+
+boll top=#ff2dff
+boll mid=#0b5454
+boll bot=#ce1c1c
+
+[lang]
+winspecial=Amy got a Chaos Emerald
+allspecial=Amy got all Chaos Emeralds
+princess=our Princess
+savetext1=Peace is Paved
+savetext2=With Kingdom Saved
+savetext3=Hurrah to Amy
+savetext4=Our Only Hero 
+savetext5=This Ends Your hammerfall
+savetext6=Of a Long Friendship

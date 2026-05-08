@@ -1,0 +1,80 @@
+[zerosonic]
+name=Zero Tails
+
+icon speed=6
+icon loop=yes
+animation speed=1.0
+center x=24
+center y=28
+box width=48
+box height=48
+
+pitch spindash=yes
+jump ball animation=no
+fire duration=8
+victory duration=30
+time until wait=200
+pipe squish=100
+
+stand frames=1
+wait frames=1
+lookup frames=1
+pose frames=1
+crouch frames=1
+knock frames=1
+dead frames=1
+walk frames=3
+run frames=3
+brake frames=1
+spring frames=1
+jump frames=4
+bonk frames=2
+dropdash frames=4
+ball frames=4
+spindash frames=4
+push frames=1
+hang frames=1
+fire frames=1
+flagslide frames=1
+climbing frames=2
+piping frames=1
+pipingup frames=1
+sidepiping frames=3
+doorenter frames=1
+doorexit frames=1
+
+wait loop=3
+bonk loop=2
+walk loop=1
+
+wait speed=0.1
+lookup speed=0.05
+pose speed=0.20
+walk speed=0.5
+run speed=0.4
+jump speed=0.5
+bonk speed=0.25
+dropdash speed=0.75
+ball speed=0.5
+spindash speed=0.5
+push speed=0.1
+hang speed=0.2
+fire speed=0.125
+flagslide speed=0.1
+climbing speed=0.1
+sidepiping speed=0.5
+
+boll top=#bbbb00
+boll mid=#aaaa00
+boll bot=#ff0000
+
+[lang]
+winspecial=Tails got a Chaos Emerald
+allspecial=Tails got all Chaos Emeralds
+princess=our Princess
+savetext1=Peace is Paved
+savetext2=With Kingdom Saved
+savetext3=Hurrah to Tails
+savetext4=Our Only Hero 
+savetext5=This Ends Your Trip
+savetext6=Of a Long Friendship

@@ -1,0 +1,37 @@
+- crouching should put you into the rolling state (to, for example, hit question marks from above much easier, also you should still be able to move from here)
+
+-̶ ̶y̶o̶u̶ ̶s̶h̶o̶u̶l̶d̶ ̶b̶e̶ ̶a̶b̶l̶e̶ ̶t̶o̶ ̶t̶u̶r̶n̶ ̶a̶r̶o̶u̶n̶d̶ ̶c̶o̶m̶p̶l̶e̶t̶e̶l̶y̶ ̶w̶h̶e̶n̶ ̶j̶u̶m̶p̶i̶n̶g̶ ̶(̶r̶n̶ ̶h̶i̶s̶ ̶t̶h̶o̶k̶ ̶c̶a̶n̶ ̶b̶e̶ ̶a̶ ̶b̶i̶t̶ ̶a̶n̶n̶o̶y̶i̶n̶g̶ ̶b̶c̶ ̶o̶f̶ ̶t̶h̶i̶s̶)̶
+
+-̶ ̶g̶e̶t̶t̶i̶n̶g̶ ̶h̶u̶r̶t̶ ̶s̶h̶o̶u̶l̶d̶n̶'̶t̶ ̶p̶u̶t̶ ̶y̶o̶u̶ ̶t̶o̶ ̶a̶ ̶f̶u̶l̶l̶ ̶s̶t̶o̶p̶,̶ ̶i̶n̶ ̶s̶r̶b̶1̶ ̶h̶e̶ ̶k̶e̶e̶p̶s̶ ̶h̶i̶s̶ ̶m̶o̶v̶e̶m̶e̶n̶t̶  done        - awesome 
+
+- springs should launch you rolling into the other direction
+
+-̶ ̶m̶u̶l̶t̶i̶t̶h̶o̶k̶ ̶s̶h̶o̶u̶l̶d̶ ̶f̶u̶n̶c̶t̶i̶o̶n̶ ̶t̶h̶e̶ ̶s̶a̶m̶e̶ ̶a̶s̶ ̶t̶h̶e̶ ̶n̶o̶r̶m̶a̶l̶ ̶t̶h̶o̶k̶ ̶b̶u̶t̶ ̶w̶i̶t̶h̶ ̶t̶h̶e̶ ̶s̶p̶a̶m̶ ̶f̶a̶c̶t̶o̶r̶ ̶(̶b̶a̶s̶i̶c̶a̶l̶l̶y̶ ̶i̶t̶ ̶r̶e̶f̶r̶e̶s̶h̶e̶s̶ ̶y̶o̶u̶r̶ ̶t̶h̶o̶k̶ ̶a̶f̶t̶e̶r̶ ̶d̶o̶i̶n̶g̶ ̶i̶t̶ ̶a̶n̶d̶ ̶y̶o̶u̶ ̶c̶a̶n̶ ̶s̶p̶a̶m̶ ̶i̶t̶)̶
+̶
+̶-̶ ̶a̶l̶s̶o̶ ̶f̶o̶r̶ ̶s̶o̶m̶e̶ ̶r̶e̶a̶s̶o̶n̶ ̶a̶f̶t̶e̶r̶ ̶t̶h̶o̶k̶i̶n̶g̶ ̶a̶n̶d̶ ̶y̶o̶u̶ ̶p̶r̶e̶s̶s̶ ̶d̶o̶w̶n̶ ̶i̶t̶ ̶p̶l̶a̶y̶s̶ ̶t̶h̶e̶ ̶s̶p̶i̶n̶ ̶s̶o̶u̶n̶d̶ ̶(̶i̶t̶ ̶p̶o̶s̶s̶i̶b̶l̶y̶ ̶h̶a̶p̶p̶e̶n̶s̶ ̶m̶i̶d̶a̶i̶r̶ ̶o̶v̶e̶r̶a̶l̶l̶?̶)̶ ̶(̶a̶c̶t̶u̶a̶l̶l̶y̶ ̶i̶t̶ ̶m̶a̶y̶ ̶b̶e̶ ̶t̶h̶e̶ ̶a̶c̶t̶u̶a̶l̶ ̶r̶o̶l̶l̶ ̶h̶a̶p̶p̶e̶n̶i̶n̶g̶ ̶m̶i̶d̶a̶i̶r̶,̶ ̶i̶t̶ ̶b̶r̶e̶a̶k̶s̶ ̶b̶r̶i̶c̶k̶s̶ ̶w̶h̶e̶n̶ ̶t̶h̶o̶k̶i̶n̶g̶)̶
+̶
+̶-̶ ̶y̶o̶u̶ ̶c̶a̶n̶'̶t̶ ̶j̶u̶m̶p̶ ̶t̶h̶r̶o̶u̶g̶h̶ ̶s̶e̶m̶i̶s̶o̶l̶i̶d̶s̶ ̶(̶a̶t̶l̶e̶a̶s̶t̶ ̶b̶r̶i̶d̶g̶e̶s̶ ̶i̶ ̶h̶a̶v̶e̶n̶'̶t̶ ̶t̶e̶s̶t̶e̶d̶ ̶s̶e̶m̶i̶g̶r̶o̶u̶n̶d̶/̶t̶o̶p̶g̶r̶o̶u̶n̶d̶)̶ ̶s̶i̶n̶c̶e̶ ̶h̶e̶ ̶k̶e̶e̶p̶s̶ ̶s̶t̶i̶c̶k̶i̶n̶g̶ ̶t̶o̶ ̶i̶t̶ ̶(̶u̶p̶d̶a̶t̶e̶ ̶t̶h̶i̶s̶ ̶a̶l̶s̶o̶ ̶a̶f̶f̶e̶c̶t̶s̶ ̶s̶e̶m̶i̶g̶r̶o̶u̶n̶d̶/̶t̶o̶p̶g̶r̶o̶u̶n̶d̶)̶
+̶
+̶-̶ ̶y̶o̶u̶ ̶c̶a̶n̶ ̶s̶t̶i̶c̶k̶ ̶t̶o̶ ̶c̶e̶i̶l̶i̶n̶g̶s̶ ̶t̶h̶o̶k̶k̶i̶n̶g̶ ̶b̶u̶t̶ ̶i̶t̶'̶s̶ ̶a̶c̶t̶u̶a̶l̶l̶y̶ ̶f̶u̶n̶n̶y̶ ̶a̶n̶d̶ ̶h̶a̶r̶m̶l̶e̶s̶s̶ ̶s̶o̶
+
+Missing Features:
+
+Explosion Rings on fire (Fires a projectile that explodes on contact with surfaces or other objects.) (you could reuse tails' bombs' code for this)
+
+Scatter Rings on Feather: Fires a cross of 5 rings which slowly spread apart as they fly. At close range, it can launch the opponent extremely far.
+
+Polish(?)
+
+- thok trail gfx (i could make it maybe) (Its Done Already) (the effect i mean)
+- for some reason he gets stretched when going down/up pipes
+- lost coins should disappear after a while
+- lost coins shouldn't be lost in the same directions, in srb1 it's random
+
+Todo (art):
+- Make the ring graphics (big has the SRB1 design in the boll style, fire has the explosion ring, feather has the scatter ring)
+- thok trail gfx(done except it's not asymmetrical it should be for the funny)
+- bio layers
+
+Sorry For Putting So Much Things Here
+
+You Did Good Btw!!!! He's really fun                    --no way

@@ -1,0 +1,40 @@
+[settings]
+skin type=ashura
+swap idle and taunt=yes
+credits=Cyan
+
+[walk frames]
+ashura=4
+
+[run frames]
+ashura=4
+
+[walk frames small]
+ashura=4
+
+[run frames small]
+ashura=4
+
+[taunt frames]
+ashura=2
+
+[short names]
+ashura=SILVER
+
+[long names]
+ashura=Silver Sonic
+
+[lang]
+credits=Cyan
+princess=our princess
+savetext1=Peace is Paved
+savetext2=With Kingdom Saved
+savetext3=Hurrah to %player%
+savetext4=Our Only Hero 
+savetext5=This Ends Your Trip
+savetext6=Of a Long Friendship
+
+[boll color]
+ashura top=#AAAAAA
+ashura mid=#555555
+ashura bot=#FFFFFF

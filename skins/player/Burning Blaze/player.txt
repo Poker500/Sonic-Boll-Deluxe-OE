@@ -1,0 +1,139 @@
+[super]
+name=Burning Blaze
+
+supermusic=nah
+
+icon speed=4
+icon loop=yes
+animation speed=1.0
+center x=24
+center y=28
+box width=48
+box height=48
+pole center offset=8
+
+pitch spindash=yes
+jump ball animation=no
+fire duration=8
+victory duration=45
+time until wait=0
+pipe squish=20
+disable spindust=true
+
+use paletting=false
+
+custom sprite list=stand,wait,lookup,pose,crouch,knock,dead,walk,run,maxrun,brake,spring,springfall,jump,bonk,ball,spindash,push,hang,transform,dash,specfall,climbing,flagslide,dropdash,piping,pipingup,sidepiping,doorenter,doorexit
+
+max sizes=9
+
+size reroute fire=big
+size reroute feather=big
+
+reroute fall=jump
+reroute spincharge=spindash
+
+stand frames=1
+wait frames=5
+lookup frames=5
+pose frames=6
+crouch frames=2
+knock frames=1
+dead frames=1
+walk frames=8
+run frames=8
+maxrun frames=4
+brake frames=4
+spring frames=2
+jump frames=6
+bonk frames=2
+ball frames=8
+springfall frames=3
+specfall frames=3
+spindash frames=8
+push frames=4
+hang frames=4
+fire frames=4
+dash frames=2
+dropdash frames=4
+climbing frames=4
+climbon2 frames=2
+transform frames=8
+
+stand loop=1
+pose loop=3
+lookup loop=2
+crouch loop=2
+wait loop=2
+bonk loop=2
+springfall loop=2
+dash loop=7
+specfall loop=2
+brake loop=4
+dash loop=1
+walk loop=1
+fire loop=4
+transform loop=6
+
+stand speed=0.1
+lookup speed=0.2
+crouch speed=0.25
+wait speed=0.2
+springfall speed=0.35
+pose speed=0.2
+walk speed=0.25
+run speed=0.25
+jump speed=0.5
+bonk speed=0.25
+brake speed=0.3
+spring speed=0.25
+ball speed=0.5
+spindash speed=0.25
+specfall speed=0.35
+push speed=0.05
+hang speed=0.1
+fire speed=0.4
+dash speed=0.2
+dropdash speed=0.5
+climbing speed=0.125
+climbon2 speed=0.05
+
+stand frametimes=1
+run frametimes=1,1,1,1,1,1,1,1
+pose frametimes=1,1,1,1,1,1
+wait frametimes=1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+lookup frametimes=1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+crouch frametimes=1,37,3,3
+brake frametimes= 1,1,2,10
+fire frametimes= 2,1,1,1
+
+grind frames=1,4,4,4,1
+piping frames=8
+pipingup frames=8
+sidepiping frames=8
+doorenter frames=4
+doorexit frames=1,2,2,2,1
+
+grind speed=0.5
+piping speed=0.5
+pipingup speed=0.5
+sidepiping speed=0.5
+doorenter speed=0.20
+doorexit speed=0.20
+
+doorenter loop=4
+doorexit loop=2
+
+boll top=#920AAE
+boll mid=#000000
+boll bot=#F0D818
+
+[lang]
+winspecial=Blaze got a Sol Emerald
+allspecial=Blaze got all Sol Emeralds
+princess=our Princess
+savetext1=Peace is Paved
+savetext2=With Kingdom Saved
+savetext3=Hurrah to Blaze
+savetext4=Our Only Hero 
+savetext5=This Ends Your Trip
+savetext6=Of a Long Friendship

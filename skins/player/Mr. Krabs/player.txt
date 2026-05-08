@@ -1,0 +1,126 @@
+[mecha]
+name=Mr. Krabs
+credits=SuperSani24 (creator), DaJumpJump, Alex Kidd (some sfx), LuigiRules 2009
+
+icon speed=6
+icon loop=yes
+animation speed=1.0
+center x=31
+center y=49
+box width=64
+box height=70
+shield offset=-6
+
+fire duration=8
+victory duration=50
+time until wait=300
+pipe squish=20
+
+use paletting=false
+
+custom sprite list=stand,wait,lookup,crouch,dead,pose,knock,run,turn,fly,jump,ball,claw,armless,armlessalt,pipingup,climbing,flagslide,sidepiping
+reroute prerun=run
+reroute knockstand=knock
+reroute knockrun=knock
+reroute deadair=knock
+reroute handlegrab=flagslide
+reroute grindgrab=flagslide
+reroute piping=stand
+reroute doorenter=stand
+reroute doorexit=stand
+reroute grind=crouch
+
+connect wait=true
+connect crouch=true
+connect dead=true
+connect knock=true
+connect turn=true
+connect fly=true
+connect jump=true
+connect armless=true
+connect armlessalt=true
+connect pipingup=true
+connect sidepiping=true
+
+stand frames=4
+wait frames=4
+lookup frames=4
+pose frames=6
+crouch frames=1
+knock frames=2
+run frames=3
+turn frames=1
+fly frames=2
+jump frames=2
+ball frames=6
+dead frames=3
+claw frames=2
+armless frames=3
+armlessalt frames=1
+climbing frames=8
+flagslide frames=4
+
+idle loop=1
+wait loop=4
+lookup loop=2
+pose loop=3
+run loop=1
+jump loop=2
+fly loop=1
+ball loop=1
+claw loop=2
+dead loop=3
+crouch loop=1
+flagslide loop=4
+
+stand speed=0.1
+wait speed=0.1
+lookup speed=0.3
+pose speed=0.3
+knock speed=0.2
+run speed=0.25
+fly speed=0.8
+jump speed=0.1
+ball speed=0.5
+dead speed=0.5
+claw speed=1
+flagslide speed=0.5
+climbing speed=0.125
+
+stand frametimes=1,1,1,1
+wait frametimes=1,1,1,1
+lookup frametimes=1,1,1,1
+pose frametimes=1,1,1,1,1,1
+knock frametimes=1,1
+deadair frametimes=1,1
+run frametimes=1,1,1
+fly frametimes=1,1
+jump frametimes=1,1
+ball frametimes=1,1,1,1,1,1
+dead frametimes=1,1,1
+armless frametimes=1,1,1
+fired frametimes=2,1,1,1
+climbing frametimes=1,1
+flagslide frametimes=1,1,1,1
+sidepiping frametimes=1,1,1,1
+claw frametimes=10,1
+
+pipingup frames=1
+sidepiping frames=4
+
+sidepiping speed=0.1
+
+boll top=#aaaaaa
+boll mid=#000000
+boll bot=#808080
+
+[lang]
+winspecial=Mr. Krabs got a Chaos Emerald
+allspecial=Mr. Krabs got all Chaos Emeralds
+princess=the Formula
+savetext1=agagagagga
+savetext2=
+savetext3=me formuler
+savetext4=
+savetext5=
+savetext6=

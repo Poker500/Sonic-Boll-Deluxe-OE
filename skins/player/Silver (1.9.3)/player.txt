@@ -1,0 +1,233 @@
+[ashura]
+name=Silver
+
+
+icon speed=6
+icon loop=yes
+animation speed=1.0
+
+
+pitch spindash=yes
+jump ball animation=yes
+fire duration=2.75
+victory duration=50
+time until wait=300
+pipe squish=20
+pole center offset=8
+ping pong teleport=true
+
+multiple box sizes=true
+
+center x=12,16,16,16,16,12
+center y=13,18,18,18,18,13
+
+box width=24,32,32,32,32,24
+box height=32,40,40,40,40,32
+
+single sheet=true
+singlesheet split width=8,200,456,200,8,8
+singlesheet spilt height=0,0,0,0,0,0
+
+use paletting=true
+defaultspray 1=0
+defaultspray 2=6
+defaultspray 3=1
+defaultspray 4=7
+
+custom sprite list=stand,wait,pose,crouch,knock,dead,walk,run,brake,spring,spacer2,ball,jump,fall,spindash,teleport,push,hang,spacer1,bounce,dash
+
+connect stand=true
+connect wait=true
+connect pose=true
+connect crouch=true
+connect knock=true
+connect dead=true
+connect brake=true
+connect spring=true
+connect spacer2=true
+connect fall=true
+connect hang=true
+connect bounce=true
+connect spacer2=true
+connect dash=true
+connect teleport=true
+
+reroute lookup=stand
+reroute maxrun=run
+reroute springfall=walk
+reroute bonk=jump
+reroute flagslide=spring
+reroute climbing=spring
+reroute piping=pose
+reroute pipingup=pose
+reroute sidepiping=walk
+reroute doorenter=pose
+reroute doorexit=stand 
+reroute airspindash=spindash
+reroute airspincharge=spindash
+reroute spincharge=spindash
+
+reroute fall=fall
+
+stand frames=1
+stand loop=1
+stand speed=0.5
+stand frametimes=0
+stand offset x=0
+stand offset y=0
+
+wait frames=3
+wait loop=1
+wait speed=0.1
+wait frametimes=0
+wait offset x=0
+wait offset y=0
+
+pose frames=1
+pose loop=1
+pose speed=0.5
+pose frametimes=0
+pose offset x=0
+pose offset y=0
+
+crouch frames=1
+crouch loop=1
+crouch speed=0.5
+crouch frametimes=0
+crouch offset x=0
+crouch offset y=0
+
+knock frames=1
+knock loop=1
+knock speed=0.5
+knock frametimes=0
+knock offset x=0
+knock offset y=0
+
+dead frames=1
+dead loop=1
+dead speed=0.5
+dead frametimes=0
+dead offset x=0
+dead offset y=0
+
+
+walk frames=8
+walk loop=1
+walk speed=0.5
+walk frametimes=0
+walk offset x=0
+walk offset y=-3
+
+run frames=4
+run loop=1
+run speed=0.5
+run frametimes=0
+run offset x=0
+run offset y=0
+
+brake frames=1
+brake loop=1
+brake speed=0.5
+brake frametimes=0
+brake offset x=0
+brake offset y=0
+
+spring frames=1
+spring loop=1
+spring speed=0.5
+spring frametimes=0
+spring offset x=0
+spring offset y=0
+
+jump frames=4
+jump loop=1
+jump speed=0.5
+jump frametimes=0
+jump offset x=0
+jump offset y=0
+
+fall frames=4
+fall loop=1
+fall speed=0.5
+fall frametimes=0
+fall offset x=0
+fall offset y=0
+
+ball frames=8
+ball loop=1
+ball speed=0.5
+ball frametimes=0
+ball offset x=0
+ball offset y=0
+
+spindash frames=4
+spindash loop=1
+spindash speed=0.5
+spindash frametimes=0
+spindash offset x=-3
+spindash offset y=0
+
+push frames=4
+push loop=1
+push speed=0.1
+push frametimes=0
+push offset x=0
+push offset y=0
+
+hang frames=4
+hang loop=1
+hang speed=0.15
+hang frametimes=0
+hang offset x=0
+hang offset y=0
+
+spacer1 frames=2
+spacer1 loop=1
+spacer1 speed=0.5
+spacer1 frametimes=0
+spacer1 offset x=0
+spacer1 offset y=0
+
+bounce frames=4
+bounce loop=1
+bounce speed=0.5
+bounce frametimes=0
+bounce offset x=0
+bounce offset y=0
+
+dash frames=2
+dash loop=1
+dash speed=0.2
+dash frametimes=0
+dash offset x=0
+dash offset y=0
+
+spacer2 frames=2
+spacer2 loop=1
+spacer2 speed=0.5
+spacer2 frametimes=0
+spacer2 offset x=0
+spacer2 offset y=0
+
+teleport frames=4
+teleport loop=1
+teleport speed=0.5
+teleport frametimes=0
+teleport offset x=0
+teleport offset y=0
+
+boll top=#dddd00
+boll mid=#000000
+boll bot=#00dd00
+
+[lang]
+winspecial=Silver Got a Chaos Emerald
+allspecial=Silver Got All Chaos Emeralds
+princess=our Princess
+savetext1=Peace is Paved
+savetext2=With Kingdom Saved
+savetext3=Hurrah to Silver
+savetext4=Our Only Hero 
+savetext5=This Ends Your Trip
+savetext6=Of a Long Friendship

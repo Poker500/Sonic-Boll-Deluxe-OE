@@ -1,0 +1,148 @@
+[sonic]
+name=HD Sonic
+credits=SuperSanic24 (creator), Vincenzo Mastrorosato, “Lapper”, Corral Summer, Mike Harvey, Christian Peterson, Jesús Campos, Isaiah Garcia, Ricky Earl, Leonardo Cirius
+character animation/artwork people from https://sonic2hd.com/staff/
+
+icon speed=6
+icon loop=yes
+animation speed=1.0
+center x=91
+center y=165
+box width=196
+box height=197
+
+size reroute big=basic
+
+custom sprite list=stand,wait,lookup,brake,pose,crouch,knock,dead,walk,run,spring,jump,spindash,dropdash,push,hang,dash,specfall,climbing,handlegrab,maxrun
+reroute bonk=handlegrab
+reroute springfall=walk
+reroute ball=jump
+reroute spincharge=spindash
+reroute fire=push
+reroute specfall=dash
+reroute flagslide=handlegrab
+reroute grinding=jump
+reroute piping=jump
+reroute pipingup=dash
+reroute sidepiping=walk
+reroute doorenter=lookup
+reroute doorexit=stand
+
+connect wait=true
+connect lookup=true
+connect brake=true
+connect knock=true
+connect dead=true
+connect walk=true
+connect run=true
+connect maxrun=true
+connect brake=true
+connect spindash=true
+connect dropdash=true
+connect hang=true
+connect dash=true
+connect specfall=true
+connect climbing=true
+
+pitch spindash=yes
+jump ball animation=no
+fire duration=8
+victory duration=150
+time until wait=200
+pipe squish=3
+pole center offset=8
+mini sheet=0
+
+short small form=0.2
+
+use paletting=false
+
+stand frames=1
+wait frames=10
+lookup frames=5
+pose frames=31
+crouch frames=4
+knock frames=1
+dead frames=1
+walk frames=16
+run frames=8
+maxrun frames=9
+brake frames=11
+spring frames=23
+jump frames=16
+specfall frames=6
+spindash frames=12
+dropdash frames=1
+push frames=8
+hang frames=8
+dash frames=2
+climbing frames=4
+handlegrab frames=21
+
+wait loop=6
+lookup loop=5
+pose loop=31
+crouch loop=4
+walk loop=1
+run loop=1
+maxrun loop=4
+brake loop=11
+specfall loop=5
+push loop=1
+fire loop=8
+handlegrab loop=11
+pipingup loop=4
+
+wait speed=0.35
+lookup speed=0.40
+pose speed=0.40
+crouch speed=0.40
+walk speed=0.40
+run speed=0.50
+maxrun speed=0.50
+brake speed=0.40
+spring speed=0.35
+jump speed=1.0
+bonk speed=0.40
+ball speed=1.0
+spindash speed=1.0
+spincharge speed=1.0
+dropdash speed=1.0
+springfall speed=0.40
+specfall speed=0.6
+push speed=0.2
+hang speed=0.4
+fire speed=0.40
+dash speed=1.0
+climbing speed=0.05
+handlegrab speed=0.40
+piping speed=0.40
+pipingup speed=0.40
+sidepiping speed=0.40
+doorenter speed=0.15
+doorexit speed=0.1
+
+stand frametimes=1,1,1
+wait frametimes=1,1,1,1,1,8,3,3,3,3
+pose frametimes=1,1,1,1,1
+lookup frametimes=1,1,1,1,1
+crouch frametimes=1,1,1,1
+specfall frametimes=1,1,1,1
+run frametimes=1,1,1,1,1,1,1,1
+brake frametimes= 1,1,1,1
+fire frametimes=1,1,1
+
+boll top=#0077FF
+boll mid=#000000
+boll bot=#ff0000
+
+[lang]
+winspecial=Sonic got a Chaos Emerald
+allspecial=Sonic got all Chaos Emeralds
+princess=our Princess
+savetext1=Peace is Paved
+savetext2=With Kingdom Saved
+savetext3=Hurrah to Sonic
+savetext4=Our Only Hero 
+savetext5=This Ends Your Trip
+savetext6=Of a Long Friendship

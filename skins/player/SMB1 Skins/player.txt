@@ -1,0 +1,412 @@
+[mario]
+name=Mario
+
+
+
+first spray: hat, signpost black, hair, moustache and eyes
+second spray: pants outline, shirt
+third spray: signpost bg, pants, buttons
+fourth spray: skin, shoes, gloves, gloves outline
+
+
+
+icon speed=6
+icon loop=yes
+animation speed=1.0
+center x=16
+center y=18
+box width=33
+box height=34
+
+victory duration=0
+time until wait=0
+pipe squish=0
+pole center offset=8
+
+sheet splits=0
+sheet split size=0
+
+use paletting=true
+defaultspray 1=0
+defaultspray 2=0
+defaultspray 3=0
+defaultspray 4=0
+
+single sheet=true
+singlesheet split width=8,371,371,371,371,8,371,371
+singlesheet split height=0,0,0,0,0,0
+
+size reroute feather=big
+
+custom sprite list=stand,crouch,brake,walk,jump,hurt,dead,flagslide,standcarry,crouchcarry,throw,walkcarry,jumpcarry,handlegrab,flaghold,climbing,groundpound,poundfall,roll,swim,paddle,swimcarry,fire,spinjump,dive,capeflight
+reroute wait=stand
+reroute lookup=stand
+reroute pose=stand
+reroute run=walk
+reroute bonk=jump
+reroute fall=jump
+reroute runjump=jump
+reroute longjump=jump
+reroute sideflip=jump
+reroute doublejump=jump
+reroute doublejumpbonk=jump
+reroute doublejumpfall=jump
+reroute wallslide=brake
+reroute slide=crouch
+reroute lookupcarry=standcarry
+reroute bonkcarry=jumpcarry
+reroute fallcarry=jumpcarry
+reroute doublejumpcarry=jumpcarry
+reroute airthrow=throw
+reroute push=walk
+reroute balancing=stand
+reroute bellyslide=dive
+reroute grind=jump
+reroute piping=crouch
+reroute pipingup=stand
+reroute sidepiping=walk
+reroute doorenter=stand
+reroute doorexit=stand
+reroute handlegrab=handlegrab
+
+connect crouch=true
+connect brake=true
+connect walk=true
+connect jump=true
+connect hurt=true
+connect dead=true
+connect flagslide=true
+connect crouchcarry=true
+connect throw=true
+connect walkcarry=true
+connect jumpcarry=true
+connect handlegrab=true
+connect flaghold=true
+connect climbing=true
+connect poundfall=true
+connect paddle=true
+connect swimcarry=true
+connect fire=true
+connect dive=true
+connect capeflight=true
+
+stand frames=1
+crouch frames=1
+brake frames=1
+walk frames=3
+jump frames=1
+hurt frames=1
+dead frames=1
+standcarry frames=1
+crouchcarry frames=1
+throw frames=1
+walkcarry frames=3
+jumpcarry frames=1
+groundpound frames=8
+poundfall frames=1
+roll frames=8
+slide frames=1
+swim frames=2
+paddle frames=3,4,4,4,4,3
+swimcarry frames=2
+fire frames=1
+spinjump frames=4
+dive frames=1
+capeflight frames=3
+flaghold frames=1
+climbing frames=2
+flagslide frames=2
+
+groundpound loop=8
+paddle loop=3
+
+stand speed=0.2
+crouch speed=0.22
+brake speed=0.3
+walk speed=0.5
+jump speed=0.5
+roll speed=1
+swim speed=0.4
+paddle speed=0.75
+swimcarry speed=0.3
+walkcarry speed=0.5
+jumpcarry speed=0.1
+fallcarry speed=0.15
+spinjump speed=0.375
+climbing speed=0.125
+flagslide speed=0.125
+piping speed=0.50
+pipingup speed=0.50
+sidepiping speed=0.5
+doorenter speed=0.15
+doorexit speed=0.1
+
+boll top=#d82800
+boll mid=#000000
+boll bot=#887000
+
+[lang mario]
+winspecial=Mario got a Chaos Emerald
+allspecial=Mario got all Chaos Emeralds
+princess=our Princess
+savetext1=Peace is Paved
+savetext2=With Kingdom Saved
+savetext3=Hurrah to Mario
+savetext4=Our Only Hero 
+savetext5=This Ends Your Trip
+savetext6=Of a Long Friendship
+
+[kid]
+name=The Kid
+credits= DaJumpJump
+
+icon speed=6
+icon loop=yes
+animation speed=1.0
+multiple box sizes=true
+center x=16,17,16,16,16,6
+center y=10,18,10,10,10,-5
+box width=30,33,33,33,30,11
+box height=25,33,33,33,25,11
+
+skin offset=128
+
+fire duration=0
+blood splat=no
+bow lag=no
+victory duration=0
+time until wait=0
+pipe squish=0
+pole center offset=6
+mini sheet=true
+
+stand frames=1
+walk frames=3
+jump frames=1
+wall frames=2
+dash frames=1
+climbing frames=2
+flagslide frames=2
+
+sheet splits=walk
+sheet split size=98
+
+single sheet=true
+singlesheet split width=8,248,8,8,8,512
+singlesheet split height=0,0,0,0,0,0
+
+custom sprite list=stand,jump,dash,walk,wall,bow,handlegrab,flaghold,climbing,flagslide
+reroute wait=stand
+reroute lookup=stand
+reroute pose=stand
+reroute bonk=jump
+reroute fall=jump
+reroute firedstand=stand
+reroute firedlookup=stand
+reroute firedpose=stand
+reroute firedwalk=walk
+reroute firedjump=jump
+reroute firedbonk=jump
+reroute firedfall=jump
+reroute firedwall=wall
+reroute fireddash=dash
+reroute firedbow=bow
+reroute spin=jump
+reroute grinding=jump
+reroute piping=stand
+reroute pipingup=stand
+reroute sidepiping=walk
+reroute doorenter=stand
+reroute doorexit=stand
+
+connect jump=true
+connect dash=true
+connect bow=true
+connect flagslide=true
+connect handlegrab=true
+connect flaghold=true
+
+use paletting=true
+defaultspray 1=6
+defaultspray 2=6
+defaultspray 3=0
+defaultspray 4=0
+
+stand speed=0.2
+wait speed=0.2
+lookup speed=0.2
+walk speed=0.5
+jump speed=0.25
+bonk speed=0.25
+fall speed=0.25
+wall speed=0.25
+dash speed=0.25
+flaghold speed=0.1
+flagslide speed=0.1
+
+boll top=#FFF2F2
+boll mid=#E81A1A
+boll bot=#000000
+
+
+[lang kid]
+winspecial=The Kid got a Chaos Emerald
+allspecial=The Kid got all Chaos Emeralds
+princess=our Princess
+savetext1=Peace is Paved
+savetext2=With Kingdom Saved
+savetext3=Hurrah to The Kid
+savetext4=Our Only Hero 
+savetext5=This Ends Your Trip
+savetext6=Of a Long Friendship
+
+[sonic]
+name=Sonic
+credits= DaJumpJump,Amelia,CyanideJam,-S-,Flareguy
+
+icon speed=6
+icon loop=yes
+animation speed=1.0
+center x=8
+center y=18
+box width=25
+box height=33
+
+victory duration=0
+time until wait=0
+pipe squish=0
+
+sheet splits=walk,dropdash
+sheet split size=83,183
+
+use paletting=true
+defaultspray 1=0
+defaultspray 2=0
+defaultspray 3=0
+defaultspray 4=0
+
+
+single sheet=true
+singlesheet split width=8,283,283,283,283,8,283,283
+singlesheet split height=0,0,0,0,0,0
+
+custom sprite list=stand,crouch,brake,walk,jump,spring,fire,dash,dropdash,knock,dead,flagslide,handlegrab,flaghold,climbing
+reroute wait=stand
+reroute lookup=stand
+reroute pose=stand
+reroute run=walk
+reroute maxrun=walk
+reroute springfall=walk
+reroute bonk=jump
+reroute ball=jump
+reroute spindash=jump
+reroute spincharge=jump
+reroute push=walk
+reroute hang=stand
+reroute specfall=dash
+reroute grinding=jump
+reroute piping=crouch
+reroute pipingup=stand
+reroute sidepiping=walk
+reroute doorenter=stand
+reroute doorexit=stand
+
+connect crouch=true
+connect brake=true
+connect fire=true
+connect dash=true
+connect dropdash=true
+connect dead=true
+connect flagslide=true
+connect flaghold=true
+connect climbing=true
+
+pitch spindash=false
+jump ball animation=no
+fire duration=2.75
+victory duration=0
+time until wait=0
+pipe squish=0
+pole center offset=8
+mini sheet=0
+
+
+stand frames=1
+wait frames=1
+lookup frames=1
+pose frames=1
+crouch frames=1
+knock frames=1
+dead frames=1
+walk frames=3
+run frames=3
+maxrun frames=3
+brake frames=1
+spring frames=1
+jump frames=4
+bonk frames=4
+ball frames=4
+springfall frames=1
+specfall frames=1
+spindash frames=4
+spincharge frames=4
+dropdash frames=1
+push frames=1
+hang frames=1
+balance frames=1
+fire frames=1
+dash frames=1
+climbing frames=2
+climbon2 frames=2
+flagslide frames=2
+piping frames=1
+pipingup frames=1
+sidepiping frames=3
+doorenter frames=1
+doorexit frames=1
+
+stand speed=0.2
+wait speed=0.15
+springfall speed=0.5
+lookup speed=0.22
+crouch speed=0.22
+pose speed=0.20
+walk speed=0.5
+run speed=0.25
+maxrun speed=0.25
+jump speed=0.5
+bonk speed=0.25
+knock speed=0.25
+brake speed=0.3
+ball speed=0.5
+spindash speed=0.5
+spincharge speed=0.5
+dropdash speed=0.5
+specfall speed=0.5
+push speed=0.05
+balance speed=0.16
+hang speed=0.16
+fire speed=0.2
+dash speed=0.2
+climbing speed=0.125
+flagslide speed=0.125
+piping speed=0.50
+pipingup speed=0.50
+sidepiping speed=0.5
+doorenter speed=0.15
+doorexit speed=0.1
+
+boll top=#2038ec
+boll mid=#000000
+boll bot=#fc9838
+
+[lang sonic]
+winspecial=Sonic got a Chaos Emerald
+allspecial=Sonic got all Chaos Emeralds
+princess=our Princess
+savetext1=Peace is Paved
+savetext2=With Kingdom Saved
+savetext3=Hurrah to Sonic
+savetext4=Our Only Hero 
+savetext5=This Ends Your Trip
+savetext6=Of a Long Friendship

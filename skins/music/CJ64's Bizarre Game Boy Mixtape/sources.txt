@@ -1,0 +1,33 @@
+\ground: The Smurfs' Nightmare - Kitchen of Danger
+\underground: Tomb Raider - Intro
+\underwater: Milon's Secret Castle - Inside the Castle
+\castle: Harry Potter and the Chamber of Secrets - other battle music. I dunno how to describe when it's used.
+\airship: Looney Tunes: Carrot Crazy - Zoo
+\autumn: The King of Fighters: Heat of Battle - Big Shot! "Mellow"
+\seaside: Cool Spot - First Level
+\factory: Microsoft Puzzle Collection - Finty Flush
+\forest: Animaniacs - Bungle in the Jungle
+\ghost house: The Pagemaster - Horror Land
+\sky: LEGO Island 2 - Main Theme
+\snow: Magical Tetris Challenge - Updown
+\special: Conker's Pocket Tales - Minigame
+\volcano: Bomberman Max - Battle Star
+\bonus: Game & Watch Gallery 2 - Mode Select
+\desert: Aladdin (GBC) - First Level
+\clockwork: Dave Mirra's Freestyle BMX - "BGM #05" (zophar's domain)
+\final castle: Tony Hawk's Pro Skater 2 - Skater Heaven
+\abstract: Razor Freestyle Scooter - Ex Number Five: Not Go
+\tutorial: LEGO Racers - Build Menu (restored, I guess. I still wish I knew why the music plays correctly on some emulators but not on real hardware...)
+
+\start: Mickey's Speedway USA - Race Start
+\flagpole clear: LEGO Racers - 1st Place
+\signpost clear: Mickey's Speedway USA - Trophy
+\block clear: Boxxle - Level Clear
+\toad clear: Bubsy 2 - Level Clear
+\starman: Parasol Stars - Main Theme
+\drowning: Donkey Kong '94 - Hurry Up!
+\p switch: Donkey Kong '94 - Temporary Bridge
+\boss: Looney Tunes: Carrot Crazy - Boss
+\final boss: Harry Potter and the Chamber of Secrets - Boss
+\death: Cool Spot - Death
+\game over: Sonic 3D Blast 5 - Game Over

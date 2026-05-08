@@ -1,0 +1,124 @@
+[sonic]
+name=Sonic
+credits= GoldenB4
+
+icon speed=7
+icon loop=yes
+animation speed=1.0
+center x=24
+center y=28
+box width=48
+box height=48
+
+pitch spindash=no
+jump ball animation=no
+fire duration=8
+victory duration=50
+time until wait=300
+pipe squish=20
+pole center offset=8
+
+use paletting=true
+defaultspray 1=2
+defaultspray 2=6
+defaultspray 3=5
+defaultspray 4=5
+
+total palettes=13
+
+custom sprite list=stand,wait,lookup,pose,crouch,knock,dead,walk,run,maxrun,brake,spring,springfall,jump,bonk,ball,spindash,dropdash,push,balance,fire,dash,specfall,climbing,flagslide,handlegrab
+reroute spincharge=spindash
+reroute grinding=run
+reroute piping=pose
+reroute pipingup=spring
+reroute sidepiping=walk
+reroute doorenter=stand
+reroute doorexit=stand
+
+size reroute beet=big
+size reroute lui=big
+
+single sheet=false
+
+stand frames=16
+wait frames=45
+lookup frames=2
+pose frames=4,4,6,4
+crouch frames=5
+knock frames=2
+dead frames=1
+walk frames=8
+springfall frames=8
+run frames=4
+maxrun frames=4
+brake frames=4
+spring frames=5
+jump frames=16
+bonk frames=2
+ball frames=16
+spindash frames=8
+dropdash frames=8
+push frames=4
+balance frames=4
+fire frames=3
+dash frames=9
+climbing frames=4
+climbon2 frames=2
+specfall frames=5
+handlegrab frames=2
+
+stand frametimes=1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+lookup frametimes=6,1
+crouch frametimes=6,10,10,10,10
+wait frametimes=1.5,8,3,1.5,1.5,3,1.5,1.5,3,1.5,1.5,3,1.5,1.5,3,1.5,1.5,8,1.5,1.5,3,1.5,1.5,3,1.5,1.5,3,1.5,1.5,3,1.5,1.5,8,1.5,1.5,3,1.5,1.5,3,1.5,1.5,3,1.5,1.5,3,1.5,1.5,1.5,1.5,1.5,1.5
+spindash frametimes=0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,1,1,1,1,1,1,1,1
+specfall frametimes=0.30,0.30,0.30,0.35,0.35
+push frametimes=1,1,1,1
+
+wait loop=44
+brake loop=4
+bonk loop=2
+walk loop=1
+lookup loop=2
+crouch loop=2
+specfall loop=4
+dash loop=9
+
+stand speed=0.1
+wait speed=0.15
+lookup speed=1
+pose speed=0.15
+crouch speed=1
+walk speed=0.3
+springfall speed=0.5
+spring speed=0.3
+run speed=0.25
+brake speed=0.3
+jump speed=0.75
+bonk speed=0.25
+ball speed=0.75
+spindash speed=0.75
+push speed=0.1
+knock speed=0.15
+balance speed=0.1
+fire speed=0.125
+dash speed=0.2
+climb speed=0.05
+climbon2 speed=0.05
+specfall speed=0.35
+handlegrab speed=0.1
+
+boll top=#3E3EE3
+boll mid=#416A76
+boll bot=#E12700
+
+[lang]
+winspecial=Sonic got a Chaos Emerald!
+allspecial=Sonic got all Chaos Emeralds!
+princess=Amy
+savetext1=Thank You, Sonic!
+savetext2=You Saved Me!
+savetext3=My Hero!
+savetext4=You Are My True Love!
+savetext5=This Ends Your Trip
+savetext6=Of a Long Friendship

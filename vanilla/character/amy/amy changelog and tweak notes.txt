@@ -1,0 +1,25 @@
+[Gameplay Changes]
+- New move "Piko Ball", inspired by Antonblast and the Sonic 3 AIR Extra Slot Project/Framework
+- Added a wall jump, also inspired by the S3AIR mods
+- Hammer Flip has been removed
+- Dive/Trip has been removed
+- Hammer Twirl has been re-mapped to the B button, and is now a short dash sideways
+- Hammer Twirl can now be used on the ground if at running speed
+- Hammer Twirl now knocks enemies away
+- Hammer Swing now gives Amy partial invincibility to make it safer
+- Hammer Swing now stomps enemies, if possible
+- New versions of the Up+B and Down+B moves from older versions
+- Hammer Drop / Slam is now "coin explosive" (breaking many coins out from multi-coin boxes)
+- Most hammer moves can now break cracked ground
+- Skip has been re-added
+- Slide kick has been re-added, and its recovery jump now skips
+- Amy can now roll out of slide kick
+
+[Art] -- WIP CHANGE LATER
+- New animations
+- Updated/tweaked art from 2.0.6b
+- New particle effects
+
+[Skinning]
+- "Old Hammer Rotation" skin option mimicking the visual of older versions
+- Offsets for seperated hammer spin graphics

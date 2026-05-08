@@ -1,0 +1,157 @@
+[kid]
+name=The Kid
+
+icon speed=6
+icon loop=yes
+animation speed=1.0
+center x=17
+center y=17
+box width=33
+box height=37
+marker offset=26
+
+carry offset x=10
+carry offset y=2
+fire duration=4
+blood splat=yes
+bow lag=yes
+victory duration=50
+time until wait=200
+pipe squish=20
+mario death=false
+death animation=false
+
+
+custom sprite list=stand,wait,lookup,pose,walk,jump,bonk,fall,wall,dash,bow,stand2,wait2,lookup2,pose2,walk2,jump2,bonk2,fall2,wall2,dash2,bow2,standcarry,walkcarry,jumpcarry,fallcarry,bonkcarry,dashcarry,flagslide,climbing,grind,run,spin,piping,pipingup,sidepiping,doorenter,doorexit
+
+use paletting=true
+defaultspray 1=10
+defaultspray 2=5
+defaultspray 3=2
+defaultspray 4=2
+
+roster size=0
+
+bullet graphic x=10
+bullet graphic y=87
+
+blood graphic x=29
+blood graphic y=101
+
+gib head graphic x=10
+gib head graphic y=98
+
+gib limbs graphic x=30
+gib limbs graphic y=87
+
+stand frames=4
+wait frames=4
+lookup frames=4
+pose frames=8
+walk frames=4
+jump frames=2
+bonk frames=2
+fall frames=3
+wall frames=4
+dash frames=4
+
+jump loop=2
+fall loop=2
+bonk loop=2
+pose loop=8
+
+stand speed=0.2
+wait speed=0.2
+lookup speed=0.2
+pose speed=0.3
+walk speed=0.5
+jump speed=0.25
+bonk speed=0.25
+fall speed=0.25
+wall speed=0.25
+dash speed=0.25
+
+size reroute beet=basic
+size reroute lui=basic
+
+standcarry frames=4
+walkcarry frames=4
+jumpcarry frames=2
+bonkcarry frames=2
+fallcarry frames=3
+dashcarry frames=4
+
+jumpcarry loop=2
+fallcarry loop=2
+bonkcarry loop=2
+
+standcarry speed=0.2
+walkcarry speed=0.5
+jumpcarry speed=0.25
+bonkcarry speed=0.25
+fallcarry speed=0.25
+dashcarry speed=0.25
+
+stand2 frames=4
+wait2 frames=4
+lookup2 frames=4
+pose2 frames=8
+walk2 frames=4
+jump2 frames=2
+bonk2 frames=2
+fall2 frames=3
+wall2 frames=4
+dash2 frames=4
+
+jump2 loop=2
+fall2 loop=2
+bonk2 loop=2
+pose2 loop=8
+
+stand2 speed=0.2
+wait2 speed=0.2
+lookup2 speed=0.2
+pose2 speed=0.3
+walk2 speed=0.5
+jump2 speed=0.25
+bonk2 speed=0.25
+fall2 speed=0.25
+wall2 speed=0.25
+dash2 speed=0.25
+
+spin frames=8
+grind frames=4
+piping frames=8
+pipingup frames=8
+sidepiping frames=4
+doorenter frames=4
+doorexit frames=4
+
+doorenter loop=4
+doorexit loop=2
+
+spin speed=0.25
+grind speed=0.2
+sidepiping speed=0.5
+doorenter speed=0.2
+doorexit speed=0.2
+
+run frames=9
+run speed=0.35
+run loop=5
+
+boll top=#FFF2F2
+boll mid=#E81A1A
+boll bot=#000000
+
+
+[lang]
+winspecial=The Kid got a Chaos Emerald
+allspecial=The Kid got all Chaos Emeralds
+princess=our Princess
+savetext1=Peace is Paved
+savetext2=With Kingdom Saved
+savetext3=Hurrah to The Kid
+savetext4=Our Only Hero 
+savetext5=This Ends Your Trip
+savetext6=Of a Long Friendship

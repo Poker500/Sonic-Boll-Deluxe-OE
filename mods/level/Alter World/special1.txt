@@ -1,0 +1,29 @@
+time=30
+1=12
+2=12
+3=12
+xxxxxxxxxxxxxxxxxxxxxx##t##x
+xxxxxxxxxxxxxxxxxxxxxx:TTT:x
+xxxxxxxxxxxxxxxxxxxxxx  !  x
+xxxxxxxxxxxxxxxxxxxxxx     x
+xxxxxxxxxxxxxxxxxxxxxx#   #x
+xxxxxxxxxxxxxxxxxxxxx/# O #\
+xxxxxxxxxxxxxxxxxxxxx#´...`#
+xxxxxxxxxxxxxxxxxxxxx#.   .#
+xxxxxxxxxxxxxxxxxxxxx#. S .#
+xxxxxxxxxxxxxxxxxxxxx#.   .#
+xxxxxxxxxxxxxxxxxxxxx#\.../#
+xxxxxxxxxxxxxxxxxxxxx`#BOB#´
+xxxxxxxxxxxxxxxxxxxxxx#   #x
+xxxxxxxxxxxxxxxxxxxxxx#\ /#x
+xxxxxxxxxxxxxxxxxxxxxx`#1#´x
+xxxxxxxxxxxxxxxxxxxxxxxx xxx
+xxxxxxxxxxxxxxxxxxxxxxx@ @xx
+xxxxxxxxxxxxxxxxxxxxxxxx xxx
+xxxxxxxxxxxxxxxxxxxxxxx@ @xx
+xxxxxxxxxxxxxxxxxxxx###   #x
+/#####################´   #x
+#´      ...               #x
+# F          O           /#x
+#\              ...     /##x
+`#########################´x

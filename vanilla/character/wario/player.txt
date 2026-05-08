@@ -1,0 +1,162 @@
+[wario]
+name=Wario
+
+icon speed=5.5
+icon loop=yes
+animation speed=1.0
+center x=24
+center y=27
+box width=48
+box height=48
+
+carry offset x=3
+carry offset y=-2
+fire duration=8
+victory duration=60
+time until wait=300
+pipe squish=20
+afterimage blend=$ff00ff
+
+use paletting=true
+defaultspray 1=7
+defaultspray 2=7
+defaultspray 3=3
+defaultspray 4=9
+
+custom sprite list=stand,wait,lookup,pose,crouch,knock,dead,walk,machrun,machbash,brake,crawl,jump,bonk,fall,crouchjump,pound,poundland,idleswim,swim,paddle,standcarry,lookupcarry,crouchcarry,walkcarry,jumpcarry,bonkcarry,fallcarry,crouchjumpcarry,throw,bash,bashjump,bashhit,sliding,rolling,fire,climbing,flagslide,grind,piping,pipingup,sidepiping,doorenter,doorexit
+
+
+stand frames=3
+wait frames=3,5,5,5,5,3
+lookup frames=4
+pose frames=7
+crouch frames=4
+knock frames=1
+dead frames=1
+deadup frames=4
+deaddown frames=1
+walk frames=8
+machrun frames=6
+machbash frames=6
+brake frames=1
+jump frames=3
+bonk frames=1
+reroute bonkbrick=bonk
+fall frames=3
+crouchjump frames=2
+wall frames=1
+kick frames=1
+slide frames=1
+standcarry frames=3
+crouchcarry frames=3
+lookupcarry frames=3
+walkcarry frames=8
+jumpcarry frames=2
+bonkcarry frames=1
+fallcarry frames=3
+crouchjumpcarry frames=2
+throw frames=1
+spin frames=8
+pound frames=3
+swim frames=4
+paddle frames=6
+twirl frames=4
+climbing frames=4
+bash frames=4
+bashjump frames=2
+crawl frames=4,6
+throw frames=2
+sliding frames=4
+rolling frames=9
+
+jump loop=3
+crouch loop=2
+lookup loop=2
+fall loop=3
+crouchjump loop=2
+pose loop=7
+jumpcarry loop=2
+fallcarry loop=3
+crouchjumpcarry loop=2
+pound loop=3
+throw loop=2
+rolling loop=2
+paddle loop=6
+
+size reroute beet=big
+size reroute lui=big
+
+stand speed=0.2
+wait speed=0.15
+deadup speed=0.5
+lookup speed=0.2
+crouch speed=0.2
+pose speed=0.275
+walk speed=0.30
+crawl speed=0.25
+run speed=0.5
+jump speed=0.25
+fall speed=0.1
+crouchjump speed=0.35
+machrun speed=0.5
+machbash speed=0.9
+climbing speed=0.125
+standcarry speed=0.1
+lookupcarry speed=0.1
+crouchcarry speed=0.1
+walkcarry speed=0.25
+jumpcarry speed=0.1
+fallcarry speed=0.1
+crouchjumpcarry speed=0.35
+throw speed=0.2
+rolling speed=0.4
+sliding speed=0.2
+bashjump speed=0.4
+twirl speed=0.5
+swim speed=0.3
+paddle speed=1.25
+fire speed=0.3
+climbing speed=0.125
+
+
+jump frametimes=0.1,2.5,1
+rolling frametimes=2.25,1,1,1,1,1,1,1,1
+stand frametimes=32,1,1
+crouch frametimes=1,32,1,1
+lookup frametimes=1,32,1,1
+standcarry frametimes=16,1,1
+lookupcarry frametimes=16,1,1
+crouchcarry frametimes=16,1,1
+
+grind frames=1
+piping frames=1,8,8,8
+pipingup frames=1,8,8,8
+sidepiping frames=8
+doorenter frames=1,4,4,4
+doorexit frames=1
+
+piping speed=0.5
+pipingup speed=0.5
+sidepiping speed=0.3
+doorenter speed=0.20
+doorexit speed=0.20
+
+piping loop=1
+pipingup loop=1
+doorenter loop=4
+doorenter framestimes=1,1,1,1
+
+boll top=#FFFF00
+boll mid=#550055
+boll bot=#9033A0
+
+[lang]
+winspecial=Wario got a Chaos Emerald
+allspecial=Wario got all Chaos Emeralds
+princess=our Princess
+savetext1=Peace is Paved
+savetext2=With Kingdom Saved
+savetext3=Hurrah to Wario
+savetext4=Our Only Hero...?
+savetext5=This Ends Your Trip
+savetext6=Of a Long Friendship

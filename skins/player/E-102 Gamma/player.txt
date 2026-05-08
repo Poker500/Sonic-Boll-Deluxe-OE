@@ -1,0 +1,97 @@
+[mecha]
+name=E-102
+
+icon speed=6
+icon loop=yes
+animation speed=0.2
+center x=30
+center y=40
+box width=61
+box height=65
+shield offset=-6
+pole center offset=8
+
+fire duration=8
+victory duration=30
+
+custom sprite list=stand,wait,lookup,pose,crouch,knockstand,knockrun,deadair,run,turn,fly,jump,ball,dead,claw,armless,armlessalt,climbing,flagslide,grind,piping,pipingup,sidepiping,doorenter,doorexit
+
+reroute prerun=run
+reroute piping=pose
+reroute sidepiping=ball
+reroute pipingup=jump
+reroute doorenter=turn
+reroute doorexit=turn
+
+stand frames=22
+idle frames=7
+wait frames=2
+lookup frames=3
+pose frames=1
+run frames=9
+jump frames=7
+ball frames=7
+turn frames=2
+fly frames=3
+dead frames=3
+turn loop=2
+crouch frames=11
+armless frames=2
+claw frames=4
+flagslide frames=1
+knockstand frames=2
+knockrun frames=2
+pipingup frames=4
+
+run loop=2
+idle loop=2
+lookup loop=2
+jump loop=6
+fly loop=2
+wait loop=2
+ball loop=2
+claw loop=4
+dead loop=3
+armless loop=2
+crouch loop=4
+
+stand speed=0.1
+claw speed=1.5
+lookup speed=2
+ball speed=2.5
+stand speed=999
+jump speed=999
+run speed=999
+prerun speed=0.5
+jump speed=1
+fly speed=5
+turn speed=0.5
+
+stand frametimes=300,300,300,300,500,500,300,300,300,300,300,300,500,500,300,300
+run frametimes=999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999,999
+ball frametimes=2,2,2,2,2,2,2
+lookup frametimes=1,1,1
+pose frametimes=1
+turn frametimes=1,1
+dead frametimes=1,1,1
+crouch frametimes=1,1,1,1,1,1,1,1,1,1,1
+armless frametimes=1,1
+claw frametimes=1,1,1,1
+fly frametimes=3,2,2
+turn frametimes=3,4,2
+flagslide frametimes=1
+
+boll top=#D60000
+boll mid=#000000
+boll bot=#F0D818
+
+[lang]
+winspecial=Gamma got a Chaos Emerald
+allspecial=Gamma got all Chaos Emeralds
+princess=our Princess
+savetext1=Peace is Paved
+savetext2=With Kingdom Saved
+savetext3=Hurrah to Gamma
+savetext4=Our Only Hero 
+savetext5=This Ends Your Trip
+savetext6=Of a Long Friendship

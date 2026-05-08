@@ -1,0 +1,43 @@
+time=32
+1=34
+2=78
+3=34
+/###\xxxxxxxxxbbbbbbbxxxxxxxxxxxxxxxxxxxxx
+#´  `@xx@   xBBBT:BBBbxxxxxxxxxxxxxxxxxxxx
+# F  2     Txx%B:BB.:Bxxxxxxxxxxxxxxxxxxxx
+#\  /@xx@   xxbBBBB.B:bxxxxxxxxxxx@##\xxxx
+`###´xxxxxxxxbbbBBB.B.txxxxx%       `#xxxx
+xxxxxxxxxxxxxxxbBBB.. BBxxxx%        #xxxx
+xxxxxxxxxxxxxxbBBB     xxxxxxxxxxx@  @xxxx
+xxxxxxxxxxxxxbbbbBb  xxxxxxxxxxxxxx  xxxxx
+xxxxxxxxxxxxxxxx BBbb xxxxxxxxxxxxx  xxxxx
+xxxxxxxxxxxxxxx BB  bx xxxxxxxxxxx@  @xxxx
+xxxxxxxxxxxxxx .B    B. xxxxxxxxx/#11#\xxx
+xxxxxxxxxxxxxx.:.!  b.:.xxxxxxxxx#    #xxx
+xxxxxxxxxxxxxxt.BBbbbb.txxxxxxxxx#    #xxx
+xxxxxxxxxxxxxxxxBBxxBbxxxxxxxx/##´    `##\
+xxxxxxxxxxxxxxxxBBxxBbxxxxxxxx#:       .:#
+xxxxxxxxxxxxxxx...xx...xxxxxxx#.   @@   .#
+xxxxxxxxxxxxxx%%%%xx%%%%xxxxxx#    @@    #
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx#t        t#
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`##\    /##´
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx#    #xxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx#%%%%#xxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`####´xxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx%%%%%%xxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx%%%%%%%%%%x
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx####..@.xxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx##T#t..@...x
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx##T##...@..:
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx###....@@@@x
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxt.......xx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx###%@@@xxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx####%@@%@@@x
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx#####%%%%@@@@
+xxxxxxxxxxxxxxxxxxxxx#####xxx...#%:%%:%@..
+xxxxxxxxxxxxxxxxxxxxx#´ `#xxx....%%%%%%...
+xxxxxxxxxxxxxxxxxxxxx# S  %xx...%%%%%%%%.t
+xxxxxxxxxxxxxxxxxxxxx#\ /#xxxxx%%%%x%%%%xx
+xxxxxxxxxxxxxxxxxxxxx#####xxxx####xxx@@@@x
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx#####xxx@@@@@

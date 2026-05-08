@@ -1,0 +1,143 @@
+[sonic]
+name=Shadow
+credits=Emilia, -S-, Christian32307
+icon speed=6
+icon loop=yes
+animation speed=1.0
+time until wait=300
+center x=24
+center y=28
+box width=48
+box height=48
+
+pitch spindash=no
+jump ball animation=no
+fire duration=2.75
+victory duration=45
+time until wait=300
+pipe squish=20
+pole center offset=8
+disable spindust=false
+
+use paletting=true
+defaultspray 1=11
+defaultspray 2=10
+defaultspray 3=5
+defaultspray 4=6
+
+custom sprite list=stand,wait,lookup,pose,crouch,knock,dead,walk,run,maxrun,brake,spring,springfall,jump,bonk,ball,spindash,push,hang,fire,dash,specfall,climbing,flagslide,dropdash,piping,pipingup,sidepiping,doorenter,doorexit
+
+reroute fall=jump
+reroute spincharge=spindash
+
+stand frames=3
+wait frames=15
+lookup frames=4
+pose frames=8
+crouch frames=4
+knock frames=1
+dead frames=1
+walk frames=8
+run frames=14
+maxrun frames=13
+brake frames=4
+spring frames=2
+jump frames=8
+bonk frames=2
+ball frames=8
+springfall frames=3
+specfall frames=3
+spindash frames=4
+push frames=4
+hang frames=4
+fire frames=6
+dash frames=4
+dropdash frames=4
+climbing frames=4
+climbon2 frames=2
+flagslide frames=1
+piping frames=4
+
+wait loop=13
+pose loop=8
+crouch loop=2
+lookup loop=2
+jump loop=1
+bonk loop=2
+springfall loop=2
+dash loop=9
+specfall loop=2
+brake loop=4
+walk loop=1
+run loop=3
+maxrun loop=10
+fire loop=6
+
+stand speed=0.1
+pose speed=0.25
+wait speed=0.15
+springfall speed=0.45
+lookup speed=0.25
+crouch speed=0.25
+pose speed=0.5
+walk speed=0.35
+run speed=0.15
+maxrun speed=0.5
+jump speed=0.75
+bonk speed=0.25
+knock speed=0.25
+brake speed=0.3
+spring speed=0.25
+ball speed=0.5
+spindash speed=0.5
+specfall speed=0.5
+push speed=0.05
+hang speed=0.16
+fire speed=0.5
+dash speed=0.25
+dropdash speed=0.5
+climbing speed=0.125
+climbon2 speed=0.05
+piping speed=0.20
+
+stand frametimes=16,1,1
+wait frametimes=1,1,1,1,1,1,1,1,1,1,1,1,37,1,1
+pose frametimes=2,2,2,45,1,1,1,1
+lookup frametimes=1,37,3,3
+run frametimes=1,1,1,1,1,1,1,1,1,1,1,1,1,1
+crouch frametimes=1,37,3,3
+maxrun frametimes=5,5,2,1,1,20,1,1,1,2,2,2,2
+specfall frametimes=3,2,1,1
+brake frametimes= 1,1,2,10
+
+grind frames=1,4,4,4,1
+piping frames=8
+pipingup frames=8
+sidepiping frames=8
+doorenter frames=4
+doorexit frames=1,2,2,2,1
+
+grind speed=0.5
+piping speed=0.5
+pipingup speed=0.5
+sidepiping speed=0.5
+doorenter speed=0.20
+doorexit speed=0.20
+
+doorenter loop=4
+doorexit loop=2
+
+boll top=#D60000
+boll mid=#000000
+boll bot=#F0D818
+
+[lang]
+winspecial=Shadow got a Chaos Emerald
+allspecial=Shadow got all Chaos Emeralds
+princess=our Princess
+savetext1=I have an announcement to make
+savetext2=Shadow the Hedgehog is my hero
+savetext3=He defeated my kidnapper. 
+savetext4=That's right.
+savetext5=He took his gloved fists and completely beat them. 
+savetext6=
