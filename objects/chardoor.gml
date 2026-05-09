@@ -228,8 +228,8 @@ if (name == "reset") {
 } else {
     if file_exists(global.moddata+"character\"+string(name)+"\"+string(name)+"-basic.png")
         spr=sprite_add(global.moddata+"character\"+string(name)+"\"+string(name)+"-basic.png",0,1,0,0,0)
-    else if file_exists(global.workdir+"mods\character\"+string(name)+"\"+string(name)+"-basic.png")
-        spr=sprite_add(global.workdir+"mods\character\"+string(name)+"\"+string(name)+"-basic.png",0,1,0,0,0)
+    else if file_exists(global.workdir+"SBDX_mods\character\"+string(name)+"\"+string(name)+"-basic.png")
+        spr=sprite_add(global.workdir+"SBDX_mods\character\"+string(name)+"\"+string(name)+"-basic.png",0,1,0,0,0)
 
     mydoorpalette=replacepalettedoor(global.doorpalettes,string(name))
 }

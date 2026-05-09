@@ -1,4 +1,4 @@
-extdir=global.workdir+"mods\extensions\"
+extdir=global.workdir+"SBDX_mods\extensions\"
 global.extensions_step=ds_list_create();
 global.extensions_draw=ds_list_create();
 

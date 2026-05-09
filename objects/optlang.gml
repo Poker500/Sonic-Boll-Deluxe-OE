@@ -7,7 +7,7 @@ applies_to=self
 langs[0]=1
 langs[1]=""
 clang=settings("language")
-f=file_find_first("mods\language\*.txt",0)
+f=file_find_first("SBDX_mods\language\*.txt",0)
 while (f!="") {
     if (f!="example.txt") {
         if (f=clang) langc=langs[0]
