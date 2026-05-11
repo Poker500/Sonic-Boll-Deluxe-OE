@@ -985,11 +985,12 @@ if (bbut) {
 			playsfx('amyupper')
 		}
 		
-	if (down && jump && !upper && !pikoball) {
+	if (down && jump && !pikoball) {
 			kick=0
 			kickjump=0
+			upper=0
 			dropkick=1
-			fall=1
+			fall=4
 			energy-=2
 			tatsu=0
 			playsfx('amydive')
