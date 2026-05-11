@@ -1130,6 +1130,11 @@ listobj(greenlui          ,1,spr_greenlui     ,239,beetroot)
     listargs("align", "jumping")
     listdata("0"    , "0")
 
+listobj(pig          ,0,spr_pig     ,243,pig)
+    listdoc("The pig from angry birds","Bye Bye Broom")
+    listargs("align")
+    listdata("0,0"  )
+
 n=ds_map_create()
 k=ds_map_find_first(m)
 repeat (ds_map_size(m)) {

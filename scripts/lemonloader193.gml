@@ -119,7 +119,6 @@ repeat (8) {
                     //Mo' Powerups
                     if (i.data[1] == "bubshield" || i.data[1] == "firshield") i.data[1] = "shield"
                     //Redux
-                    if (i.data[1] == "moon") i.data[1]="moon"
                     if (i.data[1] == "rotten" || i.data[1] == "demon") i.data[1] = "poison"
                     if (i.data[1] == "dotter") i.data="mini"
                     if (i.data[1] == "undotter") i.data="item"
@@ -143,7 +142,8 @@ repeat (8) {
                         if (i.data[1]="mushroom" || i.data[1]="undotter") i.obj=mushroom
                         if (i.data[1]="flower" || i.data[1]="iflower") i.obj=flower //PokerPJ's "1.9.4"
                         if (i.data[1]="leaf") i.obj=feather
-                        if (i.data[1]="1up" || i.data[1]="3up") i.obj=lifemush
+                        if (i.data[1]="1up") i.obj=lifemush
+                        if (i.data[1]="3up") i.obj=lifemoon
                         if (i.data[1]="star") i.obj=starman
                         if (i.data[1]="poison" || i.data[1]=="rotten" || i.data[1]=="demon") i.obj=mushpoison
                         if (i.data[1]="shard") i.obj=starshard
@@ -153,7 +153,6 @@ repeat (8) {
                         if (i.data[1]="dotter") i.obj=mushmini
                         if (i.data[1]="shield" || i.data[1]="bubshield" || i.data="firshield") i.obj=shield //Mo' Powerups, Sonic Boll Redux
                     } else {
-                        if (i.data[1]="3up") i.data[1]="1up"
                         if (i.data[1]="rotten" || i.data[1]="demon") i.data[1]="poison"
                         if (i.data[1]="tap") i.obj=crystaltap
                         if (i.data[1]="key") i.obj=keyitem

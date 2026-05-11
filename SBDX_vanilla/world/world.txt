@@ -424,3 +424,7 @@ bombignite speed=0.125
 thwimp frames=1
 thwimp loop=1
 thwimp speed=0.125
+pig frames=5
+pig loop=1
+pig speed=0.125
+pig frametimes=4,1,1,1,1

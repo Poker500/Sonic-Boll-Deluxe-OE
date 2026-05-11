@@ -23,8 +23,8 @@ enemy2=1
 type=0
 getregion(x)
 
-type=""
-sub="pig"
+type="pig"
+sub=""
 
 wait=instance_position(x+24,y,enemy)
 if (wait) if (wait.object_index=piranha) wait=noone
@@ -137,7 +137,6 @@ if (trap) {
     }
 }
 
-sprite="pig"
 sprite=type+sub
 #define Collision_enemy
 /*"/*'/**//* YYD ACTION
@@ -188,5 +187,6 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-enemy_animate()
+if !animated {enemy_animate() animated=1}
+
 if (active && !carry) ssw_enemy(sprite)

@@ -93,7 +93,6 @@ repeat (8) {
                     if (i.data[1]=="long") {i.data[1]="normal" i.data[4]="12"}
                 }
                 if (obj==itembox || obj==bigitembox || obj=noteblock) {
-                    if (i.data[1] == "moon") i.data[1]="moon"
                     if (i.data[1] == "bros" && obj!=itembox) i.data[1]=""
                     if (i.data[1] == "floorclock" || i.data[1] == "plusclock" || i.data[1] == "greenplusclock") {i.data[1]="time" i.obj=monitor}
                     if (i.data[1] == "rotten" || i.data[1] == "demon") i.data[1] = "poison"
@@ -118,7 +117,8 @@ repeat (8) {
                     if (i.data[2]="1") {
                         if (i.data[1]="mushroom" || i.data[1]="undotter") i.obj=mushroom
                         if (i.data[1]="flower") i.obj=flower
-                        if (i.data[1]="1up" || i.data[1]="3up") i.obj=lifemush
+                        if (i.data[1]="1up") i.obj=lifemush
+                        if (i.data[1]="3up") i.obj=lifemoon
                         if (i.data[1]="star") i.obj=starman
                         if (i.data[1]="poison" || i.data[1]=="rotten" || i.data[1]=="demon") i.obj=mushpoison
                         if (i.data[1]="shard") i.obj=starshard
@@ -128,7 +128,6 @@ repeat (8) {
                         if (i.data[1]="dotter") i.obj=mushmini
                         if (i.data[1]="shield") i.obj=shield
                     } else {
-                        if (i.data[1]="3up") i.data[1]="1up"
                         if (i.data[1]="rotten" || i.data[1]="demon") i.data[1]="poison"
                         if (i.data[1]="tap") i.obj=crystaltap
                         if (i.data[1]="key") i.obj=keyitem
