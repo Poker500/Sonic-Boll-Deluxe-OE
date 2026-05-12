@@ -45,7 +45,7 @@ if (sub=27) {
     if settings("nolemonsound") sound_str="Disabled" else sound_str="Enabled"
     if settings("nolemonmusic") music_str="Disabled" else music_str="Enabled"
     if settings("lemontasing") tasing_str="Enabled" else tasing_str="Disabled"
-    if !funnytruefalse(settings("lemoninput")) settings("lemoninput","Keyboard") //fix it being 0 on existing saves
+    if !funnytruefalse(settings("lemoninput")) && settings("lemoninput")!="Gamepad" settings("lemoninput","Keyboard") //fix it being 0 on existing saves
 
     i=show_contextmenu("Lemon Settings|-|Fun Mode: "+funmode_str+"|Lemon Sounds: "+sound_str+"|Editor Music: "+music_str+"|"+lemonmusic_str+"|Toggle Grid (G)|Selection Ruler: "+ruler_str+"|Testing Input: "+settings("lemoninput")+"|Testing TAS Controls: "+tasing_str,0)
     if (i=1) settings("funmode",!settings("funmode"))
