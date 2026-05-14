@@ -12,9 +12,15 @@ shield offset=-6
 small shield offset=0
 pole center offset=8
 marker offset=36
-
 fire duration=8
 victory duration=30
+
+max sizes=7
+use paletting=true
+defaultspray 1=12
+defaultspray 2=6
+defaultspray 3=6
+defaultspray 4=6
 
 size reroute mini=big
 
