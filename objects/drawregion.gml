@@ -845,7 +845,7 @@ if (selecting) {
                             myarray_i+=1
                         }moveback=0
                     }
-                    selected=(x=median(other.selx,x,other.selx+other.selw-1) && y=median(other.sely,y,other.sely+other.selh-1))
+                    with (drawregion) other.selected=(splace_meeting(selx,sely,other.id,selw,selh))
                     if (selected) {
                         other.selected_array[0]+=1 other.selected_array[other.selected_array[0]]=id updatedeities()
                     }
@@ -860,7 +860,7 @@ if (selecting) {
                             myarray_i+=1
                         }moveback=0
                     }
-                    selected=(x=median(other.selx,x,other.selx+other.selw-1) && y=median(other.sely,y,other.sely+other.selh-1))
+                    with (drawregion) other.selected=(splace_meeting(selx,sely,other.id,selw,selh))
                     if (selected) {
                         other.selected_array[0]+=1 other.selected_array[other.selected_array[0]]=id updatedeities()
                     } else{
@@ -877,7 +877,7 @@ if (selecting) {
                             myarray_i+=1
                         }
                     }
-                    selected=(x=median(other.selx,x,other.selx+other.selw-1) && y=median(other.sely,y,other.sely+other.selh-1))
+                    with (drawregion) other.selected=(splace_meeting(selx,sely,other.id,selw,selh))
                     if (selected) {
                         other.selected_array[0]+=1 other.selected_array[other.selected_array[0]]=id updatedeities()
                     }
@@ -891,7 +891,7 @@ if (selecting) {
                             myarray_i+=1
                         }
                     }
-                    selected=(x=median(other.selx,x,other.selx+other.selw-1) && y=median(other.sely,y,other.sely+other.selh-1))
+                    with (drawregion) other.selected=(splace_meeting(selx,sely,other.id,selw,selh))
                     if (selected) {
                         other.selected_array[0]+=1 other.selected_array[other.selected_array[0]]=id updatedeities()
                     }
@@ -1549,7 +1549,7 @@ if ((selecting == 2 || scaling) && !dragsound) {
 }
 i=1 var _s;
 repeat (selected_array[0]) { _s = selected_array[i]
-    rect((_s.x * 16) - 2, (_s.y * 16) - 2, ((_s.scalex * 16) * _s._xsc) + 2, ((_s.scaley * 16) * _s._ysc) + 2, selcol, 0.5)
+    rect((_s.x * 16) - 2, (_s.y * 16) - 2, ((_s.scalex * 16) * _s._xsc) + 4, ((_s.scaley * 16) * _s._ysc) + 4, selcol, 0.5)
     i+=1
 }
 /*
