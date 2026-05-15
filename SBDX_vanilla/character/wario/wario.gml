@@ -650,7 +650,7 @@ canmach = (!water && !crouch && !pound && !carry && !bash && !brakingmach)
 if (cbut) {
 }
 
-if (ckey && size && size!=5) {
+if (ckey && size && size!=5 && !water) {
     if (!jump && canmach)
         machrun=1
     else if (!canmach)
@@ -658,7 +658,7 @@ if (ckey && size && size!=5) {
 } else
     machrun=0
 
-if (machrun && abs(hsp)>0.5) {
+if (machrun && abs(hsp)>0.5 && !water) {
 machtime=min(1,machtime+0.02)
 } else {machtime=0 machbash=0}
 
@@ -960,7 +960,8 @@ jumpspd=min(jumpspd,100)
 
 if (onvine) {pound=0 bash=0 machrun=0 machbash=0 flybash=0}
 
-jesus=((roll || (boost && vsp<4)||(size==5 && !down && abs(hsp)>2.8)) && !water)
+jesus=((roll || (boost && vsp<4)||(size==5 && !down && abs(hsp)>2.8)) && !water && !pound)
+if pound jesus_mercy=0 //merciless
 
 com_endactions()
 
