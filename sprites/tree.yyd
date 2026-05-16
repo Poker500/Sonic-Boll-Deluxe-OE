@@ -270,6 +270,9 @@
 	|spr_falcon
 	|spr_lainthrow
 	|spr_trollitor
+	+orange
+		|spr_premiere
+		|spr_feverhour
 +graphics
 	+tiles
 		|spr_ground

@@ -32,10 +32,16 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-sound('frogswitch')
 gamemanager.frog_escape = 1
 gamemanager.frog_escape_timer = unreal(timer, 60) * 60
 gamemanager.frog_escape_timer_effect = unreal(timerdeathtype,0)
+
+gamemanager.frog_secret = egg()
+
+if (gamemanager.frog_secret)
+   sound('frogswitch2')
+else sound('frogswitch')
+
 mus_play("escape",1)
 instance_create(x,y-40,smoke)
 activated=1

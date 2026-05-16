@@ -181,10 +181,21 @@ if !(global.nohud) && !(p.dontdrawhudler) {
        //ny=32
        ny=(clamp(gamemanager.frog_escape,0,16+32) * 2) - (16 + 32)
 
-       draw_sprite_part_ext(global.effectssheet[biome],0,8,349,16,16,nx-16,ny,1,1,c_white,hud_alpha[view_current])
-       repeat (string_length(timstr)) {
-              draw_sprite_part_ext(global.effectssheet[biome],0,8 + ((ord(string_char_at(timstr,ni)) - 48) * 8),333,8,16,nx,ny,1,1,timcol,hud_alpha[view_current])
-              ni+=1 nx+=8
+       if (gamemanager.frog_secret) {
+           nx=221
+           //ny=32
+           ny=(clamp(gamemanager.frog_escape,0,16+32) * 2) - (16 + 32) - 8
+           draw_sprite_ext(spr_premiere,0,nx - 81,ny - 17,1,1,0,c_white,hud_alpha[view_current])
+           repeat (string_length(timstr)) {
+                  draw_sprite_ext(spr_feverhour,(ord(string_char_at(timstr,ni)) - 48),nx,ny,1,1,0,c_white,hud_alpha[view_current])
+                  ni+=1 nx+=9
+           }
+       } else {
+           draw_sprite_part_ext(global.effectssheet[biome],0,8,349,16,16,nx-16,ny,1,1,c_white,hud_alpha[view_current])
+           repeat (string_length(timstr)) {
+                  draw_sprite_part_ext(global.effectssheet[biome],0,8 + ((ord(string_char_at(timstr,ni)) - 48) * 8),333,8,16,nx,ny,1,1,timcol,hud_alpha[view_current])
+                  ni+=1 nx+=8
+           }
        }
     }
 
