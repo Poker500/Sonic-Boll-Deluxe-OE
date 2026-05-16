@@ -177,6 +177,7 @@ boll bot=#0C0C0C
 [lang]
 winspecial=X got a Chaos Emerald
 allspecial=X got all Chaos Emeralds
+credits=CowboyJoseph64
 princess=Zero
 savetext1=Zero has been
 savetext2=successfully rescued.

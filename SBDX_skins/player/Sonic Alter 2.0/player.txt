@@ -115,6 +115,7 @@ boll bot=#E12700
 [lang]
 winspecial=Sonic got a Chaos Emerald!
 allspecial=Sonic got all Chaos Emeralds!
+credits=GoldenB4
 princess=Amy
 savetext1=Thank You, Sonic!
 savetext2=You Saved Me!

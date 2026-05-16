@@ -217,6 +217,7 @@ boll bot=#006EEE
 [lang]
 winspecial=Toad got a Chaos Emerald
 allspecial=Toad got all Chaos Emeralds
+credits=Todadoat, LillyPads, Poker500
 princess=our Princess
 savetext1=Peace is Paved
 savetext2=With Kingdom Saved

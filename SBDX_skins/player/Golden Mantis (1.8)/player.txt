@@ -19,7 +19,10 @@ defaultspray 2=0
 defaultspray 3=0
 defaultspray 4=0
 
+size reroute beet=big
+size reroute lui=big
 
+projectile palettes=true
 
 single sheet=true
 singlesheet split width=8,242,476,710,710,8
