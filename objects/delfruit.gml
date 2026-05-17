@@ -47,7 +47,7 @@ delfr2=0
 
 if (del) with (instance_place(x,y,player)) {
     if (!piped) {
-        if (settings("lock kid")) {
+        if (settings("lock kid") && (global.lskins[global.levelskin+1,0] == global.lbase) && !global.cheater && global.gamemode == "classic" && !global.lemontest) {
             sound("systemhit")
             piped=1
             reset=1

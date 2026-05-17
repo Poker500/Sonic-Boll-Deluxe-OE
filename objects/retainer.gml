@@ -61,7 +61,7 @@ if (o=0) {
 
         if (!instance_exists(timecounter)) hide=min(512,hide+1) frame=(hide>64)+(hide>128)
         if (hide=96) {done=1 alarm[0]=2 alarm[1]=30}
-        if (global.emeralds == 7) {unlockchar("super")}
+        if (global.emeralds == 7 && (global.lskins[global.levelskin+1,0] == global.lbase) && !global.cheater && global.gamemode == "classic" && !global.lemontest) {unlockchar("super")}
 
     } else {
 
@@ -77,7 +77,7 @@ if (o=0) {
                     j.direction=90-45*((i+0.5)/k-0.5)
                     j.speed=2+sqrt(bbb)/2
                     j.mode=mode
-                    if (mode && global.gamemode!="timeattack") {
+                    if (mode && (global.lskins[global.levelskin+1,0] == global.lbase) && !global.cheater && (global.gamemode != "battle" || global.gamemode != "timeattack") && !global.lemontest) {
                         unlockchar("ashura")
                         j.vspeed=-3
                     }
