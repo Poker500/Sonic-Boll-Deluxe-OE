@@ -278,7 +278,11 @@ if (what="more" || what="all") {
     playerskinstr(slot,"savetext4"+ss,playerskinstr(slot,laniel+" savetext4"))
     playerskinstr(slot,"savetext5"+ss,playerskinstr(slot,laniel+" savetext5"))
     playerskinstr(slot,"savetext6"+ss,playerskinstr(slot,laniel+" savetext6"))
-    playerskinstr(slot,"credits"+ss,playerskinstr(slot,laniel+" credits"))   
+    
+    //credits are an optional string.
+    if playerskindat(slot,"credits"+ss,playerskindat(slot,laniel+" credits"))==0 {
+        show_debug_message("missing skin string: credits")
+    } 
               
     
     if (dir != allyourbase) {
