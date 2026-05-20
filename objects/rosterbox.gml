@@ -101,7 +101,7 @@ if (showbox) {
 
 if p2!=0 exit
 
-if (keyboard_check_pressed(vk_f3) && global.playerskin[p2] && (string(playerskindat(p2,"credits"+string(p2)))!="" && string(playerskindat(p2,"credits"+string(p2)))!="0")) {
+if (keyboard_check_pressed(vk_f3) && global.playerskin[p2] && (string(playerskindat(p2,"credits"+string(p2)))!="" && string(playerskindat(p2,"credits"+string(p2)))!="0" && string(playerskindat(p2,"credits"+string(p2)))!=" ")) {
     ping(
         playerskindat(p2,"name"+string(p2))
         +"#-#"+
