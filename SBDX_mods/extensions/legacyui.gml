@@ -356,14 +356,29 @@ object_setevent(rosteroptions, ev_draw, 0, "
 	over=0
 ")
 
-object_clearevent(rostergm, ev_step, ev_step_end)
-object_setevent(rostergm,ev_step,ev_step_end,"
+object_clearevent(rostergm, ev_step, ev_step_begin)
+object_setevent(rostergm, ev_step, ev_step_begin,'
+point=-1
+if room!=ta_roster {
+		if (gm=0) {
+			if (!pcount) global.gamemode="classic"
+			else global.gamemode="battle" 
+		}
+		if (gm=1) {
+			if (!pcount) global.gamemode="classic"
+			else global.gamemode="coop"
+		}
+	} else global.gamemode="timeattack"
+')
+
+object_clearevent(rostergm, ev_step, ev_step_normal)
+object_setevent(rostergm,ev_step,ev_step_normal,"
 	pcount=-1
 	with (rosterbox) if (ready) other.pcount+=1
 	
 	over=0
 	with rostercursor if instance_place(x,y,other) other.over=1
-	if room=ta_roster global.gamemode='timeattack'
+	depth=rosteroptions.depth+1
 ")
 
 object_clearevent(rostergm, ev_draw, 0)
@@ -439,9 +454,6 @@ if (fadetables("border",global.lastroom,room)) {
     with (mmicon) if (image_index=1) event_perform(ev_draw,0)
 }                    
 ')
-
-//but what if i made you visible
-object_setevent(rostergm, ev_step, 0, "visible=1 depth=rosteroptions.depth+1")
 
 #define step
 
