@@ -1210,6 +1210,14 @@ switch (argument[0]) {
         if (type=0) return get_string("Filename of character (lowercase):",argument[2])
     } break
 
+    case customobject:
+        if type>0{
+            global.cobjectlemonreturnvalue="[NO DATA]"
+            lemon_get_lemoninfo("editobjmenu",type,argument[2])
+            return string(global.cobjectlemonreturnvalue)
+        }else return get_string("Custom Object's name:",argument[2])
+    break;
+
     case trigger_spawn: {
         if (type=0) return get_string("Alignment in pixels (x,y):",argument[2])
         if (type=1) {
@@ -1281,6 +1289,9 @@ switch (argument[0]) {
             return string(i-1)
         }
     }
+
+
+
 }
 
 if (type=1) return string(!funnytruefalse(argument[2]))
