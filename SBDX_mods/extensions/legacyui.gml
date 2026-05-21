@@ -137,8 +137,10 @@ object_setevent(ext_legacyuicog, ev_step, 0, "
 		} else {modtoggle.x=modtoggle.xstart x=-32 y=-32 visible=0 drawconfigbutton=0 imconfigure=0}
 	}
 	
-	input_get(-1) 
-	input_keystates()
+	if !noinput {
+		input_get(-1) 
+		input_keystates()
+	}
 	
 	with genericcursor {
 		depth=-1
@@ -164,7 +166,9 @@ object_setevent(ext_legacyuicog, ev_step, 0, "
 		}
 		
 		if (sbut && settings('ext_legacyui_watermarktype')='custom') {
+			noinput=1
 			settings('ext_legacyui_customwatermark',get_string('Enter text:','SONIC BOLL DELUXE'))
+			noinput=0
 		}
 		
 		if (ybut) {
@@ -254,6 +258,7 @@ object_setevent(rostercard, ev_create, 0, "
 
 object_event_add(rostercard,ev_step,0,"
 	if !swappedforlegacyui {
+		if sprite_exists_0(global.chariconlegacyui[charm_get_id(name),0])
 		icon=global.chariconlegacyui[charm_get_id(name),0]
 		swappedforlegacyui=1
 	}
