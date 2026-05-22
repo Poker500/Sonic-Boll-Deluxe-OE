@@ -562,6 +562,9 @@ if (up) {
             if (h) {xsc=h braking=0}
 		    hasfired=1
             fire_projectile(x+7*xsc,y)
+			playsfx("gianafireball")
+            fired=12
+            if (sprite="fire" || sprite="firewalk" || sprite="firejump") frame=0
 		} else if (size=6 && count_projectiles() < 2) {
 		    p2 = 10;
             with fire_projectile(x+8*xsc,y+2) {
@@ -570,10 +573,10 @@ if (up) {
                 visible = 0;
             }
 			p2 = real(ss);
+			playsfx("gianafireball")
+            fired=12
+            if (sprite="fire" || sprite="firewalk" || sprite="firejump") frame=0
 		}
-        playsfx("gianafireball")
-        fired=12
-        if (sprite="fire" || sprite="firewalk" || sprite="firejump") frame=0
     }
 }
 
