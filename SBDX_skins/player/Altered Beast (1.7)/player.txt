@@ -20,8 +20,11 @@ pole center offset=8
 
 old glide animation=true
 
-use paletting=false
-
+use paletting=true
+defaultspray 1=5
+defaultspray 2=6
+defaultspray 3=8
+defaultspray 4=0
 
 single sheet=true
 singlesheet split width=8,200,456,200,456,8,200,200,200
