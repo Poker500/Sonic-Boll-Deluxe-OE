@@ -20,6 +20,9 @@ switch(global.cobjectentrypoint){
 		depth=1000000
 		mask_index=spr_mask12x12
 		
+		x+=8
+		y+=8
+		
 	break;
 	case "step":
 		if (toppingtype!=5 || !gamemanager.kaerublockstate) {
@@ -42,13 +45,13 @@ switch(global.cobjectentrypoint){
 	break;
 	case "draw":	
 		switch toppingtype {
-			case 0: draw_sprite_part_ext(sheet,0,4,4,16,16,x,y,1,1,c_white,1) break; 
-			case 1: draw_sprite_part_ext(sheet,0,20,4,16,16,x,y,1,1,c_white,1) break;
-			case 2: draw_sprite_part_ext(sheet,0,4,20,16,16,x,y,1,1,c_white,1) break;
-			case 3: draw_sprite_part_ext(sheet,0,20,20,16,16,x,y,1,1,c_white,1) break;
-			case 4 : draw_sprite_part_ext(sheet,0,4,36,16,16,x,y,1,1,c_white,1) break;
+			case 0: draw_sprite_part_ext(sheet,0,4,4,16,16,x-8,y-8,1,1,c_white,1) break; 
+			case 1: draw_sprite_part_ext(sheet,0,20,4,16,16,x-8,y-8,1,1,c_white,1) break;
+			case 2: draw_sprite_part_ext(sheet,0,4,20,16,16,x-8,y-8,1,1,c_white,1) break;
+			case 3: draw_sprite_part_ext(sheet,0,20,20,16,16,x-8,y-8,1,1,c_white,1) break;
+			case 4 : draw_sprite_part_ext(sheet,0,4,36,16,16,x-8,y-8,1,1,c_white,1) break;
 			
-			case 5 : draw_sprite_part_ext(sheet,0,20,36,16,16,x,y,1,1,c_white,0.25+0.75*(!gamemanager.kaerublockstate)) break; 
+			case 5 : draw_sprite_part_ext(sheet,0,20,36,16,16,x-8,y-8,1,1,c_white,0.25+0.75*(!gamemanager.kaerublockstate)) break; 
 		}
 	break;
 	
