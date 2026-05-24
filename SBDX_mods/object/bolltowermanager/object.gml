@@ -1,6 +1,11 @@
 switch(global.cobjectentrypoint){
 
 	case "create":
+		if !global.__bt_untower {
+			object_event_add(globalmanager,ev_room_start,0,"if room!=game global.TOWER=0")
+			global.__bt_untower=1
+		}
+	
 		global.inf_time=1
 		settings("cog inflives",1)
 		skindat("hurry",0)
@@ -99,7 +104,7 @@ switch(global.cobjectentrypoint){
 		if timer<0 {
 			timer=5
 			with customobject{
-				if mytype="topping" || mytype="bigtopping" || mytype="toppinfollower" || mytype="entrancedoor"
+				if mytype="topping" || mytype="bigtopping" || (mytype="toppinfollower" && !imfollow) || mytype="entrancedoor"
 				if !inview() instance_deactivate_object(self.id)
 			
 			}
