@@ -19,24 +19,26 @@ victory duration=100
 time until wait=200
 pipe squish=20
 
-use paletting=false
-defaultspray 1=9
-defaultspray 2=9
-defaultspray 3=2
-defaultspray 4=10
+use paletting=true
+defaultspray 1=0
+defaultspray 2=0
+defaultspray 3=0
+defaultspray 4=0
 
-short small form=0.8
+short small form=0.75
 
-size reroute basic=big
-size reroute fire=big
-size reroute feather=big
-size reroute beet=big
-size reroute lui=big
+size reroute big=basic
+size reroute feather=basic
+size reroute mini=basic
+size reroute beet=basic
+size reroute lui=basic
+
+max sizes=7
 
 fireball graphic x=265
 fireball graphic y=59
 
-custom sprite list=stand,wait,lookup,pose,crouch,hurt,dead,walk,run,brake,jump,bonk,grind,turn,ball,capeflight,slide,scuttle,spinjump,roll,climbing,groundpound,standcarry,lookupcarry,crouchcarry,walkcarry,brakecarry,jumpcarry,bonkcarry,throw,swim,fire,flagslide
+custom sprite list=stand,wait,lookup,jump,pose,crouch,hurt,dead,walk,run,brake,tailidle,tailspin,bonk,grind,turn,ball,capeflight,slide,scuttle,spinjump,roll,climbing,groundpound,standcarry,lookupcarry,crouchcarry,walkcarry,brakecarry,jumpcarry,bonkcarry,throw,swim,fire,flagslide
 
 reroute crouchwalk=crouch
 reroute longjump=slide
@@ -56,18 +58,22 @@ reroute paddle=swim
 reroute push=walkcarry
 reroute tspin=scuttle
 reroute galspinfall=scuttle
+reroute balancing=stand
 reroute piping=wait
 reroute pipingup=jump
 reroute sidepiping=slide
 reroute doorenter=stand
 reroute doorexit=wait
+reroute bonkbrick=bonk
 
 connect wait=true
 connect lookup=true
+connect jump=true
 connect crouch=true
 connect hurt=true
 connect run=true
 connect brake=true
+connect tailspin=true
 connect bonk=true
 connect grind=true
 connect ball=true
@@ -118,6 +124,8 @@ throw frames=3
 swim frames=4
 fire frames=3
 flagslide frames=1
+tailspin frames=1
+tailidle frames=1
 
 pose loop=2
 slide loop=3
@@ -140,7 +148,7 @@ wait speed=0.375
 lookup speed=0.375
 pose speed=0.375
 hurt speed=0.5
-dead speed=0.5
+dead speed=0.375
 walk speed=0.5
 run speed=0.375
 jump speed=0.375
@@ -160,20 +168,402 @@ walkcarry speed=0.5
 jumpcarry speed=0.375
 fire speed=0.25
 throw speed=0.25
-swim speed=0.5
+swim speed=1
 
 boll top=#FFF7F7
 boll mid=#000000
 boll bot=#FFF7F7
 
+
+
+
+
+
+
+
+[tails]
+name=Wario
+
+sheetname=wariosadventure
+
+icon speed=4
+icon loop=yes
+animation speed=1.0
+center x=25
+center y=29
+box width=46
+box height=48
+pole center offset=4
+
+pitch spindash=yes
+jump ball animation=no
+fire duration=18
+victory duration=100
+victory frame=4
+time until wait=200
+pipe squish=20
+enable spindust=true
+
+smooth flight bar drain=true
+
+use paletting=true
+defaultspray 1=0
+defaultspray 2=0
+defaultspray 3=0
+defaultspray 4=0
+
+short small form=0.75
+
+size reroute big=basic
+size reroute fire=basic
+size reroute feather=basic
+size reroute mini=basic
+size reroute beet=basic
+size reroute lui=basic
+
+max sizes=7
+
+custom sprite list=stand,wait,lookup,jump,pose,crouch,knock,dead,walk,run,brake,tailidle,tailspin,bonk,grind,turn,spindash,flyfast,ball,fly,flyup,roll,climbing,groundpound,standcarry,lookupcarry,crouchcarry,walkcarry,brakecarry,jumpcarry,bonkcarry,throw,swim,fire,flagslide
+
+reroute push=walkcarry
+reroute flydown=fly
+reroute flytired=jump
+reroute spring=jump
+reroute airwalk=jump
+reroute hang=stand
+reroute spindash=ball
+reroute spincharge=ball
+reroute tailspin=tailidle
+reroute piping=wait
+reroute pipingup=jump
+reroute sidepiping=slide
+reroute doorenter=stand
+reroute doorexit=wait
+
+connect wait=true
+connect lookup=true
+connect jump=true
+connect crouch=true
+connect knock=true
+connect run=true
+connect brake=true
+connect tailspin=true
+connect bonk=true
+connect grind=true
+connect spindash=true
+connect flyfast=true
+connect ball=true
+connect flyup=true
+connect climbing=true
+connect standcarry=true
+connect lookupcarry=true
+connect walkcarry=true
+connect brakecarry=true
+connect jumpcarry=true
+connect throw=true
+connect swim=true
+connect fire=true
+connect flagslide=true
+
+explosion graphic x=265
+explosion graphic y=95
+
+bomb graphic x=331
+bomb graphic y=111
+
+spindash dust graphic x=454
+spindash dust graphic y=10
+spindash dust frames=1
+spindash dust speed=1
+
+stand frames=2
+wait frames=4
+lookup frames=4
+pose frames=5
+crouch frames=1
+knock frames=6
+dead frames=12
+walk frames=8
+run frames=2
+brake frames=1
+jump frames=2
+bonk frames=1
+grind frames=9
+turn frames=2
+spindash frames=3
+flyfast frames=3
+ball frames=3
+fly frames=8
+flyup frames=3
+roll frames=4
+climbing frames=2
+groundpound frames=6
+standcarry frames=2
+lookupcarry frames=4
+crouchcarry frames=1
+walkcarry frames=8
+brakecarry frames=1
+jumpcarry frames=2
+bonkcarry frames=1
+throw frames=3
+swim frames=4
+fire frames=3
+flagslide frames=1
+tailspin frames=1
+tailidle frames=1
+
+pose loop=2
+ball loop=3
+groundpound loop=4
+throw loop=3
+fire loop=3
+
+stand frametimes=2,5
+wait frametimes=2,5,2,5
+lookup frametimes=2,5,2,5
+pose frametimes=3.75,1,1,1,1
+standcarry frametimes=2,5
+waitcarry frametimes=2,5,2,5
+lookupcarry frametimes=2,5,2,5
+grind frametimes=1,0.5,0.5,1,1,0.5,0.5,0.5,0.5
+swim frametimes=6,6,6,6
+
+stand speed=0.375
+wait speed=0.375
+lookup speed=0.375
+pose speed=0.375
+knock speed=0.5
+dead speed=0.375
+walk speed=0.5
+run speed=0.375
+jump speed=0.375
+grind speed=0.25
+turn speed=0.5
+spindash speed=0.5
+flyfast speed=0.5
+ball speed=0.5
+fly speed=0.5
+flyup speed=0.5
+roll speed=1
+climbing speed=0.25
+groundpound speed=1
+standcarry speed=0.375
+lookupcarry speed=0.375
+walkcarry speed=0.5
+jumpcarry speed=0.375
+fire speed=0.25
+throw speed=0.25
+swim speed=1
+
+boll top=#FFF7F7
+boll mid=#000000
+boll bot=#FFF7F7
+
+
+
+
+[mecha]
+name=Wario
+
+sheetname=wariosadventure-mecha
+
+icon speed=4
+icon loop=yes
+animation speed=1.0
+center x=25
+center y=29
+box width=46
+box height=48
+pole center offset=3
+
+carry offset x=0
+carry offset y=-3
+fire duration=18
+victory duration=100
+time until wait=200
+pipe squish=20
+
+use paletting=true
+defaultspray 1=0
+defaultspray 2=0
+defaultspray 3=0
+defaultspray 4=0
+
+short small form=0.75
+
+size reroute big=basic
+size reroute fire=basic
+size reroute feather=basic
+size reroute mini=basic
+size reroute beet=basic
+size reroute lui=basic
+
+max sizes=7
+
+custom sprite list=stand,wait,lookup,jump,pose,crouch,knockstand,deadair,walk,run,brake,tailidle,tailspin,bonk,grind,turn,spindash,ball,slide,fly,flyup,roll,climbing,groundpound,standcarry,lookupcarry,crouchcarry,walkcarry,brakecarry,jumpcarry,bonkcarry,throw,swim,claw,flagslide
+
+reroute prerun=grind
+reroute run=grind
+reroute knockrun=knockstand
+reroute armless=grind
+reroute armlessalt=stand
+reroute dead=deadair
+reroute push=walkcarry
+reroute flydown=fly
+reroute flytired=jump
+reroute spring=jump
+reroute airwalk=jump
+reroute hang=stand
+reroute spindash=ball
+reroute spincharge=ball
+reroute tailspin=tailidle
+reroute piping=wait
+reroute pipingup=jump
+reroute sidepiping=slide
+reroute doorenter=stand
+reroute doorexit=wait
+
+connect wait=true
+connect lookup=true
+connect jump=true
+connect crouch=true
+connect knockstand=true
+connect run=true
+connect brake=true
+connect tailspin=true
+connect bonk=true
+connect grind=true
+connect spindash=true
+connect ball=true
+connect slide=true
+connect flyup=true
+connect climbing=true
+connect standcarry=true
+connect lookupcarry=true
+connect walkcarry=true
+connect brakecarry=true
+connect jumpcarry=true
+connect throw=true
+connect swim=true
+connect claw=true
+connect flagslide=true
+
+death explosion graphic x=10
+death explosion graphic y=87
+
+overlay spark graphic x=66
+overlay spark graphic y=44
+
+dash spark graphic x=10
+dash spark graphic y=112
+
+claw graphic x=112
+claw graphic y=96
+
+spike center graphic x=125
+spike center graphic y=68
+
+charge dash graphic x=183
+charge dash graphic y=88
+
+stand frames=2
+wait frames=4
+lookup frames=4
+pose frames=5
+crouch frames=1
+knockstand frames=6
+deadair frames=12
+walk frames=8
+run frames=2
+brake frames=1
+jump frames=2
+bonk frames=1
+grind frames=9
+turn frames=2
+spindash frames=3
+ball frames=3
+slide frames=3
+fly frames=8
+flyup frames=3
+roll frames=4
+climbing frames=2
+groundpound frames=6
+standcarry frames=2
+lookupcarry frames=4
+crouchcarry frames=1
+walkcarry frames=8
+brakecarry frames=1
+jumpcarry frames=2
+bonkcarry frames=1
+throw frames=3
+swim frames=4
+claw frames=3
+flagslide frames=1
+tailspin frames=1
+tailidle frames=1
+
+pose loop=2
+slide loop=3
+groundpound loop=4
+throw loop=3
+claw loop=3
+
+stand frametimes=2,5
+wait frametimes=2,5,2,5
+lookup frametimes=2,5,2,5
+pose frametimes=3.75,1,1,1,1
+standcarry frametimes=2,5
+waitcarry frametimes=2,5,2,5
+lookupcarry frametimes=2,5,2,5
+grind frametimes=1,0.5,0.5,1,1,0.5,0.5,0.5,0.5
+swim frametimes=6,6,6,6
+
+stand speed=0.375
+wait speed=0.375
+lookup speed=0.375
+pose speed=0.375
+knockstand speed=0.5
+deadair speed=0.375
+walk speed=0.5
+run speed=0.375
+jump speed=0.375
+grind speed=0.25
+turn speed=0.5
+spindash speed=0.5
+ball speed=0.5
+slide speed=0.5
+fly speed=0.5
+flyup speed=0.5
+roll speed=1
+climbing speed=0.25
+groundpound speed=1
+standcarry speed=0.375
+lookupcarry speed=0.375
+walkcarry speed=0.5
+jumpcarry speed=0.375
+claw speed=0.25
+throw speed=0.25
+swim speed=1
+
+boll top=#FFF7F7
+boll mid=#000000
+boll bot=#FFF7F7
+
+
+
+
+
+
+
+
 [lang]
 winspecial=Wario got a Chaos Emerald
 allspecial=Wario got all Chaos Emeralds
-princess=our Princess
-savetext1=Peace is Paved
-savetext2=With Kingdom Saved
-savetext3=Hurrah to Wario
-savetext4=Our Only Hero...?
-savetext5=This Ends Your Trip
-savetext6=Of a Long Friendship
+princess=the treasure
+savetext1=Success!
+savetext2=All right!
+savetext3=
+savetext4=
+savetext5=
+savetext6=
 credits=
