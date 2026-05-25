@@ -31,7 +31,7 @@ defaultspray 3=5
 defaultspray 4=0
 
 single sheet=true
-singlesheet split width=8,200,456,456,456,8,456,456
+singlesheet split width=8,200,456,456,456,8,200,200
 singlesheet split height=0,0,0,0,0,0
 
 custom sprite list= stand,wait,pose,crouch,knock,dead,walk,run,brake,spring,climbing,ball,jump,spindash,dropdash,push,balance,flagslide,wall,fire,maxrun,hammerdrop,mightybounce,transform,dash
@@ -188,8 +188,8 @@ dropdash frametimes=0
 dropdash offset x=0
 dropdash offset y=0
 
-size reroute beet=fire
-size reroute lui=fire
+size reroute beet=big
+size reroute lui=big
 
 push frames=4
 push loop=1
@@ -296,7 +296,7 @@ defaultspray 3=5
 defaultspray 4=0
 
 single sheet=true
-singlesheet split width=8,200,200,200,200
+singlesheet split width=8,200,200,200,200,8
 singlesheet split height=0,0,0,0,0,0
 
 custom sprite list= stand,wait,pose,crouch,knock,dead,walk,run,brake,spring,climbing,ball,jump,spindash,dropdash,push,balance,flagslide,wall,fire,maxrun,hammerdrop,mightybounce,transform,dash
@@ -523,11 +523,11 @@ multiple box sizes=true
 
 supermusic=You sit upon a throne of True...
 
-center x=12,16,16,16,16,12,16,16,16,16
-center y=13,18,18,18,18,13,18,18,18,18
+center x=12,16,16,16,16,12,16,16,16,16,16,16
+center y=13,18,18,18,18,13,18,18,18,18,18,18
 
-box width=24,32,32,32,32,24,32,32,32,32
-box height=32,40,40,40,40,32,40,40,40,40
+box width=24,32,32,32,32,24,32,32,32,32,32,32
+box height=32,40,40,40,40,32,40,40,40,40,40,40
 
 pitch spindash=yes
 jump ball animation=no
@@ -546,10 +546,10 @@ defaultspray 2=10
 defaultspray 3=5
 defaultspray 4=0
 
-roster size=6
+roster size=8
 
 single sheet=true
-singlesheet split width=8,200,456,456,456,8,200,200,200,200
+singlesheet split width=8,200,456,456,456,8,200,200,200,200,200,200
 singlesheet split height=0,0,0,0,0,0
 
 custom sprite list= stand,wait,pose,crouch,knock,dead,walk,run,brake,spring,climbing,ball,jump,spindash,dropdash,push,balance,flagslide,wall,fire,maxrun,hammerdrop,mightybounce,transform,dash
@@ -811,7 +811,7 @@ defaultspray 3=5
 defaultspray 4=0
 
 single sheet=true
-singlesheet split width=8,200,456,456,456,8,456,456
+singlesheet split width=8,200,456,456,456,8,200,200
 singlesheet split height=0,0,0,0,0,0
 
 waterfall graphic x=363
@@ -968,8 +968,8 @@ dropdash frametimes=0
 dropdash offset x=0
 dropdash offset y=0
 
-size reroute beet=fire
-size reroute lui=fire
+size reroute beet=big
+size reroute lui=big
 
 push frames=4
 push loop=1
@@ -1076,7 +1076,7 @@ defaultspray 3=5
 defaultspray 4=0
 
 single sheet=true
-singlesheet split width=200,200,456,456,456,8,456,456
+singlesheet split width=200,200,456,456,456,8,200,200
 singlesheet split height=0,0,0,0,0,0
 
 custom sprite list= stand,wait,pose,crouch,knock,dead,walk,run,brake,spring,climbing,ball,jump,spindash,dropdash,push,balance,flagslide,wall,fire,maxrun,hammerdrop,mightybounce,transform,dash
@@ -1240,8 +1240,8 @@ dropdash frametimes=0
 dropdash offset x=0
 dropdash offset y=0
 
-size reroute beet=fire
-size reroute lui=fire
+size reroute beet=big
+size reroute lui=big
 
 push frames=4
 push loop=1
@@ -1349,7 +1349,7 @@ defaultspray 3=5
 defaultspray 4=0
 
 single sheet=true
-singlesheet split width=8,200,456,456,456,8,456,456
+singlesheet split width=8,200,456,456,456,8,200,200
 singlesheet split height=0,0,0,0,0,0
 
 custom sprite list= stand,wait,pose,crouch,knock,dead,walk,run,brake,spring,climbing,ball,jumpbll,spindash,dropdash,push,balance,flagslide,wall,fire,maxrun,hammerdrop,mightybounce,transform,dash
@@ -1390,7 +1390,7 @@ reroute bash=maxrun
 reroute bashhit=dash
 reroute pound=hammerdrop
 reroute poundland=dropdash
-reroute throw=stand
+reroute throw=fire
 reroute standcarry=stand
 reroute walkcarry=walk
 reroute lookupcarry=stand
@@ -1522,8 +1522,8 @@ dropdash frametimes=0
 dropdash offset x=0
 dropdash offset y=0
 
-size reroute beet=fire
-size reroute lui=fire
+size reroute beet=big
+size reroute lui=big
 
 push frames=4
 push loop=1
