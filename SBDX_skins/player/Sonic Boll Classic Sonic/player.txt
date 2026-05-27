@@ -1,0 +1,125 @@
+[sonic]
+name=Sonic
+
+icon speed=3.8
+icon loop=yes
+animation speed=1.0
+victory duration=60
+center x=24
+center y=28
+box width=48
+box height=48
+
+pitch spindash=no
+jump ball animation=no
+fire duration=11
+time until wait=300
+pole center offset=6
+
+use paletting=true
+defaultspray 1=2
+defaultspray 2=7
+defaultspray 3=5
+defaultspray 4=0
+
+reroutespray 4=1
+
+custom sprite list=stand,wait,lookup,pose,crouch,knock,dead,walk,run,maxrun,brake,spring,springfall,jump,bonk,ball,spindash,push,hang,fire,dash,specfall,climbing,flagslide,dropdash,spincharge
+
+reroute fall=jump
+reroute doorenter=stand
+reroute doorexit=stand
+reroute piping=stand
+reroute pipingup=spring
+reroute sidepiping=walk
+
+stand frames=4
+wait frames=14
+lookup frames=2
+pose frames=2
+crouch frames=2
+knock frames=1
+dead frames=1
+walk frames=8
+run frames=4
+brake frames=1
+spring frames=1
+jump frames=8
+bonk frames=2
+bonk loop=2
+ball frames=8
+springfall frames=8
+specfall frames=4
+spindash frames=4
+spincharge frames=4
+push frames=4
+hang frames=4
+fire frames=4
+dash frames=7
+climbing frames=4
+climbon2 frames=1
+flagslide frames=1
+maxrun frames=4
+dropdash frames=4
+
+stand loop=1
+wait loop=5
+pose loop=1
+bonk loop=2
+lookup loop=2
+crouch loop=2
+springfall loop=1
+specfall loop=4
+dash loop=7
+walk loop=1
+fire loop=4
+jump loop=1
+maxrun loop=1
+
+size reroute beet=big
+size reroute lui=big
+
+stand speed=0.2
+wait speed=1
+lookup speed=0.21
+pose speed=0.09
+dropdash speed=0.5
+crouch speed=0.21
+walk speed=0.3
+run speed=0.25
+maxrun speed=0.30
+jump speed=0.28
+bonk speed=0.25
+brake speed=1.4
+ball speed=0.28
+spring fall=0.5
+spindash speed=0.5
+spincharge speed=0.5
+push speed=0.05
+hang speed=0.1
+dash speed=0.2
+specfall speed=0.5
+climbing speed=0.125
+climbon2 speed=0.05
+fire speed=0.06
+
+
+stand frametimes=20,1,1,1
+wait frametimes=15,25,15,15,15,15,15,15,15,15,15,15,15,50
+specfall frametimes=3,2,1,1
+
+boll top=#9B0023
+boll mid=#003EE4
+boll bot=#E70021
+
+[lang]
+winspecial=Sonic got a Chaos Emerald!
+allspecial=Sonic got all Chaos Emeralds!
+princess=the Mayor
+savetext1=Peace is Paved
+savetext2=with the City saved
+savetext3=Hurrah to Sonic
+savetext4=Our Only Hero
+savetext5=This Ends Your Trip
+savetext6=Of a Long Friendship
+credits=AngryBup
