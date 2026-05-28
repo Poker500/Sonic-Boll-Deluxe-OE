@@ -668,7 +668,7 @@ if (h!=0) {
         com_hitwall(h)
         push=h
         if (!water && knuxcanclimb(collision(8*h,0))) {
-            if (jump && !carry) framegoby+=1 if framegoby>2 {hang=4}
+            if (jump && !carry) {framegoby+=1 if framegoby>2 {hang=4 framegoby=0}}
             xsc=h
         }  else {framegoby=0}
     } 
