@@ -1187,7 +1187,7 @@ if (!owner.tempkill && cracked=0 && !insted) {
 }
 
 #define hitwall
-if (abs(hyperspeed+hsp)>5) {x-=hsp+hyperspeed hurtplayer("crush")}
+if (abs(hyperspeed+hsp)>3+maxspd) {x-=hsp+hyperspeed hurtplayer("crush")}
 hsp=0
 hyperspeed=0       
 
