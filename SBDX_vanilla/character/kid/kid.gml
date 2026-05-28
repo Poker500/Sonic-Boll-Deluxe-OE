@@ -1092,7 +1092,7 @@ if (coll) {
         global.coll=id
         type=coll.object_index
     
-		if (type=shell && !coll.time) && (carryid != coll) {          
+		if (type=shell && (carryid != coll)) {          
             if (coll.type="spiny" && (coll.vspeed-vsp)*coll.ysc<0) {
                 hurtplayer("enemy") exit
             } else if (!coll.kicked || (coll.stop && (coll.owner=id || coll.vspeed>=0))) {
@@ -1102,6 +1102,15 @@ if (coll) {
 					skidding=0
 					exit
                 }
+				if (vsp>0) {
+					playsfx("kidstomp")
+					vsp=-4-akey*2
+					if antigrav vsp*=-1
+					canstopjump=akey
+					jump=1
+					insted=0
+				}	
+				exit
             }
         }
     
