@@ -103,7 +103,7 @@ name=Shaggy
 
 sheetname=193shaggy
 
-icon speed=4
+icon speed=2.65
 icon loop=no
 animation speed=1.0
 
