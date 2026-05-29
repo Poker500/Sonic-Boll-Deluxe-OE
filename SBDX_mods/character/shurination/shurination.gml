@@ -102,13 +102,13 @@ else if file_exists(filename_dir(global.lemonfilename)+"/"+global.levelname+"-bo
 #define start
 mask_set(12,24)
 
-idlemaxfr=unreal(skindat(name+" tv idle max frames"),9999)
-collectmaxfr=unreal(skindat(name+" tv collect max frames"),9999)
-hurtmaxfr=unreal(skindat(name+" tv hurt max frames"),9999)
-combomaxfr=unreal(skindat(name+" tv combo max frames"),9999)
-mach3maxfr=unreal(skindat(name+" tv mach3 max frames"),9999)
-mach4maxfr=unreal(skindat(name+" tv mach4 max frames"),9999)
-firebuttmaxfr=unreal(skindat(name+"tv firebutt max frames"),9999)
+idlemaxfr=unreal(playerskindat(p2,name+" tv idle max frames"),9999)
+collectmaxfr=unreal(playerskindat(p2,name+" tv collect max frames"),9999)
+hurtmaxfr=unreal(playerskindat(p2,name+" tv hurt max frames"),9999)
+combomaxfr=unreal(playerskindat(p2,name+" tv combo max frames"),9999)
+mach3maxfr=unreal(playerskindat(p2,name+" tv mach3 max frames"),9999)
+mach4maxfr=unreal(playerskindat(p2,name+" tv mach4 max frames"),9999)
+firebuttmaxfr=unreal(playerskindat(p2,name+"tv firebutt max frames"),9999)
 
 //This is all made by Scarf, huge credits to him, saved me a lot of trouble
 moddir=global.workdir+"SBDX_mods\"
@@ -125,7 +125,8 @@ if (skindat("bundleplayer") || path=global.pbase) skin=path
     }
 ss=string(p2)
 slot=p2
-
+if (global.ranksheet[slot] && sprite_exists(global.ranksheet[slot])) sprite_delete(global.ranksheet[slot])
+if (global.hudsheet[slot] && sprite_exists(global.hudsheet[slot])) sprite_delete(global.hudsheet[slot])
 global.ranksheet[slot]=sprite_add(directory + "\ranks\rank.png",15,1,0,0,0)
 global.hudsheet[slot]=sprite_add(directory +  global.charname[global.option[p2]] +"-hud.png",0,1,0,0,0)
 
@@ -1904,7 +1905,6 @@ dontdrawdefaulthud=1
 if global.ranks||keepwhite exit
 hudfr+=0.25
 if hudfr >= maxtvfr hudfr=0
-
 //if tvchange=4 
 switch tvani
 {
@@ -1919,6 +1919,7 @@ case "fireass": tvaniyf=10 maxtvfr=firebuttmaxfr break;
 with other{
 	p=other                   
 	spr=other.sheets[other.size]
+    if p.usepalette scr_applyPaletteSegmentedAlpha(global.shaderPaletteSwapAlpha,global.palettesprites[p.p2*100],global.pal_1[p.p2]+1,global.pal_2[p.p2]+1,global.pal_3[p.p2]+1,global.pal_4[p.p2]+1,p.size,hud_alpha[view_current],p.totpal+1)
 
 
 	///BOSS HP
@@ -2015,3 +2016,4 @@ with other{
 	}
 }
 
+shader_reset()
