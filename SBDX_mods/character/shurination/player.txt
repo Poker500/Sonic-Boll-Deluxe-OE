@@ -13,8 +13,8 @@ tv idle max frames=6
 tv hurt max frames=1
 tv collect max frames=2
 tv combo max frames=1
-tv mach3 max frames=1
-tv mach4 max frames=1
+tv mach3 max frames=2
+tv mach4 max frames=2
 tv firebutt max frames=2
 
 use paletting=true
