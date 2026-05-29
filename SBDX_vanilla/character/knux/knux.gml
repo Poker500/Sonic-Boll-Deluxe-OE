@@ -3,7 +3,7 @@ stand,wait,lookup,pose,crouch,knock,dead,walk,run,brake,spring,jump,bonk,fall,ba
 
 
 #define soundlist
-release,skid,spin,spindash,punch,uppercut,fire,reflect,land
+release,skid,spin,spindash,punch,uppercut,fire,reflect,land,taunt
 
 
 #define movelist
@@ -99,6 +99,7 @@ upper=0
 diggity=0
 punch=0
 hasgted=0
+taunt=0
 
 #define effectsfront
 if projectilepalettes scr_applyPaletteSegmentedAlpha(global.shaderPaletteSwapAlpha,global.palettesprites[p2*100],global.pal_1[p2]+1,global.pal_2[p2]+1,global.pal_3[p2]+1,global.pal_4[p2]+1,size,alpha*(1-0.75*shadow),totpal+1)
@@ -383,6 +384,7 @@ firedb = max(0, firedb-1)
 
 //situations in which it should skip controls entirely
 if (rise!=0 || slide || upper || watrlock || hurt || piped || move_lock) {
+    if (taunt) soundstop(name+"taunt") taunt=0
     di=0
     exit
 }
@@ -437,10 +439,10 @@ y=actualy
 if (up) com_piping()
 oup=up
 
-if (up && !hang) {
-    if (hsp=0 && !jump) lookup=1
-    else lookup=0
-} else lookup=0
+if (up && !hang && !left && !right) {
+    if (hsp=0 && !jump) {lookup=1 if (!taunt) {playsfx(name+"taunt") taunt=1}}
+    else {lookup=0 if (taunt) {soundstop(name+"taunt") taunt=0}}
+} else {lookup=0 if (taunt) {soundstop(name+"taunt") taunt=0}}
 
 //list of things that prevent you from moving
 if (rise!=0 || climb || spindash || land || (crouch && !jump) || (fired && !jump)) h=0

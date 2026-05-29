@@ -4,10 +4,11 @@ name=Jotaro Kujo
 icon speed=6
 icon loop=yes
 animation speed=1.0
-center x=24
-center y=28
-box width=48
-box height=48
+multiple box sizes=true
+center x=12,24,24,24,24,12,24,24
+center y=13,28,28,28,28,13,28,28
+box width=24,48,48,48,48,24,48,48
+box height=32,48,48,48,48,32,48,48
 
 fire duration=8
 victory duration=60
@@ -55,20 +56,21 @@ spindash dust graphic y=99
 spindash dust frames=1
 spindash dust speed=1
 
+size reroute extra=big
 size reroute feather=fire
 size reroute beet=big
 size reroute lui=big
 
 stand frametimes=180,3,3,3,120,3,3,3,180,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
 
-stand frames=4,24,4,4,4,4,24,24
-lookup frames=5,5,10,10,5,5,5,5
+stand frames=1,24,4,4,24,1,24,24
+lookup frames=3,5,10,10,5,3,5,5
 win frames=1
 crouch frames=1
 knock frames=1
 dead frames=1
-walk frames=8
-run frames=8
+walk frames=2,8,8,8,8,2,8,8
+run frames=2,8,8,8,8,2,8,8
 brake frames=1
 jump frames=2
 bonk frames=2
