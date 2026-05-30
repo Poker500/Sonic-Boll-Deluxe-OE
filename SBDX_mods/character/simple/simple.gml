@@ -16,77 +16,6 @@ Moveset failed to load.
 
 
 #define start
-//Global only stuff
-shortsmallform=( unreal(playerskindat(p2,"simple-overall resizesmallform"),3)  )
-
-
-for (i=0;i<=7;i+=1){
-
-	fall_type[i]=( string(playerskindat(p2,"simple-overall jump type")) == "Mario"  )	
-	mario_movement[i]=( string(playerskindat(p2,"simple-overall movement type")) == "Mario"  )
-	accuratesonic_movement[i]=( string(playerskindat(p2,"simple-overall movement type")) == "AccurateSonic"  )
-	top_speed[i]=( unreal(playerskindat(p2,"simple-overall top speed"),3)  )
-	air_accel[i]=( unreal(playerskindat(p2,"simple-overall air acceleration"),3)  )
-	ground_accel[i]=( unreal(playerskindat(p2,"simple-overall ground acceleration"),3)  )
-	deaccel[i]=( unreal(playerskindat(p2,"simple-overall deaccelaration"),3)  )
-	
-	
-	//Simple Unique
-	can_zerodash[i]=funnytruefalse(playerskindat(p2,"simple-overall zerodash"))
-	can_zerodashEX[i]=funnytruefalse(playerskindat(p2,"simple-overall zerodashEX"))
-	can_zerodashplus[i]=funnytruefalse(playerskindat(p2,"simple-overall zerodashplus"))
-	can_slide[i]=funnytruefalse(playerskindat(p2,"simple-overall slide"))
-	can_slidekick[i]=funnytruefalse(playerskindat(p2,"simple-overall slidekick"))
-	
-	can_dropdash[i]=funnytruefalse(playerskindat(p2,"simple-overall dropdash"))
-	can_momentumbreak[i]=funnytruefalse(playerskindat(p2,"simple-overall momentumbreak"))
-
-	can_fireproj[i]=funnytruefalse(playerskindat(p2,"simple-overall fire projectile"))
-	proj_button[i]=playerskindat(p2,"simple-overall projectile button") //A B C X Y Z
-	proj_button2[i]=playerskindat(p2,"simple-overall projectile button2") //A B C X Y Z Down Up None
-	proj_grounded[i]=funnytruefalse(playerskindat(p2,"simple-overall fire projectile when grounded"))
-	proj_aerial[i]=funnytruefalse(playerskindat(p2,"simple-overall fire projectile when aerial"))
-	proj_type[i]=playerskindat(p2,"simple-overall projectile type") //cloverwhip, bubble, iceball, fireball, thunderball
-	proj_limit[i]=(unreal(playerskindat(p2,"simple-overall projectile limit"),3))
-	proj_fireduration=(unreal(playerskindat(p2,"simple-overall projectile firing duration"),16))
-	
-	
-	can_fireproj2[i]=funnytruefalse(playerskindat(p2,"simple-overall fire projectile 2"))
-	can_fireproj3[i]=funnytruefalse(playerskindat(p2,"simple-overall fire projectile 3"))
-	
-	//Sonic 
-	can_spindash[i]=funnytruefalse(playerskindat(p2,"simple-overall spindash"))
-	can_roll[i]=funnytruefalse(playerskindat(p2,"simple-overall roll"))
-	can_instashield[i]=funnytruefalse(playerskindat(p2,"simple-overall instashield"))
-	can_sonicdash[i]=funnytruefalse(playerskindat(p2,"simple-overall sonicairdash"))
-	can_firedash[i]=funnytruefalse(playerskindat(p2,"simple-overall sonicfiredash"))
-	can_wingdash[i]=funnytruefalse(playerskindat(p2,"simple-overall sonicwingdash"))
-	
-	//Mario
-	can_longjump[i]=funnytruefalse(playerskindat(p2,"simple-overall longjump"))
-	can_sideflip[i]=funnytruefalse(playerskindat(p2,"simple-overall sideflip")) 
-	can_triplejump[i]=funnytruefalse(playerskindat(p2,"simple-overall triplejump"))
-	can_groundpound[i]=funnytruefalse(playerskindat(p2,"simple-overall groundpound")) //unimplemented
-	can_marioslide[i]=funnytruefalse(playerskindat(p2,"simple-overall marioslide")) 
-	can_spinjump[i]=funnytruefalse(playerskindat(p2,"simple-overall spinjump")) 
-	can_dive[i]=funnytruefalse(playerskindat(p2,"simple-overall dive"))
-	can_wallkick[i]=funnytruefalse(playerskindat(p2,"simple-overall wallkick"))
-	can_wallhang[i]=funnytruefalse(playerskindat(p2,"simple-overall wallslide"))
-	
-	//Tails
-	has_tails[i]=funnytruefalse(playerskindat(p2,"simple-overall has tails"))
-	
-	//The Kid
-	can_airjump[i]=funnytruefalse(playerskindat(p2,"simple-overall airjump"))
-	airjumpy_total[i]=unreal(playerskindat(p2,"simple-overall airjump amount"),0)
-	airjumpy_refresh[i]=funnytruefalse(playerskindat(p2,"simple-overall airjump refreshes other moves"))
-	airjumpy_changehsp[i]=funnytruefalse(playerskindat(p2,"simple-overall airjump changehorspeed"))
-	airjumpy_changevsp[i]=funnytruefalse(playerskindat(p2,"simple-overall airjump changevertspeed"))
-	airjumpy_hsp[i]=unreal(playerskindat(p2,"simple-overall airjump horspeed"),0)
-	airjumpy_vsp[i]=unreal(playerskindat(p2,"simple-overall airjump vertspeed"),0)
-	
-}
-
 for (i=0;i<=7;i+=1){
 
 	switch(i){
@@ -99,71 +28,181 @@ for (i=0;i<=7;i+=1){
 		case 6: sizename="-beet" break;
 		case 7: sizename="-lui" break;
 	}
-	
 
-	temp=playerskindat(p2,"simple"+sizename+" jump type")if (string(temp)!="0")fall_type[i]= (string(temp)=="Mario")
-	temp=playerskindat(p2,"simple"+sizename+" movement type") 	if (string(temp)!="0") mario_movement[i]= (string(temp) == "Mario")	if (string(temp)!="0") accuratesonic_movement[i]= (string(temp) == "AccurateSonic")
+
+
+	fall_type[i]=( string(playerskindat(p2,"simple-overall jump type")) == "Mario"  )	
+	temp=playerskindat(p2,"simple"+sizename+" jump type")	if (string(temp)!="0")fall_type[i]= (string(temp)=="Mario")
+	//---------------------------
+	mario_movement[i]=( string(playerskindat(p2,"simple-overall movement type")) == "Mario"  )
+	accuratesonic_movement[i]=( string(playerskindat(p2,"simple-overall movement type")) == "AccurateSonic"  )
+	temp=playerskindat(p2,"simple"+sizename+" movement type") 	if (string(temp)!="0") mario_movement[i]= (string(temp) == "Mario")	 if (string(temp)!="0") accuratesonic_movement[i]= (string(temp) == "AccurateSonic")
+	
+	top_speed[i]=( unreal(playerskindat(p2,"simple-overall top speed"),3)  ) 
 	temp=playerskindat(p2,"simple"+sizename+" top speed")	if (string(temp)!="0") top_speed[i]=real(temp)
+	
+	air_accel[i]=( unreal(playerskindat(p2,"simple-overall air acceleration"),3)  )
 	temp=playerskindat(p2,"simple"+sizename+" air acceleration")	if (string(temp)!="0") air_accel[i]=real(temp)
+	
+	ground_accel[i]=( unreal(playerskindat(p2,"simple-overall ground acceleration"),3)  )
 	temp=playerskindat(p2,"simple"+sizename+" ground acceleration")	if (string(temp)!="0") ground_accel[i]=real(temp)
+	
+	deaccel[i]=( unreal(playerskindat(p2,"simple-overall deaccelaration"),3)  )
 	temp=playerskindat(p2,"simple"+sizename+" deaccelaration")	if (string(temp)!="0") deaccel[i]=real(temp)
-		
 	
-	//Simple unique	
+	/////////////////////////////////////////////////Simple Unique
+	can_zerodash[i]=funnytruefalse(playerskindat(p2,"simple-overall zerodash"))
 	temp=playerskindat(p2,"simple"+sizename+" zerodash")	if (string(temp)!="0") can_zerodash[i]=funnytruefalse(temp)	
+	
+	can_zerodashEX[i]=funnytruefalse(playerskindat(p2,"simple-overall zerodashEX"))
 	temp=playerskindat(p2,"simple"+sizename+" zerodashEX")	if (string(temp)!="0") can_zerodashEX[i]=funnytruefalse(temp)	
+	
+	can_zerodashplus[i]=funnytruefalse(playerskindat(p2,"simple-overall zerodashplus"))
 	temp=playerskindat(p2,"simple"+sizename+" zerodashplus")	if (string(temp)!="0") can_zerodashplus[i]=funnytruefalse(temp)	
+	
+	can_slide[i]=funnytruefalse(playerskindat(p2,"simple-overall slide"))
 	temp=playerskindat(p2,"simple"+sizename+" slide")	if (string(temp)!="0") can_slide[i]=funnytruefalse(temp)	
+	
+	can_slidekick[i]=funnytruefalse(playerskindat(p2,"simple-overall slidekick"))
 	temp=playerskindat(p2,"simple"+sizename+" slidekick") if (string(temp)!="0") can_slidekick[i]=funnytruefalse(temp)
+	
+	can_dropdash[i]=funnytruefalse(playerskindat(p2,"simple-overall dropdash"))
 	temp=playerskindat(p2,"simple"+sizename+" dropdash")	if (string(temp)!="0") can_dropdash[i]=funnytruefalse(temp)
+	
+	can_momentumbreak[i]=funnytruefalse(playerskindat(p2,"simple-overall momentumbreak"))
 	temp=playerskindat(p2,"simple"+sizename+" momentumbreak")	if (string(temp)!="0") can_momentumbreak[i]=funnytruefalse(temp)
+
+	/////////////////////////////////////////////////PROJECTILES
+	can_fireproj[i]=funnytruefalse(playerskindat(p2,"simple-overall fire projectile"))
+	temp=playerskindat(p2,"simple"+sizename+" fire projectile") if (string(temp)!="0") can_fireproj[i]=funnytruefalse(temp)
+	
+	proj_button[i]=playerskindat(p2,"simple-overall projectile button") //A B C X Y Z
+	temp=playerskindat(p2,"simple"+sizename+" projectile button") if (string(temp)!="0") proj_button[i]=(temp)
+	
+	proj_button2[i]=playerskindat(p2,"simple-overall projectile button2") //A B C X Y Z Down Up None
+	temp=playerskindat(p2,"simple"+sizename+" projectile button2") if (string(temp)!="0") proj_button2[i]=(temp)
+	
+	proj_grounded[i]=funnytruefalse(playerskindat(p2,"simple-overall fire projectile when grounded"))
+	temp=playerskindat(p2,"simple"+sizename+" fire projectile when grounded") if (string(temp)!="0") proj_grounded[i]=funnytruefalse(temp)
+	
+	proj_aerial[i]=funnytruefalse(playerskindat(p2,"simple-overall fire projectile when aerial"))
+	temp=playerskindat(p2,"simple"+sizename+" fire projectile when aerial") if (string(temp)!="0") proj_aerial[i]=funnytruefalse(temp)
+	
+	proj_type[i]=playerskindat(p2,"simple-overall projectile type") //cloverwhip, bubble, iceball, fireball, thunderball
+	temp=playerskindat(p2,"simple"+sizename+" projectile type") if (string(temp)!="0") proj_type[i]=(temp)
+	
+	proj_limit[i]=(unreal(playerskindat(p2,"simple-overall projectile limit"),3))
+	temp=playerskindat(p2,"simple"+sizename+" projectile limit") if (string(temp)!="0") proj_limit[i]=unreal(temp,3)
+	
+	proj_fireduration=(unreal(playerskindat(p2,"simple-overall projectile firing duration"),16))
+	temp=playerskindat(p2,"simple"+sizename+" firing duration") if (string(temp)!="0") proj_fireduration[i]=unreal(temp,16)
+	
+	///////////////////////////////////////////////////////////PROJECTILE 2
+	can_fireproj_2[i]=funnytruefalse(playerskindat(p2,"simple-overall fire twojectile"))
+	temp=playerskindat(p2,"simple"+sizename+" fire projectile") if (string(temp)!="0") can_fireproj_2[i]=funnytruefalse(temp)
+	
+	proj_button_2[i]=playerskindat(p2,"simple-overall twojectile button") //A B C X Y Z
+	temp=playerskindat(p2,"simple"+sizename+" twojectile button") if (string(temp)!="0") proj_button_2[i]=(temp)
+	
+	proj_button2_2[i]=playerskindat(p2,"simple-overall twojectile button2") //A B C X Y Z Down Up None
+	temp=playerskindat(p2,"simple"+sizename+" twojectile button2") if (string(temp)!="0") proj_button2_2[i]=(temp)
+	
+	proj_grounded_2[i]=funnytruefalse(playerskindat(p2,"simple-overall fire twojectile when grounded"))
+	temp=playerskindat(p2,"simple"+sizename+" fire twojectile when grounded") if (string(temp)!="0") proj_grounded_2[i]=funnytruefalse(temp)
+	
+	proj_aerial_2[i]=funnytruefalse(playerskindat(p2,"simple-overall fire twojectile when aerial"))
+	temp=playerskindat(p2,"simple"+sizename+" fire twojectile when aerial") if (string(temp)!="0") proj_aerial_2[i]=funnytruefalse(temp)
+	
+	proj_type_2[i]=playerskindat(p2,"simple-overall twojectile type") //cloverwhip, bubble, iceball, fireball, thunderball
+	temp=playerskindat(p2,"simple"+sizename+" twojectile type") if (string(temp)!="0") proj_type_2[i]=(temp)
+	
+	proj_limit_2[i]=(unreal(playerskindat(p2,"simple-overall twojectile limit"),3))
+	temp=playerskindat(p2,"simple"+sizename+" twojectile limit") if (string(temp)!="0") proj_limit_2[i]=unreal(temp,3)
+	
+	proj_fireduration_2=(unreal(playerskindat(p2,"simple-overall twojectile firing duration"),16))
+	temp=playerskindat(p2,"simple"+sizename+" firing duration") if (string(temp)!="0") proj_fireduration_2[i]=unreal(temp,16)
 	
 	
 	
-	
-	
-	//Sonic stuff
+	/////////////////////////////////////////////////Sonic 
+	can_spindash[i]=funnytruefalse(playerskindat(p2,"simple-overall spindash"))
 	temp=playerskindat(p2,"simple"+sizename+" spindash")	if (string(temp)!="0") can_spindash[i]=funnytruefalse(temp)
+	
+	can_roll[i]=funnytruefalse(playerskindat(p2,"simple-overall roll"))
 	temp=playerskindat(p2,"simple"+sizename+" roll")	if (string(temp)!="0") can_roll[i]=funnytruefalse(temp)
+	
+	can_instashield[i]=funnytruefalse(playerskindat(p2,"simple-overall instashield"))
 	temp=playerskindat(p2,"simple"+sizename+" instashield")	if (string(temp)!="0") can_instashield[i]=funnytruefalse(temp)
+	
+	can_sonicdash[i]=funnytruefalse(playerskindat(p2,"simple-overall sonicairdash"))
 	temp=playerskindat(p2,"simple"+sizename+" sonicairdash")	if (string(temp)!="0") can_sonicdash[i]=funnytruefalse(temp)
+	
+	can_firedash[i]=funnytruefalse(playerskindat(p2,"simple-overall sonicfiredash"))
 	temp=playerskindat(p2,"simple"+sizename+" sonicfiredash")	if (string(temp)!="0") can_firedash[i]=funnytruefalse(temp)
+	
+	can_wingdash[i]=funnytruefalse(playerskindat(p2,"simple-overall sonicwingdash"))
 	temp=playerskindat(p2,"simple"+sizename+" sonicwingdash")	if (string(temp)!="0") can_wingdash[i]=funnytruefalse(temp)
 	
-
-	
-	//Mario
+	/////////////////////////////////////////////////Mario
+	can_longjump[i]=funnytruefalse(playerskindat(p2,"simple-overall longjump"))
 	temp=playerskindat(p2,"simple"+sizename+" longjump")	if (string(temp)!="0") can_longjump[i]=funnytruefalse(temp)
+	
+	can_sideflip[i]=funnytruefalse(playerskindat(p2,"simple-overall sideflip")) 
 	temp=playerskindat(p2,"simple"+sizename+" sideflip")	if (string(temp)!="0") can_sideflip[i]=funnytruefalse(temp)
+	
+	can_triplejump[i]=funnytruefalse(playerskindat(p2,"simple-overall triplejump"))
 	temp=playerskindat(p2,"simple"+sizename+" triplejump")	if (string(temp)!="0") can_triplejump[i]=funnytruefalse(temp)
-	temp=playerskindat(p2,"simple"+sizename+" groundpound")	if (string(temp)!="0") can_groundpound[i]=funnytruefalse(temp) //unimplemented
-	temp=playerskindat(p2,"simple"+sizename+" marioslide")	if (string(temp)!="0") can_marioslide[i]=funnytruefalse(temp) 
+	
+	can_groundpound[i]=funnytruefalse(playerskindat(p2,"simple-overall groundpound")) 
+	temp=playerskindat(p2,"simple"+sizename+" groundpound")	if (string(temp)!="0") can_groundpound[i]=funnytruefalse(temp) 
+	
+	can_marioslide[i]=funnytruefalse(playerskindat(p2,"simple-overall marioslide")) 
+	temp=playerskindat(p2,"simple"+sizename+" marioslide")	if (string(temp)!="0") can_marioslide[i]=funnytruefalse(temp)
+	
+	can_spinjump[i]=funnytruefalse(playerskindat(p2,"simple-overall spinjump")) 
 	temp=playerskindat(p2,"simple"+sizename+" spinjump")	if (string(temp)!="0") can_spinjump[i]=funnytruefalse(temp)
+	
+	can_dive[i]=funnytruefalse(playerskindat(p2,"simple-overall dive"))
 	temp=playerskindat(p2,"simple"+sizename+" dive")	if (string(temp)!="0") can_dive[i]=funnytruefalse(temp)
+	
+	can_wallkick[i]=funnytruefalse(playerskindat(p2,"simple-overall wallkick"))
 	temp=playerskindat(p2,"simple"+sizename+" wallkick")	if (string(temp)!="0") can_wallkick[i]=funnytruefalse(temp)
+	
+	can_wallhang[i]=funnytruefalse(playerskindat(p2,"simple-overall wallslide"))
 	temp=playerskindat(p2,"simple"+sizename+" wallslide")	if (string(temp)!="0") can_wallhang[i]=funnytruefalse(temp)
 	
-	
 	//Tails
+	has_tails[i]=funnytruefalse(playerskindat(p2,"simple-overall has tails"))
 	temp=playerskindat(p2,"simple"+sizename+" has tails")	if (string(temp)!="0") has_tails[i]=funnytruefalse(temp)
 	
-	
 	//The Kid
+	can_airjump[i]=funnytruefalse(playerskindat(p2,"simple-overall airjump"))
 	temp=playerskindat(p2,"simple"+sizename+" airjump")	if (string(temp)!="0") can_airjump[i]=funnytruefalse(temp)
+	
+	airjumpy_total[i]=unreal(playerskindat(p2,"simple-overall airjump amount"),0)
 	temp=playerskindat(p2,"simple"+sizename+" airjump amount")	if (string(temp)!="0") airjumpy_total[i]=real(temp)
+	
+	airjumpy_refresh[i]=funnytruefalse(playerskindat(p2,"simple-overall airjump refreshes other moves"))
 	temp=playerskindat(p2,"simple"+sizename+" airjump refreshes other moves")	if (string(temp)!="0") airjumpy_refresh[i]=funnytruefalse(temp)
+	
+	airjumpy_changehsp[i]=funnytruefalse(playerskindat(p2,"simple-overall airjump changehorspeed"))
 	temp=playerskindat(p2,"simple"+sizename+" airjump changevertspeed")	if (string(temp)!="0") airjumpy_changevsp[i]=funnytruefalse(temp)
+	
+	airjumpy_changevsp[i]=funnytruefalse(playerskindat(p2,"simple-overall airjump changevertspeed"))
 	temp=playerskindat(p2,"simple"+sizename+" airjump vertspeed")	if (string(temp)!="0") airjumpy_vsp[i]=real(temp)
+	
+	airjumpy_hsp[i]=unreal(playerskindat(p2,"simple-overall airjump horspeed"),0)
 	temp=playerskindat(p2,"simple"+sizename+" airjump changehorspeed")	if (string(temp)!="0") airjumpy_changehsp[i]=funnytruefalse(temp)
+	
+	airjumpy_vsp[i]=unreal(playerskindat(p2,"simple-overall airjump vertspeed"),0)
 	temp=playerskindat(p2,"simple"+sizename+" airjump horspeed")	if (string(temp)!="0") airjumpy_hsp[i]=real(temp)
 
-}
+
 
 //setup the movelist
 
 //Size is 0
 
-for (i=0;i<=5;i+=1){
 	
 	global.movelist[global.option[p2],i]="${c=$"
 	global.movelist[global.option[p2],i]+=playerskindat(p2,"simple-overall name color")
@@ -504,7 +543,8 @@ else if (jump) {
 	} 
 } else {
     if (spin) {sprite="ball" frspd=0.5+abs(hsp/3)}
-    else if (fired) {sprite="fire" cantslowanim=1}
+    else if (fired) {sprite="fire" if fired2 sprite="fire3" cantslowanim=1}
+	else if (fired2) {sprite="fire2" cantslowanim=1}
     else if (push!=0) {sprite="push" frspd=1+abs(hsp/3)}
     else if (hsp=0) {
         if (hang) {sprite="hang"}
@@ -1310,6 +1350,7 @@ wallhang=max(0,wallhang-1)
 wallkick=max(0,wallkick-1)
 poundjump=max(0,poundjump-1)
 poundlok=max(0,poundlok-1)
+fired2=max(0,fired2-1)
 
 if (!jump && run && !bkey) run=0
 
@@ -1868,12 +1909,14 @@ if can_fireproj[size]{
 			case "Up": projbut=up break;
 			case "Down": projbut=down break;
 		}
-		
-		
+			
 		if projbut{
-			if count_projectiles()<proj_limit[size] {
+			projectilecount=0
+			with (projectile) if (owner=other.id && !ignoreoncount && myprojid==1) other.projectilecount+=1
+			if projectilecount<proj_limit[size] {
 				projtype=proj_type[size]
 				i=fire_projectile(x+8*xsc,y+2)
+				i.myprojid=1
 				fired=proj_fireduration[size]
 				if projtype=="fireball"||projtype="iceball" && up i.vspeed=-4
 			}
@@ -1881,6 +1924,53 @@ if can_fireproj[size]{
 		}
 	}
 }
+
+
+
+if can_fireproj_2[size]{
+	
+	if (proj_aerial_2[size] && jump) || (proj_grounded_2[size] && !jump){
+		projbut=false
+		switch (proj_button_2[size]){
+			case "A": projbut=abut break;
+			case "B": projbut=bbut break;
+			case "C": projbut=cbut break;
+			case "X": projbut=xbut break;
+			case "Y": projbut=ybut break;
+			case "Z": projbut=zbut break;
+			case "R": projbut=rbut break;
+			case "S": projbut=sbut break;
+		}
+
+		if projbut switch (proj_button2_2[size]){ //it just lets it pass by default.
+			case "A": projbut=akey break;
+			case "B": projbut=bkey break;
+			case "C": projbut=ckey break;
+			case "X": projbut=xkey break;
+			case "Y": projbut=ykey break;
+			case "Z": projbut=zkey break;
+			case "R": projbut=rkey break;
+			case "S": projbut=skey break;
+			case "Up": projbut=up break;
+			case "Down": projbut=down break;
+		}
+			
+		if projbut{
+			
+			count=0
+			with (projectile) if (orig=other.id && !ignoreoncount && myprojid==2) other.count+=1
+			if count<proj_limit_2[size] {
+				projtype=proj_type_2[size]
+				i=fire_projectile(x+8*xsc,y+2)
+				i.myprojid=2
+				fired2=proj_fireduration_2[size]
+				if projtype=="fireball"||projtype="iceball" && up i.vspeed=-4
+			}
+		
+		}
+	}
+}
+
 
 #define projectile
 
@@ -1916,14 +2006,15 @@ if (event="fireball_create"){
 	hspeed=owner.xsc*3+owner.hsp/3
 	gravity=0.15
 	fr=0
+	with owner playsfx(name+"fireball")
 }else if (event="fireball_step"){
 	fr+=0.2
 	frame=floor(fr) mod 4
 	
-	
-	if com_proj_mov_bouncewall() {with owner {projtype="fireplosion" fire_projectile(other.x,other.y)} instance_destroy()}
-	/*if*/ com_proj_mov_bouncefloor() //vspeed=-2
-	com_proj_dmg_enemies(true)
+	if com_proj_mov_bouncefloor() {}
+	else if com_proj_mov_bouncewall() {with owner {projtype="fireplosion" fire_projectile(other.x,other.y)} instance_destroy()}
+	/*if*/  //vspeed=-2
+	if com_proj_dmg_enemies(false) {with owner {projtype="fireplosion" fire_projectile(other.x,other.y)} instance_destroy()}
 	
 }else if (event="fireball_draw"){
 	prevframe=frame-2
@@ -1954,6 +2045,9 @@ if (event="fireplosion_create"){
 }
 if (event="thunderball_create"){
 	hspeed=owner.xsc*2+owner.hsp
+	image_xscale=5
+	image_yscale=5
+	with owner playsfx(name+"boom")
 
 }else if (event="thunderball_step"){
 	fr=fr+0.2
@@ -1985,6 +2079,7 @@ if (event="bubble_create"){
 	gravity=-0.025
 	image_xscale=10
 	image_yscale=10
+	with owner playsfx(name+"boom")
 }else if (event="bubble_step"){
 	xsc=esign(hspeed,xsc)
 	fr=fr+0.1
@@ -2047,6 +2142,7 @@ if (event="cloverwhip_create"){
 	ignoreoncount=0
 	image_xscale=1
 	image_yscale=4
+	with owner playsfx(name+"boom")
 
 }else if (event="cloverwhip_step"){
 	if fr < 32 fr+=3 else fr=32
