@@ -109,7 +109,7 @@ for (i=0;i<=7;i+=1){
 	proj_limit[i]=(unreal(playerskindat(p2,"simple-overall projectile limit"),3))
 	temp=playerskindat(p2,"simple"+sizename+" projectile limit") if (string(temp)!="0") proj_limit[i]=unreal(temp,3)
 	
-	proj_fireduration=(unreal(playerskindat(p2,"simple-overall projectile firing duration"),16))
+	proj_fireduration[i]=(unreal(playerskindat(p2,"simple-overall projectile firing duration"),16))
 	temp=playerskindat(p2,"simple"+sizename+" firing duration") if (string(temp)!="0") proj_fireduration[i]=unreal(temp,16)
 	
 	///////////////////////////////////////////////////////////PROJECTILE 2
@@ -134,7 +134,7 @@ for (i=0;i<=7;i+=1){
 	proj_limit_2[i]=(unreal(playerskindat(p2,"simple-overall twojectile limit"),3))
 	temp=playerskindat(p2,"simple"+sizename+" twojectile limit") if (string(temp)!="0") proj_limit_2[i]=unreal(temp,3)
 	
-	proj_fireduration_2=(unreal(playerskindat(p2,"simple-overall twojectile firing duration"),16))
+	proj_fireduration_2[i]=(unreal(playerskindat(p2,"simple-overall twojectile firing duration"),16))
 	temp=playerskindat(p2,"simple"+sizename+" firing duration") if (string(temp)!="0") proj_fireduration_2[i]=unreal(temp,16)
 	
 	
@@ -666,7 +666,7 @@ com_di()
 
 //code for specifically the a button
 if ((abut || jumpbufferdo) && (!springin)) {
-    if (!jump||fall=69||grabflagpole) { //jump
+    if (!jump||fall=69||onvine||grabflagpole) { //jump
         if (hsp==0 && crouch && !slide && push==0 &&fall!=69 &&!grabbedflagpole && can_spindash[size]) {
             playsfx(name+"spindash",0,1+(median(0,spindash-1,3)/3)*playerskindat(p2,"pitchdash"+string(p2)))
             spindash=min(4,spindash+1)
@@ -678,6 +678,8 @@ if ((abut || jumpbufferdo) && (!springin)) {
 			else if triplejump>0.75 {triplejump=0.75 }
 			jumpsnd=playsfx(name+"jump",0,1+triplejump/2+((size==5)/3))
 			if triplejump > 0.75 triplejumping=1
+			onvine=0
+			fall=0
             vsp=-5.2-0.2*super-triplejump-!!poundjump
 			hellothisisajump=true
 			if braking && can_sideflip[size]{vsp-=0.2 sideflip=true  hsp=-2*xsc}

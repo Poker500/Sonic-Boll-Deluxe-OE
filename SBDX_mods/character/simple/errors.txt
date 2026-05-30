@@ -1,2 +1,2 @@
-COMPILATION ERROR in string to be executedError in code at line 33:   
- else if com_proj_mov_bouncewall() {with owner {projtype="fireplosion" fire_projectile(other.x,other.y)} instance_destroy()}    ^at position 3: Unexpected symbol in expression.
+COMPILATION ERROR in string to be executedError in code at line 409:   
+if onvine && abut show_message()                                  ^at position 33: Wrong number of arguments to function or script.
