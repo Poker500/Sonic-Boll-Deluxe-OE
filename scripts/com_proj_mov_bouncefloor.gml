@@ -3,6 +3,6 @@
 coll=instance_place(x,y,collider)
 if (coll) {
     if (coll.object_index=lavablock) {y-=vspeed vspeed=-2.75  return 2}
-    if (y<coll.y+4 && !instance_place(x,y-8,collider)) {y=-2+abs(vspeed) vspeed=-2.75 return 1}
+    if (y<coll.y+4 && !instance_place(x,y-8,collider)) {y-=vspeed vspeed=-2.75 return 1}
     if coll.object_index=phaser return 1
 }return 0

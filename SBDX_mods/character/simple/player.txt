@@ -2,16 +2,16 @@
 has tails=false
 name color=167,167,70
 
-resizesmallform=0.75
 
-top speed=3.5
+
+top speed=3.75
 air acceleration=0.08
 ground acceleration=0.06
 deaccelaration=0.33
 jump type=Sonic
 movement type=Sonic
 
-airjump=false
+airjump=true
 airjump amount=1
 airjump refreshes other moves=false
 airjump changevertspeed=true
@@ -38,7 +38,7 @@ sonicfiredash=false
 sonicwingdash=false
 
 slide=true
-slidekick=false
+slidekick=true
 
 momentumbreak=true
 
@@ -60,18 +60,22 @@ projectile type=fireball
 projectile limit=3
 projectile firing duration=16
 
+fire twojectile=true
+twojectile button=X
+fire twojectile when grounded=true
+fire twojectile when aerial=true
+twojectile type=thunderball
+twojectile limit=3
+twojectile firing duration=16
+
 [simple-basic]
-zerodash=true
-top speed=3
+top speed=3.25
 
 [simple-big]
-zerodash=true
 
 [simple-fire]
-zerodashEX=true
 
 [simple-feather]
-zerodashplus=true
 momentumbreak=false
 dive=true
 wallslide=true
@@ -98,10 +102,21 @@ top speed=3.5
 movement type=Mario
 jump type=Mario
 
+[simple-beet]
+fire projectile=true
+projectile button=B
+fire projectile when grounded=true
+fire projectile when aerial=true
+projectile type=beetroot
+projectile limit=2
+projectile firing duration=16
+
+[simple-lui]
+luijump=true
 
 [simple]
 name=Simple
-
+short small form=0.7
 
 icon speed=6
 icon loop=yes
@@ -118,6 +133,12 @@ victory duration=50
 time until wait=300
 pipe squish=20
 pole center offset=8
+
+size reroute beet=big
+size reroute lui=big
+size reroute fire=big
+size reroute feather=big
+size reroute extra=big
 
 use paletting=true
 defaultspray 1=8
@@ -145,6 +166,7 @@ spindash frames=4
 push frames=6
 hang frames=6
 fire frames=4
+fire2 frames=3
 dash frames=6
 climbing frames=4
 climbon2 frames=2
@@ -170,6 +192,7 @@ specfall loop=2
 brake loop=4
 walk loop=1
 fire loop=4
+fire2 loop=3
 slide loop=2
 zerodash loop=2
 
@@ -195,6 +218,7 @@ specfall speed=0.4
 push speed=0.1
 hang speed=0.2
 fire speed=0.35
+fire2 speed=0.2
 dash speed=0.5
 climbing speed=0.125
 climbon2 speed=0.05
