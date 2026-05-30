@@ -417,6 +417,7 @@ glide=0
 shoot(x,y,psmoke,-1,-2)
 shoot(x,y,psmoke,1,-2)
 playsfx("knuxrelease")
+soundstop("knuxspin")
 
 } 
 } else{
@@ -621,6 +622,7 @@ if (bbut) {
                 shoot(x,y,psmoke,-1,-2)
                 shoot(x,y,psmoke,1,-2)
                 playsfx("knuxrelease")
+				soundstop("knuxspin")
             }
         } else if (size && size!=5) {
             if (up && !didupper) {
@@ -668,6 +670,7 @@ startdigy=y
             diggity=1
 			spindash=0
             playsfx("knuxspin")
+			soundstop("knuxrelease")
             sound("itemblockbreak")
             com_piping()
         }
@@ -692,6 +695,7 @@ if (cbut) {
                 shoot(x,y,psmoke,-1,-2)
                 shoot(x,y,psmoke,1,-2)
                 playsfx("knuxrelease")
+				soundstop("knuxspin")
             }
         }
 	}
@@ -709,6 +713,7 @@ if (down && !up) {
         } else if (!upper && !fired && !spin && (checkland != 41) && !land && !crouch) {
             spin=1
             playsfx("knuxspin")
+			soundstop("knuxrelease")
         }
     }
     com_piping()
@@ -1051,6 +1056,7 @@ if (diggity) {
                         shoot(x-8,y+20,psmoke,-2,-1)
                         shoot(x+8,y+20,psmoke,2,-1)
                         playsfx("knuxrelease")
+						soundstop("knuxspin")
                         playsfx("knuxupper")
                         sound("itemblockbreak")
 						y=actualy
@@ -1410,6 +1416,7 @@ if (fall=12) {
         fall=0
         vsp=0
         playsfx("knuxspin")
+		soundstop("knuxrelease")
         sound("itemblockbreak")
         com_piping()        
     } else {
@@ -1426,6 +1433,7 @@ if (glide) {slide=1 hsp=(2.5+(size>0 && size!=5)+glidec)*ggf glide=0}
 if (!spin && rise=0 && !land && !slide && (checkland != 41) && !hurt && down && abs(hsp)>=0.5) {
     spin=1
     playsfx(name+"spin")
+	soundstop("knuxrelease")
     seqcount=1
 }
 
@@ -1438,6 +1446,7 @@ if (insted!=2 && !spin) {
         spin=1
         mask_set(12,12) 
         playsfx(name+"spin")
+		soundstop("knuxrelease")
         hsp=max(abs(hsp),2)*esign(hsp,xsc)
     }
 }
@@ -1481,7 +1490,7 @@ if (type="side") {
     if (spin) {
         set_sprite("ball")
         frspd=min(1,0.1+abs(hsp/4))
-        if (abs(hsp)>=3 && !water) {fastpipe=1 playsfx(name+"spin")}
+        if (abs(hsp)>=3 && !water) {fastpipe=1 playsfx(name+"spin") soundstop("knuxrelease")}
     }
 	if (punch) {set_sprite("punch") frspd=1 hspeed=xsc*3 fastpipe=1  }
 }

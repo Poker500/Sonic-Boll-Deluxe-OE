@@ -80,6 +80,7 @@ spindash frames=4
 push frames=4
 hang frames=1
 fire frames=2
+fire offset x=3
 upper frames=4
 climb frames=2
 glide frames=3
