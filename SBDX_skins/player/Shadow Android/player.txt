@@ -74,8 +74,12 @@ featherdash graphic y=58
 
 custom sprite list=stand,wait,lookup,pose,crouch,knock,dead,walk,run,maxrun,brake,spring,springfall,jump,bonk,ball,spindash,push,hang,fire,dash,specfall,climbing,flagslide,dropdash,piping,pipingup,sidepiping,doorenter,doorexit
 
+
+
+
 reroute fall=jump
 reroute spincharge=spindash
+
 
 stand frames=1
 wait frames=6

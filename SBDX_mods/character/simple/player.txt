@@ -4,14 +4,14 @@ name color=167,167,70
 
 
 
-top speed=3.5
+top speed=3.75
 air acceleration=0.08
 ground acceleration=0.06
 deaccelaration=0.33
 jump type=Sonic
 movement type=Sonic
 
-airjump=false
+airjump=true
 airjump amount=1
 airjump refreshes other moves=false
 airjump changevertspeed=true
@@ -38,7 +38,7 @@ sonicfiredash=false
 sonicwingdash=false
 
 slide=true
-slidekick=false
+slidekick=true
 
 momentumbreak=true
 
@@ -69,17 +69,13 @@ twojectile limit=3
 twojectile firing duration=16
 
 [simple-basic]
-zerodash=true
-top speed=3
+top speed=3.25
 
 [simple-big]
-zerodash=true
 
 [simple-fire]
-zerodashEX=true
 
 [simple-feather]
-zerodashplus=true
 momentumbreak=false
 dive=true
 wallslide=true
@@ -106,6 +102,17 @@ top speed=3.5
 movement type=Mario
 jump type=Mario
 
+[simple-beet]
+fire projectile=true
+projectile button=B
+fire projectile when grounded=true
+fire projectile when aerial=true
+projectile type=beetroot
+projectile limit=2
+projectile firing duration=16
+
+[simple-lui]
+luijump=true
 
 [simple]
 name=Simple
@@ -126,6 +133,12 @@ victory duration=50
 time until wait=300
 pipe squish=20
 pole center offset=8
+
+size reroute beet=big
+size reroute lui=big
+size reroute fire=big
+size reroute feather=big
+size reroute extra=big
 
 use paletting=true
 defaultspray 1=8

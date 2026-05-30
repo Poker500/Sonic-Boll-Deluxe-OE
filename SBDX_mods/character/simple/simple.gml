@@ -14,8 +14,13 @@ Moveset failed to load.
 #define rosterorder
 420
 
+#define skininit
 
-#define start
+disablespindust=funnytruefalse(playerskindat(p2,name+" disable spindust"))
+spindustframes=nozerounreal(playerskindat(p2,name+" spindash dust frames"),8)-1 //subtract 1 for Silly
+spindustspeed=nozerounreal(playerskindat(p2,name+" spindash dust speed"),1)
+
+
 for (i=0;i<=7;i+=1){
 
 	switch(i){
@@ -50,15 +55,25 @@ for (i=0;i<=7;i+=1){
 	deaccel[i]=( unreal(playerskindat(p2,"simple-overall deaccelaration"),3)  )
 	temp=playerskindat(p2,"simple"+sizename+" deaccelaration")	if (string(temp)!="0") deaccel[i]=real(temp)
 	
+	/////////////////////////////////////////////////Powerupspecific
+	
+	can_luijump[i]=( funnytruefalse(playerskindat(p2,"simple-overall luijump"))  )
+	temp=playerskindat(p2,"simple"+sizename+" luijump")	if (string(temp)!="0") can_luijump[i]=funnytruefalse(temp)
+	
+	
+	
+	
+	
 	/////////////////////////////////////////////////Simple Unique
 	can_zerodash[i]=funnytruefalse(playerskindat(p2,"simple-overall zerodash"))
-	temp=playerskindat(p2,"simple"+sizename+" zerodash")	if (string(temp)!="0") can_zerodash[i]=funnytruefalse(temp)	
+	temp=playerskindat(p2,"simple"+sizename+" zerodash")	if (string(temp)!="0") can_zerodash[i]=funnytruefalse(temp)		
 	
-	can_zerodashEX[i]=funnytruefalse(playerskindat(p2,"simple-overall zerodashEX"))
-	temp=playerskindat(p2,"simple"+sizename+" zerodashEX")	if (string(temp)!="0") can_zerodashEX[i]=funnytruefalse(temp)	
+	zerodash_button[i]=playerskindat(p2,"simple-overall zerodash button") //A B C X Y Z
+	temp=playerskindat(p2,"simple"+sizename+" zerodash button") if (string(temp)!="0") zerodash_button[i]=(temp)
 	
-	can_zerodashplus[i]=funnytruefalse(playerskindat(p2,"simple-overall zerodashplus"))
-	temp=playerskindat(p2,"simple"+sizename+" zerodashplus")	if (string(temp)!="0") can_zerodashplus[i]=funnytruefalse(temp)	
+	zerodash_button2[i]=playerskindat(p2,"simple-overall zerodash button2") //A B C X Y Z Down Up None
+	temp=playerskindat(p2,"simple"+sizename+" zerodash button2") if (string(temp)!="0") zerodash_button2[i]=(temp)
+	
 	
 	can_slide[i]=funnytruefalse(playerskindat(p2,"simple-overall slide"))
 	temp=playerskindat(p2,"simple"+sizename+" slide")	if (string(temp)!="0") can_slide[i]=funnytruefalse(temp)	
@@ -276,7 +291,7 @@ global.pagespec[global.option[p2],i]=i
 }
 
 
-
+#define start
 mask_set(12,12)
 
 //If you don't want tails on your character you can remove the following code. (You will have to remove some more code further down though.)
@@ -417,7 +432,7 @@ if (zerodash && can_zerodashEX[size]){
 }
 
 
-if (spindash) { //spindust
+if (spindash && !disablespindust) { //spindust
 	draw_sprite_part_ext(sheets[size*!global.singlesheet[p2]],0,10+27*(floor(spindust)),105,26,20,round(x-27*xsc),round(y-5)+dy,xsc,1,$ffffff,alpha)
 }
 
@@ -559,6 +574,7 @@ else if (jump) {
         else {sprite="stand"}
     } else {
         if (braking) sprite="brake"
+		else if (abs(hsp)>maxspd*1.1 && !water && !finish && !(mario_movement[size]) ) {sprite="maxrun" frspd=abs(hsp/3)}
 		else if (abs(hsp)>maxspd*0.95 && !water && !finish && !(mario_movement[size] && !run) && boost && (boostvar>=0.75||!can_dashmode[p2])) {sprite="maxrun" frspd=abs(hsp/3)}
         else if ((abs(hsp)>maxspd*0.9 && !water && !finish)  && (mario_movement[size] == 0 ||runvar>=1.4) ) {sprite="run" frspd=abs(hsp/3)}
         else {sprite="walk" frspd=0.2+abs(hsp/4)}
@@ -570,6 +586,7 @@ else if (jump) {
 com_inputstack()
 
 tempbrick=0
+luijump -= 1
 
 //situations in which it should skip controls entirely
 if (hurt || piped || move_lock) {
@@ -678,7 +695,7 @@ if ((abut || jumpbufferdo) && (!springin)) {
             vsp=lengthdir_y(vm,vd)
 
 			sprite_angle=0
-			
+			if can_luijump[size] luijump=7
 			airjumps=0
 			
             jump=1
@@ -693,7 +710,7 @@ if ((abut || jumpbufferdo) && (!springin)) {
             fallspd=min(1,0.5+abs(hsp)/5)
         }
     } else { //air jumps
-		if (wallhang && !carry && !flying) {
+		if (wallhang && can_wallkick[size] && !carry && !flying) {
             wallhang=0 spinjump=0 dive=0 triplejump=0 triplexsc=0
             kicked=xsc
             hsp=esign((right)+(-left),xsc)*-2.5 jumpspd=100 instance_create(x+6*xsc,y+8,kickpart)
@@ -715,7 +732,9 @@ if ((abut || jumpbufferdo) && (!springin)) {
 				if airjumpy_changevsp[size] vsp=airjumpy_vsp[size]
 				if airjumpy_refresh[size] {dive=0 mombreaked=0 wallbonk=0 zerodashed=0}
 				longjump=0
+				jumpsnd=playsfx(name+"jump2",0,1.2)
 				braking=0
+				if can_luijump[size] luijump=9
 				
 			}
 			
@@ -790,6 +809,7 @@ if (bbut) {
 				zerodash=20
 				if dive ||longjump xsc=esign(h,xsc)
 				dive=0
+				afterimages=1
 				longjump=0
 				if can_zerodashEX[size] boost=1
 				playsfx("simpledash",0,1.5)
@@ -1057,12 +1077,19 @@ if (!jump) if (loose || spin||mario_slide || crouch) {
     hsp=max(0,abs(hsp)-frick)*sign(hsp)
 }
 //speed cap rubberband formula
-maxspd= (top_speed[size]+mario_slide +(fall==10)*1.5 + boost*1.5  + water*0.1)*wf
+maxspd= (top_speed[size]+mario_slide +(fall==10)*1.5 + boost*1  + water*0.1)*wf
 
-if (abs(hsp)>(maxspd   - (1.5*(mario_movement[size]&&!runvar)))) {
-	if (!spin && !mario_slide && !(jump && (!fall ||fall=10) /*&& inertia*/) )  hsp=(  (abs(hsp)*2+(maxspd- (1.5*(mario_movement[size]&&!runvar))))/3   )*sign(hsp)
-} else {boost=0}
-
+if !mario_movement[size]{
+	//There's an extra check in the hsp+= section of h!=0 to compensate!.
+	/*if (abs(hsp)>maxspd) {
+		if (!spin && !(jump && (!fall || fall=10))) hsp=(abs(hsp)*2+maxspd)/3*sign(hsp)
+		else if (abs(hsp) > maxspd) hsp = max(abs(hsp) - 0.015, maxspd)*sign(hsp)
+	}*/
+}else {
+	if (abs(hsp)>(maxspd   - (1.5*(mario_movement[size]&&!runvar)))) {
+		if (!spin && !mario_slide && !(jump && (!fall ||fall=10) /*&& inertia*/) )  hsp=(  (abs(hsp)*2+(maxspd- (1.5*(mario_movement[size]&&!runvar))))/3   )*sign(hsp)
+	} else {boost=0}
+}
 if (pound) {
 vsp=min(6,vsp)
 } else vsp=min(7+downpiped,vsp)
@@ -1097,7 +1124,7 @@ if (!dead && !grabflagpole) {
 			else if (pound>=14 && pound<15) {vsp=6*wf}
 			else if (water) {vsp-=0.1*wf if (vsp<1.5) {pound=0}}
 			else {vsp+=0.375*wf}
-		}else if fall!=69 {
+		}else if fall!=69 && !luijump{
             vsp+=0.15*wf-(size=5 && vsp>-0.35 && !water)*0.075
         }
 		vine_climbing()
@@ -1351,7 +1378,22 @@ wallkick=max(0,wallkick-1)
 poundjump=max(0,poundjump-1)
 poundlok=max(0,poundlok-1)
 fired2=max(0,fired2-1)
+makeafterimages=0
+if (boost) {
+    if (hurt && !super) boost=0
+    if (point_distance(0,0,hsp,vsp)<3.2) boost=0
+} 
+if (afterimages) {
+	makeafterimages=1
+    if (hurt && !super) afterimages=0
+    if (point_distance(0,0,hsp,vsp)<maxspd) afterimages=0
+} 
+if luijump {makeafterimages=1 afterimagesair=1}
+if afterimagesair{
+	makeafterimages=1
+	if !jump afterimagesair=false
 
+}
 if (!jump && run && !bkey) run=0
 
 if (super) boost=1
@@ -1596,6 +1638,7 @@ speed=0
 if (skidding) {soundstop(name+"skid") skidding=0}
 if (carry && carryid) {with (carryid) event_user(0) carryid=noone carry=0}
 
+luijump=0
 energy=0
 braking=0
 sprung=0
@@ -2216,4 +2259,29 @@ else if (event=="pstar_draw"){
 }
 else if (event=="4star_draw"){
 	draw_sprite_part_ext(owner.sheetshields,0,493+frame*25,34,24,24,round(x-12*image_xscale),round(y-12*image_yscale),image_xscale,image_yscale,c_white,1)
+}
+
+
+
+if (event="beetroot_create"){
+	hspeed=owner.xsc*2+owner.hsp/3
+	gravity=0.15
+	fr=0
+	image_xscale=5
+	image_yscale=5
+	bounces=0
+	with owner playsfx(name+"fireball")
+}else if (event="beetroot_step"){
+	fr+=0.2
+	frame=floor(fr) mod 4
+
+	if bounces<3{
+		if com_proj_mov_bouncefloor()     {hspeed*=-1.1 vspeed=-4 bounces+=1 with owner {projtype="fireplosion" fire_projectile(other.x,other.y)} sound("enemybowserhurt")}
+		else if com_proj_mov_bouncewall() {hspeed*=1.1 vspeed=-4 bounces+=1 with owner {projtype="fireplosion" fire_projectile(other.x,other.y)} sound("enemybowserhurt")}
+		if com_proj_dmg_enemies(false)    {hspeed*=-1.1 vspeed=-4 bounces+=1 with owner {projtype="fireplosion" fire_projectile(other.x,other.y)} sound("enemybowserhurt")}
+		if bounces==3 hspeed*=0.25
+	}
+}else if (event="beetroot_draw"){
+	ssw_items("btroot")
+
 }
