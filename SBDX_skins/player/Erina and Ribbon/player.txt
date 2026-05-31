@@ -1,0 +1,140 @@
+[amy]
+name=Erina and Ribbon
+
+icon speed=4
+icon loop=yes
+animation speed=1.0
+multiple box sizes=false
+center x=43
+center y=38
+box width=71
+box height=61
+
+pitch spindash=yes
+jump ball animation=no
+fire duration=2.75
+victory duration=60
+time until wait=0
+pipe squish=20
+pole center offset=8
+minisheet=false
+
+single sheet=true
+singlesheet split width=8,8,8,8,8,8
+singlesheet split height=0,0,0,0,0,0
+
+short small form=0.7
+size reroute big=basic
+size reroute fire=basic
+size reroute feather=basic
+size reroute extra=basic
+size reroute beet=basic
+size reroute lui=basic
+
+old hammer rotation=false
+
+use paletting=true
+defaultspray 1=0
+defaultspray 2=0
+defaultspray 3=0
+defaultspray 4=0
+total palettes=1
+
+custom sprite list=stand,pose,crouch,knock,dead,walk,run,brake,climbing,jump,fall,spring,ball,pikoball,piko,twirl,hammerfall,upper,hammerslam,kick,flagslide
+connect pose=true
+connect knock=true
+connect walk=true
+connect brake=true
+connect climbing=true
+connect fall=true
+connect twirl=true
+connect kick=true
+connect flagslide=true
+
+reroute wait=stand
+reroute bonk=fall
+reroute hammerspin=pikoball
+reroute skip=jump
+reroute push=walk
+reroute hang=stand
+reroute climb=climbing
+reroute grind=run
+reroute piping=flagslide
+reroute pipingup=flagslide
+reroute sidepiping=walk
+reroute doorenter=stand
+reroute doorexit=stand
+reroute battledead=crouch
+reroute battlelose=crouch
+reroute battlemid=flagslide
+
+stand frames=8
+pose frames=6
+crouch frames=11
+knock frames=2
+dead frames=4
+walk frames=6
+run frames=9
+brake frames=2
+climbing frames=2
+jump frames=7
+fall frames=7
+spring frames=9
+ball frames=8
+ball offset y=5
+pikoball frames=8
+piko frames=9
+twirl frames=5
+hammerfall frames=14
+upper frames=14
+hammerslam frames=1
+kick frames=7
+flagslide frames=6
+
+crouch loop=6
+run loop=4
+jump loop=2
+fall loop=2
+spring loop=4
+piko loop=9
+twirl loop=2
+hammerslam loop=3
+upper loop=3
+kick loop=2
+
+stand speed=0.1
+pose speed=0.25
+crouch speed=0.2
+knock speed=0.5
+dead speed=0.25
+walk speed=0.25
+run speed=0.25
+brake speed=0.1
+climbing speed=0.25
+jump speed=0.25
+fall speed=0.25
+spring speed=0.25
+ball speed=0.5
+pikoball speed=0.5
+piko speed=0.4
+twirl speed=0.25
+hammerfall speed=0.25
+upper speed=0.25
+kick speed=0.25
+flagslide speed=0.25
+
+boll top=#ff2dff
+boll mid=#0b5454
+boll bot=#ce1c1c
+
+[lang]
+winspecial=Erina got a Chaos Emerald
+allspecial=Erina got all Chaos Emeralds
+princess=ERINA
+savetext1=Peace is Paved
+savetext2=With Kingdom Saved
+savetext3=Hurrah to Erina
+savetext4=Our Only Hero 
+savetext5=This Ends Your hammerfall
+savetext6=Of a Long Friendship
+credits=SuperSani24, Calypso, Amiine

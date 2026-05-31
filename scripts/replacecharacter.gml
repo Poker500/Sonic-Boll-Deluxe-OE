@@ -180,6 +180,7 @@ if (what="more" || what="all") {
     playerskindat(slot,"bowlag"+ss,funnytruefalse(playerskindat(slot,name+" bow lag")))
     playerskindat(slot,"useypos"+ss,funnytruefalse(playerskindat(slot,name+" use ypos")))
     playerskindat(slot,"tempwait"+ss,funnytruefalse(playerskindat(slot,name+" temporary wait")))
+    playerskindat(slot,"oldtrans"+ss,funnytruefalse(playerskindat(slot,name+" old transform animation")))
 
     
     

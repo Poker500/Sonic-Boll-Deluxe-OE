@@ -17,6 +17,7 @@ name=argument[1]
    playerskindat(slot,"minisheet"+ss,false)
    playerskindat(slot,"useypos"+ss,true)
    playerskindat(slot,"tempwait"+ss,false)
+   playerskindat(slot,"oldtrans"+ss,false)
 
 
    playerskindat(slot,"bolltex"+ss,-1)

@@ -16,7 +16,7 @@ looky=inch(lookgy,0,120)
 
 if (transform) {
     transform+=1
-    if (transform=4) frame=1
+    if (transform=4) /*if oldtrans*/ frame=1
     if (transform=8) {
         playsfx(name+"super")
         if playsupermusic{
@@ -24,13 +24,13 @@ if (transform) {
         global.music="super"
         mus_play(global.music,1,other.p2)}
         throwsparks(x,y)
-        frame=2
+        /*if oldtrans*/ frame=2
     }
-    if (transform=12) {frame=3 screenshake(x,8)}
-    if (transform=16) frame=2
-    if (transform=20) frame=3
-    if (transform=28) frame=4
-    if (transform=36) frame=5
+    if (transform=12) {/*if oldtrans*/ frame=3 screenshake(x,8)}
+    if (transform=16) /*if oldtrans*/ frame=2
+    if (transform=20) /*if oldtrans*/ frame=3
+    if (transform=28) /*if oldtrans*/ frame=4
+    if (transform=36) /*if oldtrans*/ frame=5
     if (transform=48) {transform=0 piped=0 spriteswitch(1)}
 }
 

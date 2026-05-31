@@ -67,6 +67,7 @@ skin_offsety=playerskindat(p2,"skin_offsety"+ss)
 useypos=playerskindat(p2,"useypos"+ss)
 smallshield=playerskindat(p2,"smlshield"+ss)
 tempwait=playerskindat(p2,"tempwait"+ss)
+oldtrans=playerskindat(p2,"oldtrans"+ss)
 
 usepalette=playerskindat(p2,"offersprays"+ss)
 MAXIMUMSIZESARGH=playerskindat(p2,"maxsizes"+ss)
