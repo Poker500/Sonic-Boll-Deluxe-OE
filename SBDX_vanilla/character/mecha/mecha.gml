@@ -633,7 +633,7 @@ if (onvine)
 sprite="climbing" frspd=sign(left+right+up+down)
 }
     else if (jet) {sprite="fly" /*frspd=0.4*/}
-    else {if (jumpedoutspin) sprite="ball" else if fall=1 sprite="prerun" else if (fall) sprite=fallspr else {if (spikefired) sprite="spike" else sprite="jump"} if (fallspr="turn") fallspr="run" frspd=fallspd}
+    else {if (jumpedoutspin) sprite="ball" else if (fall=1 && highjumpanim) sprite="prerun" else if (fall) sprite=fallspr else {if (spikefired) sprite="spike" else sprite="jump"} if (fallspr="turn") fallspr="run" frspd=fallspd}
 } else {
     if (spin) {sprite="ball" frspd=0.5+abs(hsp/6)}
     else if (turning && turning<maxturning-8 && turning>8) {sprite="turn" frspd=0.3*sign(turning-middleturning) cantslowanim=1}
@@ -733,7 +733,7 @@ if ((abut || jumpbufferdo) && !springin && !spindash) {
         } else {
             jumpsnd=playsfx(name+"jump",0,1+((size==5)/3))
             vsp=-4.20 //swagger
-            if (up) {energy=max(0,energy-2) playsfx(name+"step")  vsp-=2 instance_create(x,y+8,smoke)}
+            if (up) {energy=max(0,energy-2) playsfx(name+"step")  vsp-=2 instance_create(x,y+8,smoke) highjumpanim=1}
 			grabflagpole=0
             latchedtoflagpole=0
 
@@ -747,7 +747,7 @@ if ((abut || jumpbufferdo) && !springin && !spindash) {
 
             sprite_angle=0
 if sparkcharge{chargestored=1}
-			if (spin) jumpedoutspin=1
+			//if (spin) jumpedoutspin=1
 			spin=0
             jump=1
             fall=0+up-!!(size=3)
@@ -1046,6 +1046,7 @@ if (!jump) {
 	jumpedoutspin=0
     jet=0
     jetdead=0 
+	highjumpanim=0
     if (!star && !spin && !spindash) seqcount=0
     //ledge hang animation detection
     if ((sprite="stand" && hsp=0) || hang) {
