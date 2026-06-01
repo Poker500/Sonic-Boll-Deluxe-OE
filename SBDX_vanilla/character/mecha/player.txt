@@ -68,6 +68,7 @@ armless frames=8
 armlessalt frames=8
 claw frames=4
 flagslide frames=4
+climbing frames=2
 
 wait loop=2
 jump loop=1

@@ -14,7 +14,7 @@ marker offset=32
 pipe squish=0
 
 single sheet=true
-singlesheet split width=8,242,476,476,476,8
+singlesheet split width=8,242,476,710,476,8,944,1178
 singlesheet split height=0,0,0,0,0,0
 
 custom sprite list=stand,wait,jump,fly,crouch,lookup,knockstand,knockrun,run,turn,dead,deadair,claw,ball
