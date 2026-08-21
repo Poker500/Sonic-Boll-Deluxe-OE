@@ -239,7 +239,7 @@ if (type="monitor_3up") {
 }
 
 if (type="coin") {
-    sound("itemcoin")
+    if other.object_index!=redcoin && !other.red sound("itemcoin")
     if (other.fresh) global.scor[p2]+=100
     global.coins[p2]+=1
     coint+=1
